@@ -1,0 +1,717 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55")
+	(paper "A4")
+	(title_block
+		(title "harp.device.valve-controller")
+		(date "2023-09-01")
+		(rev "0.1")
+		(company "The Allen Institute")
+	)
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 115.57 81.28) (xy 133.35 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "016817f5-ff23-491f-956e-3dc1c39650bb")
+	)
+	(wire
+		(pts
+			(xy 115.57 99.06) (xy 133.35 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b7e6e62-fb0b-4e12-9dbf-e833894a862f")
+	)
+	(wire
+		(pts
+			(xy 115.57 68.58) (xy 133.35 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c6fe379-8a8b-4e60-9b6e-6a133544eb40")
+	)
+	(wire
+		(pts
+			(xy 115.57 76.2) (xy 133.35 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a07481f-668c-4757-866b-3fb0091b78b5")
+	)
+	(wire
+		(pts
+			(xy 115.57 78.74) (xy 133.35 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3895bd1d-e7eb-4898-8e65-216ad44f0eaf")
+	)
+	(wire
+		(pts
+			(xy 115.57 93.98) (xy 133.35 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67e695a5-b8c6-46f5-a2e3-29c6894d2a06")
+	)
+	(wire
+		(pts
+			(xy 115.57 66.04) (xy 133.35 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6aedc59b-8a61-4ed9-864e-d1cb1d850c00")
+	)
+	(wire
+		(pts
+			(xy 115.57 71.12) (xy 133.35 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "789b3689-a37b-4749-9f7c-79e918a86941")
+	)
+	(wire
+		(pts
+			(xy 115.57 96.52) (xy 133.35 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "830fcd10-664f-43f6-bcfa-bd6a7f395f80")
+	)
+	(wire
+		(pts
+			(xy 115.57 101.6) (xy 133.35 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9317c01d-5590-4f3d-9868-ac9241d097ef")
+	)
+	(wire
+		(pts
+			(xy 115.57 86.36) (xy 133.35 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a654aa21-540f-4db2-925b-e8f7b45cdc9f")
+	)
+	(wire
+		(pts
+			(xy 115.57 83.82) (xy 133.35 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9aead71-57dd-4162-918b-f42f2c0150d9")
+	)
+	(wire
+		(pts
+			(xy 115.57 73.66) (xy 133.35 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adc7d16c-f831-4cad-9a02-366bf9634508")
+	)
+	(wire
+		(pts
+			(xy 115.57 91.44) (xy 133.35 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7544c9c-1c66-40b9-8102-6414b5e29542")
+	)
+	(wire
+		(pts
+			(xy 115.57 104.14) (xy 133.35 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf949830-ed84-45d4-971c-de97f7de2f79")
+	)
+	(wire
+		(pts
+			(xy 115.57 88.9) (xy 133.35 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc3e3bca-b4ec-483c-8017-4435c389774c")
+	)
+	(text "Level shift 5VTTL to 3.3VCMOS with: SN74LV1T34"
+		(exclude_from_sim no)
+		(at 132.08 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a73f0c56-f243-4ca2-b394-b2ad5d3bddcd")
+	)
+	(text "* Valve Power Input & device power input\n* RF Isolation\n* Flyback diodes"
+		(exclude_from_sim no)
+		(at 52.07 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ed6b2fbf-ccfc-46ff-9ee3-da1ff5e0e934")
+	)
+	(sheet
+		(at 64.77 81.28)
+		(size 18.415 26.035)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b51b21ef-b374-4f9f-a058-7db9b64fdf4a")
+		(property "Sheetname" "Power Supplies"
+			(at 64.77 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "board_power.kicad_sch"
+			(at 64.77 107.8996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 92.71 62.23)
+		(size 22.86 45.72)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d3da6e00-f648-4952-a8c4-6dc66560e83b")
+		(property "Sheetname" "Valve Control"
+			(at 92.71 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "valve_control.kicad_sch"
+			(at 92.71 108.5346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "OUT4" input
+			(at 115.57 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "560c83db-bddf-44cf-be9f-91519bb177be")
+		)
+		(pin "OUT5" input
+			(at 115.57 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "1bb43b06-6d0c-48d2-869d-9bf98d59f8c0")
+		)
+		(pin "OUT2" input
+			(at 115.57 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8fad8c52-ef1d-448a-b739-bac9b5da9fa1")
+		)
+		(pin "OUT3" input
+			(at 115.57 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "88dc9215-cd28-42fa-b5b2-f4eee813cda2")
+		)
+		(pin "OUT6" input
+			(at 115.57 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b8ce0180-5361-4197-9e56-16dc6740e09c")
+		)
+		(pin "OUT7" input
+			(at 115.57 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e4ce1895-c470-4cd4-a396-a221199d607d")
+		)
+		(pin "OUT0" input
+			(at 115.57 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d038d162-1739-4c5b-b0bb-8875da82b116")
+		)
+		(pin "OUT1" input
+			(at 115.57 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a9109cec-64cf-4797-9caa-8e15b40b9755")
+		)
+		(pin "OUT10" input
+			(at 115.57 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "951e72b7-b483-4c9f-848b-d92d62aef938")
+		)
+		(pin "OUT11" input
+			(at 115.57 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "025d73e7-3b40-4787-8618-9d250b19d2fc")
+		)
+		(pin "OUT14" input
+			(at 115.57 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "67aa03d9-e525-4bf9-9963-cec311cd45a1")
+		)
+		(pin "OUT15" input
+			(at 115.57 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b7e69990-eebf-4c4f-98cc-eafe294abcb9")
+		)
+		(pin "OUT13" input
+			(at 115.57 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7d501d77-3736-43fe-9959-e5bc34747029")
+		)
+		(pin "OUT12" input
+			(at 115.57 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cb8f65ca-c432-4d0c-b86b-27d76f38d6dc")
+		)
+		(pin "OUT8" input
+			(at 115.57 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d4e2b7b5-2bf2-4faa-8b1d-b26788cc7245")
+		)
+		(pin "OUT9" input
+			(at 115.57 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e7310e87-cd55-4934-897c-e8ab590c3285")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 133.35 62.23)
+		(size 24.13 45.085)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "eb8325ca-9747-4676-8e08-1fb825a7219f")
+		(property "Sheetname" "Harp Core RP2040 + Isolated USB"
+			(at 133.35 61.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "isolated_usb_rp2040.kicad_sch"
+			(at 133.35 107.8996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "OUT8" input
+			(at 133.35 86.36 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ba323afc-a51c-40a0-aaa6-2e5d9f212de6")
+		)
+		(pin "OUT11" input
+			(at 133.35 93.98 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f4b071e1-9198-4062-9338-ca5b8085c480")
+		)
+		(pin "OUT9" input
+			(at 133.35 88.9 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "53ce9483-e528-4932-bdfb-63f4d5140b4d")
+		)
+		(pin "OUT10" input
+			(at 133.35 91.44 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "12f99c0e-75da-4955-91e4-7d56d139d43b")
+		)
+		(pin "OUT13" input
+			(at 133.35 99.06 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c9e9cb9b-0457-4eae-bc66-e0243ac46266")
+		)
+		(pin "OUT14" input
+			(at 133.35 101.6 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "170fa333-d3cf-4069-a442-2182515f8460")
+		)
+		(pin "OUT15" input
+			(at 133.35 104.14 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "fa5b2432-210b-47ce-ab59-55c0c9d8c1fc")
+		)
+		(pin "OUT12" input
+			(at 133.35 96.52 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "035381f2-15a3-4b4c-8249-eb865efa5a05")
+		)
+		(pin "OUT7" input
+			(at 133.35 83.82 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d0181c52-6474-4a37-bc96-a723ef506c15")
+		)
+		(pin "OUT5" input
+			(at 133.35 78.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1c24b710-8aff-4f6f-990b-a8a24a949442")
+		)
+		(pin "OUT6" input
+			(at 133.35 81.28 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f5182e93-bf09-40fb-9ac3-540639affe7e")
+		)
+		(pin "OUT4" input
+			(at 133.35 76.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "dd2244d9-9f00-49bc-bc56-663af20e0a54")
+		)
+		(pin "OUT0" input
+			(at 133.35 66.04 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "069f490c-ba0e-48ef-a1f4-d4423d2b85cb")
+		)
+		(pin "OUT3" input
+			(at 133.35 73.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ab20d2c6-5faf-4a55-aa0d-3ef4637e3085")
+		)
+		(pin "OUT2" input
+			(at 133.35 71.12 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9767a7c0-0e1f-4e54-97b3-560d8ddd5940")
+		)
+		(pin "OUT1" input
+			(at 133.35 68.58 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4a770314-fb9b-4bcb-94e3-0668126ef3fa")
+		)
+		(pin "POKE_IN3" input
+			(at 157.48 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "57dfd3c7-76b9-4909-a6e9-478c4cd0319c")
+		)
+		(pin "POKE_IN2" input
+			(at 157.48 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "32b7d4c5-e613-4151-aeb7-2a5fef71a8af")
+		)
+		(pin "EXT_TRIG0" input
+			(at 157.48 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5a0f6a02-57d9-4d21-901e-411044635375")
+		)
+		(pin "EXT_TRIG1" input
+			(at 157.48 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "01dc311a-0c69-4ec9-bea1-abc8c4b29e8b")
+		)
+		(pin "EXT_TRIG2" input
+			(at 157.48 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "228c91ae-2c95-40f5-8f37-fcdad8052938")
+		)
+		(pin "EXT_TRIG3" input
+			(at 157.48 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0216e9c3-aac6-4b96-ac46-564c38f9cff3")
+		)
+		(pin "POKE_IN0" input
+			(at 157.48 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "42c6bd9e-4600-4b83-b29e-75cf62dc6ad3")
+		)
+		(pin "POKE_IN1" input
+			(at 157.48 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9dce3bdb-2940-49c4-9cd5-bc86e9efeb87")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
