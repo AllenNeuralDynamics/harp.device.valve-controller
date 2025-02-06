@@ -8437,7 +8437,7 @@
 		)
 		(uuid "57185248-526e-4c24-91bf-2d51225a775d")
 	)
-	(hierarchical_label "EXT_TRIG1"
+	(hierarchical_label "GPIO1"
 		(shape input)
 		(at 227.33 133.35 0)
 		(fields_autoplaced yes)
@@ -8449,7 +8449,7 @@
 		)
 		(uuid "5dd7871b-56e7-4ad0-a065-0e2262628fdf")
 	)
-	(hierarchical_label "POKE_IN0"
+	(hierarchical_label "GPIO4"
 		(shape input)
 		(at 227.33 143.51 0)
 		(fields_autoplaced yes)
@@ -8461,7 +8461,7 @@
 		)
 		(uuid "62fffdf4-6136-4982-a7a6-cf8afdbe7760")
 	)
-	(hierarchical_label "EXT_TRIG2"
+	(hierarchical_label "GPIO2"
 		(shape input)
 		(at 227.33 135.89 0)
 		(fields_autoplaced yes)
@@ -8473,7 +8473,7 @@
 		)
 		(uuid "63f39579-e9cb-461d-8323-c4bdd7637274")
 	)
-	(hierarchical_label "POKE_IN1"
+	(hierarchical_label "GPIO5"
 		(shape input)
 		(at 227.33 146.05 0)
 		(fields_autoplaced yes)
@@ -8497,7 +8497,7 @@
 		)
 		(uuid "93533e69-0937-42a2-83ca-6c75f0247339")
 	)
-	(hierarchical_label "EXT_TRIG3"
+	(hierarchical_label "GPIO3"
 		(shape input)
 		(at 227.33 138.43 0)
 		(fields_autoplaced yes)
@@ -8509,7 +8509,7 @@
 		)
 		(uuid "a76e67eb-e2f8-4f0a-99c6-79a80951182b")
 	)
-	(hierarchical_label "POKE_IN2"
+	(hierarchical_label "GPIO6"
 		(shape input)
 		(at 227.33 148.59 0)
 		(fields_autoplaced yes)
@@ -8533,7 +8533,7 @@
 		)
 		(uuid "b51ad033-439f-4de5-91cb-25c2a9756ed3")
 	)
-	(hierarchical_label "EXT_TRIG0"
+	(hierarchical_label "GPIO0"
 		(shape input)
 		(at 227.33 130.81 0)
 		(fields_autoplaced yes)
@@ -8593,7 +8593,7 @@
 		)
 		(uuid "c93f0575-6942-4024-8306-83220e963851")
 	)
-	(hierarchical_label "POKE_IN3"
+	(hierarchical_label "GPIO7"
 		(shape input)
 		(at 227.33 151.13 0)
 		(fields_autoplaced yes)

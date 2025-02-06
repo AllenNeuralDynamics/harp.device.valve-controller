@@ -11,6 +11,126 @@
 		(company "The Allen Institute")
 	)
 	(lib_symbols
+		(symbol "+5V_2"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_2_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_2_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:Screw_Terminal_01x02"
 			(pin_names
 				(offset 1.016) hide)
@@ -5018,6 +5138,138 @@
 		)
 	)
 	(symbol
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 34.29 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0175053f-1b50-4c07-8b02-d6a08c4afe1c")
+		(property "Reference" "#PWR054"
+			(at 34.29 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 34.29 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 34.29 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1808c141-b309-4564-a6ed-d33b2873dc13")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 27.94 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0722db48-321f-483c-8a4a-ada68b520e82")
+		(property "Reference" "#PWR051"
+			(at 27.94 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 27.94 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 27.94 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bf5e63fb-5339-497a-8d1b-e1f758ee15bd")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 214.63 137.16 90)
 		(unit 1)
@@ -5079,72 +5331,6 @@
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
 					(reference "R33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VPP")
-		(at 93.98 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0abfd8f8-2100-4ad9-8b5c-80be7ad4c9af")
-		(property "Reference" "#PWR0108"
-			(at 93.98 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VPP"
-			(at 93.98 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 93.98 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50315ec2-71ef-4722-a567-d5259e369800")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -6376,71 +6562,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VPP")
-		(at 50.8 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1a241ac7-63ae-433e-b96b-3d258f300222")
-		(property "Reference" "#PWR035"
-			(at 50.8 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VPP"
-			(at 50.8 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 50.8 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25e76d33-08bf-4770-9b34-47df23980670")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "kicad-lib:SQ4940AEY")
 		(at 99.06 106.68 0)
 		(unit 1)
@@ -7182,22 +7303,22 @@
 			(uuid "ee04fe3e-06a1-4c49-b246-d12bf1f33b8d")
 		)
 		(pin "7"
-			(uuid "fdd36323-be09-46ff-b54b-f82287eaa820")
+			(uuid "fdd36323-be09-46ff-b54b-f82287eaa821")
 		)
 		(pin "6"
 			(uuid "b9fba511-e44a-4a9e-8c4d-5db62422ff87")
 		)
 		(pin "1"
-			(uuid "55cc6551-c0bd-43cb-9263-044c679bb415")
+			(uuid "55cc6551-c0bd-43cb-9263-044c679bb416")
 		)
 		(pin "3"
 			(uuid "a0b83705-6495-4784-991e-3126dca9a5f1")
 		)
 		(pin "2"
-			(uuid "26cb4469-ff8e-4f78-8795-3776b4a7e1e5")
+			(uuid "26cb4469-ff8e-4f78-8795-3776b4a7e1e6")
 		)
 		(pin "8"
-			(uuid "99b298f3-9bb6-443d-aecc-ae2c3681f8fe")
+			(uuid "99b298f3-9bb6-443d-aecc-ae2c3681f8ff")
 		)
 		(pin "4"
 			(uuid "6363e9b9-9589-4074-84a5-152d31820658")
@@ -7283,72 +7404,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VPP")
-		(at 76.2 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2a6987b9-49ee-4924-874b-c1c8936be6ca")
-		(property "Reference" "#PWR0104"
-			(at 76.2 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VPP"
-			(at 76.2 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 76.2 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "818ab32e-5fa4-463f-8b32-fe3ae2dc317f")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR0104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 255.27 95.25 0)
 		(unit 1)
@@ -7414,6 +7469,72 @@
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
 					(reference "J19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 36.83 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2edc40cb-2927-433d-8a82-07ca2db680aa")
+		(property "Reference" "#PWR063"
+			(at 36.83 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 36.83 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 36.83 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c67e514-b9ab-4709-8012-62f7010d6e98")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -7609,6 +7730,72 @@
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 182.88 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "332e20d4-e1c4-415f-8c62-8d16232b534e")
+		(property "Reference" "#PWR0110"
+			(at 182.88 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 182.88 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 182.88 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "30f99522-79a7-4ba9-8f83-71746e4cd2a7")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -8004,6 +8191,138 @@
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
 					(reference "#PWR0120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 182.88 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "45088b5e-2473-41f6-908e-447eb590e718")
+		(property "Reference" "#PWR081"
+			(at 182.88 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 182.88 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 182.88 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c384ab4-a47d-4d1a-9a88-b3edb6bea457")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 45.72 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "451c35f5-26cf-4877-8bad-d8e96f2bee4a")
+		(property "Reference" "#PWR075"
+			(at 45.72 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 45.72 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 45.72 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bcb3b3c3-edfb-4605-9881-b9bc8a7814b3")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -8609,71 +8928,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VPP")
-		(at 182.88 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "508c14ef-9927-4ad7-80d7-ff5ba6faae5b")
-		(property "Reference" "#PWR0110"
-			(at 182.88 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VPP"
-			(at 182.88 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 182.88 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 182.88 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 182.88 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "04d5fcbe-f0aa-4efb-a594-15408068dc3e")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR0110")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 49.53 36.83 90)
 		(unit 1)
@@ -9011,6 +9265,72 @@
 		)
 	)
 	(symbol
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 85.09 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "573e846e-8e7f-4dda-a376-c1d31a5bd5f4")
+		(property "Reference" "#PWR0104"
+			(at 85.09 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 85.09 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 85.09 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59e8d494-f5a2-44da-9078-b3f343875807")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VPP")
 		(at 99.06 88.9 0)
 		(unit 1)
@@ -9325,19 +9645,19 @@
 			)
 		)
 		(pin "5"
-			(uuid "6d6dfd76-40b3-4a99-8d85-8d03d6d0384c")
+			(uuid "6d6dfd76-40b3-4a99-8d85-8d03d6d0384d")
 		)
 		(pin "7"
 			(uuid "278b4110-5ac6-47a1-b67c-29ba3b04ca43")
 		)
 		(pin "6"
-			(uuid "d0941f54-6690-4743-a316-8ac791817ade")
+			(uuid "d0941f54-6690-4743-a316-8ac791817adf")
 		)
 		(pin "1"
 			(uuid "e40aa5ea-8594-40d1-b7e0-400a940a35c6")
 		)
 		(pin "3"
-			(uuid "7a9e7bea-e88f-48eb-8da0-1fddca519190")
+			(uuid "7a9e7bea-e88f-48eb-8da0-1fddca519191")
 		)
 		(pin "2"
 			(uuid "a63dc63f-a86a-445a-97d1-6cb60be1ea29")
@@ -9346,7 +9666,7 @@
 			(uuid "34f00303-7e4f-42ff-8a82-2468581eef4d")
 		)
 		(pin "4"
-			(uuid "7134b7c2-606f-47f4-a279-7c5676793446")
+			(uuid "7134b7c2-606f-47f4-a279-7c5676793447")
 		)
 		(instances
 			(project "valve-controller"
@@ -9687,72 +10007,6 @@
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
 					(reference "C25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VPP")
-		(at 45.72 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6a083a9c-1790-4500-8a39-e1da8c0f3d51")
-		(property "Reference" "#PWR099"
-			(at 45.72 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VPP"
-			(at 45.72 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 45.72 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a96fde07-f0dd-4f46-b3ac-14c322e6cf18")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -10177,6 +10431,72 @@
 		)
 	)
 	(symbol
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 35.56 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73bd3add-7e58-47f9-a49a-4a7f5879b90d")
+		(property "Reference" "#PWR053"
+			(at 35.56 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 35.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 35.56 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "256214a6-269e-434d-9068-812f5a7f6ba0")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VPP")
 		(at 246.38 25.4 0)
 		(unit 1)
@@ -10299,22 +10619,22 @@
 			(uuid "a64d583f-e37b-4234-9bde-38beb9d559b8")
 		)
 		(pin "7"
-			(uuid "fdd36323-be09-46ff-b54b-f82287eaa821")
+			(uuid "fdd36323-be09-46ff-b54b-f82287eaa822")
 		)
 		(pin "6"
 			(uuid "b444c655-1354-4406-95e8-142ae2f29811")
 		)
 		(pin "1"
-			(uuid "55cc6551-c0bd-43cb-9263-044c679bb416")
+			(uuid "55cc6551-c0bd-43cb-9263-044c679bb417")
 		)
 		(pin "3"
 			(uuid "224946fd-134f-47b5-b622-afd1b23f94bf")
 		)
 		(pin "2"
-			(uuid "26cb4469-ff8e-4f78-8795-3776b4a7e1e6")
+			(uuid "26cb4469-ff8e-4f78-8795-3776b4a7e1e7")
 		)
 		(pin "8"
-			(uuid "99b298f3-9bb6-443d-aecc-ae2c3681f8ff")
+			(uuid "99b298f3-9bb6-443d-aecc-ae2c3681f900")
 		)
 		(pin "4"
 			(uuid "54ad181f-5603-4d24-abfe-c3e6947bc098")
@@ -10459,6 +10779,72 @@
 		)
 	)
 	(symbol
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 76.2 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7800b1da-dcef-4770-a081-44a79dfe50e7")
+		(property "Reference" "#PWR0102"
+			(at 76.2 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 76.2 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 76.2 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d21682e-95fa-4bb5-890c-5c8019c0607f")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "kicad-lib:SQ4940AEY")
 		(at 97.79 41.91 0)
 		(unit 1)
@@ -10513,28 +10899,28 @@
 			)
 		)
 		(pin "5"
-			(uuid "6d6dfd76-40b3-4a99-8d85-8d03d6d0384d")
+			(uuid "6d6dfd76-40b3-4a99-8d85-8d03d6d0384e")
 		)
 		(pin "7"
-			(uuid "fdd36323-be09-46ff-b54b-f82287eaa822")
+			(uuid "fdd36323-be09-46ff-b54b-f82287eaa823")
 		)
 		(pin "6"
-			(uuid "d0941f54-6690-4743-a316-8ac791817adf")
+			(uuid "d0941f54-6690-4743-a316-8ac791817ae0")
 		)
 		(pin "1"
-			(uuid "55cc6551-c0bd-43cb-9263-044c679bb417")
+			(uuid "55cc6551-c0bd-43cb-9263-044c679bb418")
 		)
 		(pin "3"
-			(uuid "7a9e7bea-e88f-48eb-8da0-1fddca519191")
+			(uuid "7a9e7bea-e88f-48eb-8da0-1fddca519192")
 		)
 		(pin "2"
-			(uuid "26cb4469-ff8e-4f78-8795-3776b4a7e1e7")
+			(uuid "26cb4469-ff8e-4f78-8795-3776b4a7e1e8")
 		)
 		(pin "8"
-			(uuid "99b298f3-9bb6-443d-aecc-ae2c3681f900")
+			(uuid "99b298f3-9bb6-443d-aecc-ae2c3681f901")
 		)
 		(pin "4"
-			(uuid "7134b7c2-606f-47f4-a279-7c5676793447")
+			(uuid "7134b7c2-606f-47f4-a279-7c5676793448")
 		)
 		(instances
 			(project ""
@@ -10600,19 +10986,19 @@
 			)
 		)
 		(pin "5"
-			(uuid "6d6dfd76-40b3-4a99-8d85-8d03d6d0384e")
+			(uuid "6d6dfd76-40b3-4a99-8d85-8d03d6d0384f")
 		)
 		(pin "7"
 			(uuid "6d214aa2-9d7e-4f63-91d7-55a7c84981d5")
 		)
 		(pin "6"
-			(uuid "d0941f54-6690-4743-a316-8ac791817ae0")
+			(uuid "d0941f54-6690-4743-a316-8ac791817ae1")
 		)
 		(pin "1"
 			(uuid "80539074-d432-4237-9df1-d73b0104f31a")
 		)
 		(pin "3"
-			(uuid "7a9e7bea-e88f-48eb-8da0-1fddca519192")
+			(uuid "7a9e7bea-e88f-48eb-8da0-1fddca519193")
 		)
 		(pin "2"
 			(uuid "0a9e8cd9-da72-4753-8426-2c77cddcff42")
@@ -10621,7 +11007,7 @@
 			(uuid "32645de0-fc78-49d6-be22-6ba1b1a4cf5c")
 		)
 		(pin "4"
-			(uuid "7134b7c2-606f-47f4-a279-7c5676793448")
+			(uuid "7134b7c2-606f-47f4-a279-7c5676793449")
 		)
 		(instances
 			(project "valve-controller"
@@ -11247,22 +11633,22 @@
 			(uuid "f032a7ef-b64e-48f0-a1b1-1eeda838ade8")
 		)
 		(pin "7"
-			(uuid "fdd36323-be09-46ff-b54b-f82287eaa823")
+			(uuid "fdd36323-be09-46ff-b54b-f82287eaa824")
 		)
 		(pin "6"
 			(uuid "1602d883-849c-4b4b-ab60-e5c0c559d2f8")
 		)
 		(pin "1"
-			(uuid "55cc6551-c0bd-43cb-9263-044c679bb418")
+			(uuid "55cc6551-c0bd-43cb-9263-044c679bb419")
 		)
 		(pin "3"
 			(uuid "d10427d3-7bc5-431d-8529-d97cb5615b29")
 		)
 		(pin "2"
-			(uuid "26cb4469-ff8e-4f78-8795-3776b4a7e1e8")
+			(uuid "26cb4469-ff8e-4f78-8795-3776b4a7e1e9")
 		)
 		(pin "8"
-			(uuid "99b298f3-9bb6-443d-aecc-ae2c3681f901")
+			(uuid "99b298f3-9bb6-443d-aecc-ae2c3681f902")
 		)
 		(pin "4"
 			(uuid "89be7546-c812-442d-8346-3d545a993602")
@@ -11409,6 +11795,72 @@
 		)
 	)
 	(symbol
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 102.87 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b88b707-4a0d-4215-930f-55ebd2d937ae")
+		(property "Reference" "#PWR0108"
+			(at 102.87 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 102.87 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 102.87 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a88f297a-9e36-4f48-add3-a3e385f892a5")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 246.38 49.53 0)
 		(unit 1)
@@ -11539,16 +11991,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VPP")
-		(at 182.88 29.21 0)
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 199.39 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9bd5722c-09b1-4df7-9977-ddd4668cb07c")
-		(property "Reference" "#PWR081"
-			(at 182.88 33.02 0)
+		(uuid "9426dd28-b13e-468a-a4a4-679928c3b346")
+		(property "Reference" "#PWR083"
+			(at 199.39 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11556,8 +12009,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VPP"
-			(at 182.88 25.4 0)
+		(property "Value" "+5V"
+			(at 199.39 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11565,7 +12018,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 29.21 0)
+			(at 199.39 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11574,7 +12027,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 29.21 0)
+			(at 199.39 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11582,8 +12035,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 182.88 29.21 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 199.39 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11592,12 +12045,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ca951eb9-d1e4-49b2-9b91-93eb6eec8ebb")
+			(uuid "e263fb19-c246-4d41-9db9-68ab4715b75a")
 		)
 		(instances
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR081")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -11740,17 +12193,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VPP")
-		(at 54.61 179.07 0)
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 50.8 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9fe471fd-3a72-4fee-9307-6700219cc806")
-		(property "Reference" "#PWR0102"
-			(at 54.61 182.88 0)
+		(uuid "9ec02613-9dde-40ff-ab0e-6bd4ddb019cd")
+		(property "Reference" "#PWR077"
+			(at 50.8 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11758,8 +12211,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VPP"
-			(at 54.61 173.99 0)
+		(property "Value" "+5V"
+			(at 50.8 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11767,7 +12220,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 179.07 0)
+			(at 50.8 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11776,7 +12229,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 179.07 0)
+			(at 50.8 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11784,8 +12237,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 54.61 179.07 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 50.8 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11794,12 +12247,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "0d5b5ca4-a454-42a5-a148-f66e7b9ddd93")
+			(uuid "db73d4a5-1789-4030-ac4f-3fcb2d3a7bbd")
 		)
 		(instances
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR0102")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -12602,22 +13055,22 @@
 			(uuid "25a6929d-5b05-43cd-85a6-154e5a2b6bcb")
 		)
 		(pin "7"
-			(uuid "fdd36323-be09-46ff-b54b-f82287eaa823")
+			(uuid "fdd36323-be09-46ff-b54b-f82287eaa825")
 		)
 		(pin "6"
 			(uuid "f7996476-8bae-45dd-8ce8-290e90cdb62b")
 		)
 		(pin "1"
-			(uuid "55cc6551-c0bd-43cb-9263-044c679bb418")
+			(uuid "55cc6551-c0bd-43cb-9263-044c679bb41a")
 		)
 		(pin "3"
 			(uuid "c138971f-818c-4900-b714-377e24495571")
 		)
 		(pin "2"
-			(uuid "26cb4469-ff8e-4f78-8795-3776b4a7e1e8")
+			(uuid "26cb4469-ff8e-4f78-8795-3776b4a7e1ea")
 		)
 		(pin "8"
-			(uuid "99b298f3-9bb6-443d-aecc-ae2c3681f901")
+			(uuid "99b298f3-9bb6-443d-aecc-ae2c3681f903")
 		)
 		(pin "4"
 			(uuid "58c8a22d-9eb6-4da3-a096-5a95b1aa3bde")
@@ -12926,72 +13379,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VPP")
-		(at 85.09 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b6a8597c-f446-48cc-ad11-be6d98b78cfe")
-		(property "Reference" "#PWR0106"
-			(at 85.09 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VPP"
-			(at 85.09 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 85.09 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1878e965-28ab-4a91-96cb-5a6a57176353")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR0106")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "kicad-lib:MIC4127")
 		(at 50.8 73.66 0)
 		(unit 1)
@@ -13100,14 +13487,15 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VPP")
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
 		(at 199.39 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b98a16ea-b41d-4c47-afde-a39be7376ce4")
+		(uuid "bc691307-7194-47f7-9e7f-2ffe711f2683")
 		(property "Reference" "#PWR0112"
 			(at 199.39 132.08 0)
 			(effects
@@ -13117,7 +13505,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VPP"
+		(property "Value" "+5V"
 			(at 199.39 124.46 0)
 			(effects
 				(font
@@ -13143,7 +13531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 199.39 128.27 0)
 			(effects
 				(font
@@ -13153,78 +13541,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "04d36802-2b8c-4e1f-971c-59aafeaf6017")
+			(uuid "9f3ec2a9-c278-4c3f-8eab-8db381db4da3")
 		)
 		(instances
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
 					(reference "#PWR0112")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VPP")
-		(at 27.94 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "baa960b0-60ec-432f-973b-7fc9e41cde1b")
-		(property "Reference" "#PWR051"
-			(at 27.94 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VPP"
-			(at 27.94 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 27.94 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "122e2498-cdd2-4d7f-8117-6aaa12188853")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -13352,19 +13674,19 @@
 			)
 		)
 		(pin "5"
-			(uuid "6d6dfd76-40b3-4a99-8d85-8d03d6d0384f")
+			(uuid "6d6dfd76-40b3-4a99-8d85-8d03d6d03850")
 		)
 		(pin "7"
 			(uuid "0526414a-b187-4c7f-9561-a79c2cb0afa9")
 		)
 		(pin "6"
-			(uuid "d0941f54-6690-4743-a316-8ac791817ae1")
+			(uuid "d0941f54-6690-4743-a316-8ac791817ae2")
 		)
 		(pin "1"
 			(uuid "8ccd1089-c83a-48b3-b59a-47b02dced594")
 		)
 		(pin "3"
-			(uuid "7a9e7bea-e88f-48eb-8da0-1fddca519193")
+			(uuid "7a9e7bea-e88f-48eb-8da0-1fddca519194")
 		)
 		(pin "2"
 			(uuid "e6f3eb96-e547-4989-a21c-a84d5c308554")
@@ -13373,7 +13695,7 @@
 			(uuid "f09e5b22-f034-441c-844f-9f8e7d8af49b")
 		)
 		(pin "4"
-			(uuid "7134b7c2-606f-47f4-a279-7c5676793449")
+			(uuid "7134b7c2-606f-47f4-a279-7c567679344a")
 		)
 		(instances
 			(project "valve-controller"
@@ -14057,72 +14379,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VPP")
-		(at 102.87 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d2a3c628-ac33-4ef4-851a-9ed62f3cab39")
-		(property "Reference" "#PWR063"
-			(at 102.87 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VPP"
-			(at 102.87 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 102.87 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d7a9671a-1721-4ef6-b576-986e864ed246")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR063")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 229.87 90.17 0)
 		(unit 1)
@@ -14398,71 +14654,6 @@
 	)
 	(symbol
 		(lib_id "power:VPP")
-		(at 34.29 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d56d4166-204f-4676-9a80-aaa99179ced5")
-		(property "Reference" "#PWR054"
-			(at 34.29 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VPP"
-			(at 34.29 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 34.29 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "81cb2ea8-8ff4-4ef4-8871-76f69e85e488")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR054")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VPP")
 		(at 220.98 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14521,6 +14712,72 @@
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
 					(reference "#PWR0114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 50.8 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "da8355c4-c6ed-4c90-96da-8c57666aef66")
+		(property "Reference" "#PWR035"
+			(at 50.8 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 50.8 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 50.8 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4154c8a1-0357-4e55-86a8-66c708b0ff2b")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -14921,16 +15178,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VPP")
-		(at 50.8 125.73 0)
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 54.61 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e668d705-022c-4a55-9cfc-9761ac482943")
-		(property "Reference" "#PWR077"
-			(at 50.8 129.54 0)
+		(uuid "e62e1531-75c7-43d9-b693-80402dec6366")
+		(property "Reference" "#PWR099"
+			(at 54.61 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14938,8 +15196,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VPP"
-			(at 50.8 121.92 0)
+		(property "Value" "+5V"
+			(at 54.61 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14947,7 +15205,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 125.73 0)
+			(at 54.61 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14956,7 +15214,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 125.73 0)
+			(at 54.61 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14964,8 +15222,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 50.8 125.73 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 54.61 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14974,12 +15232,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "9d73f149-88d4-4946-adf4-91ff30c99c17")
+			(uuid "d93b1313-b478-4a11-a904-41cb4336e7cb")
 		)
 		(instances
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR077")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -15379,202 +15637,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VPP")
-		(at 199.39 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f0ca73df-18f0-4f17-8a5b-b3568398c86c")
-		(property "Reference" "#PWR083"
-			(at 199.39 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VPP"
-			(at 199.39 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 199.39 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 199.39 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 199.39 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b8837d70-c07a-42e9-997b-8b3d9dbda742")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR083")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VPP")
-		(at 36.83 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f22caf47-6998-460e-9fe4-f8cbb450f1b3")
-		(property "Reference" "#PWR075"
-			(at 36.83 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VPP"
-			(at 36.83 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 36.83 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 36.83 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 36.83 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c10e9abd-78f6-4473-9a49-71f7e05c7644")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR075")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VPP")
-		(at 35.56 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f36cc094-04f8-45f8-beb3-73f5ab4546d6")
-		(property "Reference" "#PWR053"
-			(at 35.56 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VPP"
-			(at 35.56 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 35.56 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2928adad-e79b-4898-a6a2-fe48f577be31")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
-					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "kicad-lib:MIC4127")
 		(at 182.88 40.64 0)
 		(unit 1)
@@ -15740,22 +15802,22 @@
 			(uuid "2044edfd-9e5f-45b7-b02e-f724d899b681")
 		)
 		(pin "7"
-			(uuid "fdd36323-be09-46ff-b54b-f82287eaa824")
+			(uuid "fdd36323-be09-46ff-b54b-f82287eaa826")
 		)
 		(pin "6"
 			(uuid "428427a8-759f-4d93-9d9b-762c84446f13")
 		)
 		(pin "1"
-			(uuid "55cc6551-c0bd-43cb-9263-044c679bb419")
+			(uuid "55cc6551-c0bd-43cb-9263-044c679bb41b")
 		)
 		(pin "3"
 			(uuid "4b5f5856-52ae-4adc-ad78-1ee5bfad5dca")
 		)
 		(pin "2"
-			(uuid "26cb4469-ff8e-4f78-8795-3776b4a7e1e9")
+			(uuid "26cb4469-ff8e-4f78-8795-3776b4a7e1eb")
 		)
 		(pin "8"
-			(uuid "99b298f3-9bb6-443d-aecc-ae2c3681f902")
+			(uuid "99b298f3-9bb6-443d-aecc-ae2c3681f904")
 		)
 		(pin "4"
 			(uuid "df29ab1f-7fe2-40bf-b2b8-96fc4573e160")
@@ -15921,19 +15983,19 @@
 			)
 		)
 		(pin "5"
-			(uuid "6d6dfd76-40b3-4a99-8d85-8d03d6d0384f")
+			(uuid "6d6dfd76-40b3-4a99-8d85-8d03d6d03851")
 		)
 		(pin "7"
 			(uuid "d52c3b67-c47f-4b03-ac08-d6a81cc28322")
 		)
 		(pin "6"
-			(uuid "d0941f54-6690-4743-a316-8ac791817ae1")
+			(uuid "d0941f54-6690-4743-a316-8ac791817ae3")
 		)
 		(pin "1"
 			(uuid "be9e9d33-338e-4706-b2a0-17727d60ed41")
 		)
 		(pin "3"
-			(uuid "7a9e7bea-e88f-48eb-8da0-1fddca519193")
+			(uuid "7a9e7bea-e88f-48eb-8da0-1fddca519195")
 		)
 		(pin "2"
 			(uuid "ca694fee-4007-49a5-a7b2-a1f15500ee69")
@@ -15942,7 +16004,7 @@
 			(uuid "fb28b74b-b927-448f-a94b-56583e21b2a7")
 		)
 		(pin "4"
-			(uuid "7134b7c2-606f-47f4-a279-7c5676793449")
+			(uuid "7134b7c2-606f-47f4-a279-7c567679344b")
 		)
 		(instances
 			(project "valve-controller"
@@ -16116,6 +16178,72 @@
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
 					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 93.98 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff483a13-6047-419a-b4d2-c98833ccaf5e")
+		(property "Reference" "#PWR0106"
+			(at 93.98 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 93.98 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 93.98 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ff60707-98da-47b7-b7b2-dff9b3aaee77")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/d3da6e00-f648-4952-a8c4-6dc66560e83b"
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
