@@ -1144,12 +1144,12 @@
 				)
 			)
 		)
-		(symbol "Regulator_Switching:MCP16312x-xMNY"
+		(symbol "Regulator_Switching:LMR51430"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -7.62 8.89 0)
+				(at -7.62 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1157,8 +1157,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "MCP16312x-xMNY"
-				(at 0 8.89 0)
+			(property "Value" "LMR51430"
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1166,8 +1166,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm"
-				(at 1.27 -6.35 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 1.27 -8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1176,16 +1176,17 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP16311-Family-Data-Sheet-DS20005255C.pdf"
-				(at -7.62 15.24 0)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr51430.pdf"
+				(at 1.27 -11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Description" "1A Output Voltage, 30V Input, integrated switch step-down regulator, PWM modulation, DFN-8"
+			(property "Description" "4.5-V to 36-V, 3-A synchronous buck converter with 40-µA IQ, SOT-23-6"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1203,7 +1204,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DFN*1EP*3x2mm*P0.5mm*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1212,10 +1213,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "MCP16312x-xMNY_0_1"
+			(symbol "LMR51430_0_1"
 				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1225,11 +1226,11 @@
 					)
 				)
 			)
-			(symbol "MCP16312x-xMNY_1_1"
-				(pin input line
-					(at 10.16 -2.54 180)
+			(symbol "LMR51430_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "Vfb"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1244,10 +1245,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -10.16 -2.54 0)
+				(pin power_out line
+					(at 10.16 0 180)
 					(length 2.54)
-					(name "V_{CC}"
+					(name "SW"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1262,10 +1263,10 @@
 						)
 					)
 				)
-				(pin input line
+				(pin power_in line
 					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "EN"
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1280,10 +1281,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -10.16 5.08 0)
+				(pin input line
+					(at 10.16 -2.54 180)
 					(length 2.54)
-					(name "V_{IN}"
+					(name "FB"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1298,10 +1299,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -10.16 90)
+				(pin input line
+					(at -10.16 -2.54 0)
 					(length 2.54)
-					(name "GND"
+					(name "EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1316,10 +1317,10 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 10.16 2.54 180)
 					(length 2.54)
-					(name "SW"
+					(name "CB"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1327,60 +1328,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "BOOST"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2402,134 +2349,152 @@
 		)
 	)
 	(junction
-		(at 115.57 54.61)
+		(at 193.04 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "076842fc-5ee1-44ce-a7c5-e64e018c4346")
+		(uuid "02b6c75b-e237-4052-8c60-97e7fcebdea1")
 	)
 	(junction
-		(at 156.21 118.11)
+		(at 175.26 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08ec5d2e-ce50-41f7-be55-f4e9ec708b73")
+	)
+	(junction
+		(at 132.08 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0de0b2ae-7b35-45e9-b33b-78b647506173")
+	)
+	(junction
+		(at 156.21 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "13795af1-03ee-4107-85f6-1167a662ce27")
 	)
 	(junction
-		(at 172.72 59.69)
+		(at 175.26 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1bd96b1b-3f5e-43b6-a596-71d787be940c")
+		(uuid "348dd5a5-d66c-4669-a9c4-704674ff4bea")
 	)
 	(junction
-		(at 180.34 59.69)
+		(at 189.23 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "457ac5ca-5ad7-4da2-916b-8569273e1224")
+		(uuid "434a21cb-75fa-4413-bab5-c374b602f3ca")
 	)
 	(junction
-		(at 167.64 69.85)
+		(at 204.47 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "46ff125c-2f8d-49ca-b152-41985ff379e7")
+		(uuid "470e78a8-4310-4205-84aa-17a12eb23a9c")
 	)
 	(junction
-		(at 91.44 63.5)
+		(at 165.1 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5aee0db4-b952-4fb1-a91f-4dc182c98e6f")
+	)
+	(junction
+		(at 181.61 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ef817f4-ac46-404c-b7a7-59243f1c50c7")
+	)
+	(junction
+		(at 92.71 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f809bc5-251a-495a-a491-1c7b251ed14a")
 	)
 	(junction
-		(at 91.44 71.12)
+		(at 92.71 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7cdb7c43-ac48-40a8-b1da-44de3c11604a")
 	)
 	(junction
-		(at 167.64 59.69)
+		(at 189.23 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8559c243-3233-4021-b875-9dbec35d8fdd")
+		(uuid "80a2bd73-310f-4823-bfe6-5798c536281e")
 	)
 	(junction
-		(at 124.46 54.61)
+		(at 196.85 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8c31fdcd-c32f-4d65-977b-58ab6f8be33e")
+		(uuid "a386c9f8-e593-4513-b54c-670ef11f1240")
 	)
 	(junction
-		(at 180.34 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a10e19c5-d566-4964-a88f-8b87f4054e3a")
-	)
-	(junction
-		(at 167.64 118.11)
+		(at 167.64 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a6134f04-dace-4889-b592-a5054b9a318e")
 	)
 	(junction
-		(at 194.31 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a88d79be-a36c-4761-a2e7-ca13cfd9b95e")
-	)
-	(junction
-		(at 121.92 128.27)
+		(at 121.92 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a8d60cfc-09dd-433b-9d55-3513a2820664")
 	)
 	(junction
-		(at 121.92 118.11)
+		(at 196.85 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b27e1176-1d3d-45d1-80a7-e0cc11c96fbc")
+	)
+	(junction
+		(at 121.92 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c53fe9f9-deec-4aa8-be2d-973c2a061378")
 	)
 	(junction
-		(at 116.84 118.11)
+		(at 116.84 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d15b87d4-4029-47ae-bbba-b7dea5c2be73")
 	)
 	(junction
-		(at 99.06 54.61)
+		(at 100.33 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd54a937-d070-4602-b0d8-e8c18b14df9d")
 	)
 	(junction
-		(at 130.81 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "decb7e66-6027-4bc7-95b1-c68b2d2fe83c")
-	)
-	(junction
-		(at 157.48 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e7d6ac41-e365-4fef-8882-45e15c2d03bc")
-	)
-	(junction
-		(at 187.96 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e9594844-e8f6-4414-a306-0760d80ce82a")
-	)
-	(junction
-		(at 132.08 118.11)
+		(at 132.08 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eb89d7d9-39cc-40c5-b255-7258b4e4c25d")
 	)
 	(junction
-		(at 110.49 54.61)
+		(at 123.19 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f184c5b4-c69b-4564-98fe-20ec8172909e")
+	)
+	(junction
+		(at 127 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1db9d1e-d551-4a8b-bd02-631927a08b95")
+	)
+	(junction
+		(at 119.38 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f56e41a7-53a0-4ec1-bc2b-7ce844d17aee")
+	)
+	(junction
+		(at 111.76 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc081350-99db-47ef-9d3d-1fc102b7d010")
 	)
 	(wire
 		(pts
-			(xy 83.82 54.61) (xy 86.36 54.61)
+			(xy 85.09 55.88) (xy 87.63 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2539,7 +2504,17 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 57.15) (xy 85.09 57.15)
+			(xy 123.19 66.04) (xy 127 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "016a9cc1-be72-409b-8f49-fb74cccd08d4")
+	)
+	(wire
+		(pts
+			(xy 85.09 58.42) (xy 86.36 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2549,7 +2524,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 120.65) (xy 132.08 120.65)
+			(xy 133.35 113.03) (xy 132.08 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2559,17 +2534,17 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 68.58) (xy 180.34 69.85)
+			(xy 119.38 66.04) (xy 123.19 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0e1c2869-8372-47f8-99a9-4020b49989de")
+		(uuid "0ab32043-66ab-4a5c-96c2-31ed4afe4e2c")
 	)
 	(wire
 		(pts
-			(xy 132.08 118.11) (xy 121.92 118.11)
+			(xy 132.08 110.49) (xy 121.92 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2579,17 +2554,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 69.85) (xy 180.34 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1321509e-6271-4ae6-bfe5-f9263900ceca")
-	)
-	(wire
-		(pts
-			(xy 110.49 50.8) (xy 110.49 54.61)
+			(xy 111.76 52.07) (xy 111.76 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2599,7 +2564,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 71.12) (xy 91.44 71.12)
+			(xy 86.36 72.39) (xy 92.71 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2609,7 +2574,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 120.65) (xy 156.21 118.11)
+			(xy 156.21 113.03) (xy 156.21 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2619,17 +2584,17 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 59.69) (xy 180.34 59.69)
+			(xy 204.47 68.58) (xy 196.85 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "161acf20-0bc9-40b5-b41b-018420d3d8b4")
+		(uuid "1561f1fc-499f-433c-a577-862b09fe380f")
 	)
 	(wire
 		(pts
-			(xy 91.44 64.77) (xy 91.44 63.5)
+			(xy 92.71 66.04) (xy 92.71 64.77)
 		)
 		(stroke
 			(width 0)
@@ -2639,17 +2604,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 68.58) (xy 172.72 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "187f2a25-bc7e-4d22-9f71-2684429d2f11")
-	)
-	(wire
-		(pts
-			(xy 99.06 54.61) (xy 99.06 55.88)
+			(xy 100.33 55.88) (xy 100.33 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2659,7 +2614,17 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 54.61) (xy 110.49 54.61)
+			(xy 204.47 57.15) (xy 204.47 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cf071fe-d595-45fb-8347-137025af6e97")
+	)
+	(wire
+		(pts
+			(xy 110.49 55.88) (xy 111.76 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2669,17 +2634,37 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 59.69) (xy 158.75 59.69)
+			(xy 127 66.04) (xy 127 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2ba157ea-87d6-42fe-b025-9886027147f0")
+		(uuid "2157785f-fc1e-4e21-b53a-dd0c895d84b1")
 	)
 	(wire
 		(pts
-			(xy 167.64 127) (xy 167.64 128.27)
+			(xy 165.1 53.34) (xy 163.83 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26588951-0174-4399-9f7c-4c89a22a9a3c")
+	)
+	(wire
+		(pts
+			(xy 153.67 58.42) (xy 165.1 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30b130be-e5c4-4eb7-bf62-f9d107225202")
+	)
+	(wire
+		(pts
+			(xy 167.64 119.38) (xy 167.64 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2689,7 +2674,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 118.11) (xy 153.67 118.11)
+			(xy 156.21 110.49) (xy 153.67 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2699,17 +2684,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 57.15) (xy 153.67 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "351d25ba-fe61-4ede-9a65-5d154772f584")
-	)
-	(wire
-		(pts
-			(xy 121.92 128.27) (xy 121.92 129.54)
+			(xy 121.92 120.65) (xy 121.92 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2719,7 +2694,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 120.65) (xy 132.08 118.11)
+			(xy 132.08 113.03) (xy 132.08 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2729,7 +2704,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 123.19) (xy 162.56 125.73)
+			(xy 162.56 115.57) (xy 162.56 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2739,17 +2714,17 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 59.69) (xy 167.64 59.69)
+			(xy 132.08 55.88) (xy 133.35 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3d965dc5-edb3-42b3-91ff-839ff54e649e")
+		(uuid "39a72e8a-7840-4a0a-a463-f360c29f94c0")
 	)
 	(wire
 		(pts
-			(xy 91.44 73.66) (xy 91.44 71.12)
+			(xy 92.71 74.93) (xy 92.71 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2759,7 +2734,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 116.84) (xy 116.84 118.11)
+			(xy 116.84 109.22) (xy 116.84 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2769,37 +2744,27 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 71.12) (xy 180.34 69.85)
+			(xy 166.37 58.42) (xy 165.1 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "454f7186-5ddd-45dd-be40-aa61dc49c2f8")
+		(uuid "45a396ae-3005-4441-a050-ce8971e26dcf")
 	)
 	(wire
 		(pts
-			(xy 187.96 68.58) (xy 187.96 69.85)
+			(xy 181.61 68.58) (xy 181.61 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4804d7d2-d950-4c29-8ee4-2ba93faa385c")
+		(uuid "4a9cb892-81d1-4b72-b56f-88852d7cd559")
 	)
 	(wire
 		(pts
-			(xy 130.81 72.39) (xy 130.81 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49d4618f-7cae-4d5a-bede-511c2085674b")
-	)
-	(wire
-		(pts
-			(xy 85.09 57.15) (xy 85.09 71.12)
+			(xy 86.36 58.42) (xy 86.36 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2809,17 +2774,37 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 63.5) (xy 124.46 64.77)
+			(xy 196.85 58.42) (xy 204.47 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54196719-c00c-4e0d-ae9a-e2650724f083")
+		(uuid "5230c6e2-68c0-4683-8337-c0c549716b1c")
 	)
 	(wire
 		(pts
-			(xy 91.44 69.85) (xy 91.44 71.12)
+			(xy 189.23 58.42) (xy 196.85 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "540801a8-c71d-429b-be62-b3a9028f8900")
+	)
+	(wire
+		(pts
+			(xy 173.99 58.42) (xy 175.26 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c5f407d-2df7-476d-a094-df7c243e422b")
+	)
+	(wire
+		(pts
+			(xy 92.71 71.12) (xy 92.71 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2829,7 +2814,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 125.73) (xy 133.35 125.73)
+			(xy 132.08 118.11) (xy 133.35 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2839,27 +2824,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 68.58) (xy 167.64 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "670c4115-b650-4f8b-9d8f-e6d9b37b1e7c")
-	)
-	(wire
-		(pts
-			(xy 130.81 57.15) (xy 130.81 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68a002b5-251f-40a7-b7a4-4eabfe4941c9")
-	)
-	(wire
-		(pts
-			(xy 110.49 54.61) (xy 115.57 54.61)
+			(xy 111.76 55.88) (xy 119.38 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2869,7 +2834,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 123.19) (xy 121.92 118.11)
+			(xy 121.92 115.57) (xy 121.92 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2879,7 +2844,17 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 118.11) (xy 167.64 119.38)
+			(xy 204.47 58.42) (xy 204.47 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bf8034b-f037-4497-a6f2-373c8fd551b9")
+	)
+	(wire
+		(pts
+			(xy 167.64 110.49) (xy 167.64 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2889,17 +2864,57 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 62.23) (xy 130.81 64.77)
+			(xy 119.38 55.88) (xy 119.38 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7eb3ec8f-45a0-48e6-9dfa-93456f5e47f0")
+		(uuid "7016dfed-dac2-47fa-8fbd-4e4c97a14c3c")
 	)
 	(wire
 		(pts
-			(xy 116.84 118.11) (xy 121.92 118.11)
+			(xy 154.94 68.58) (xy 175.26 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75293f2f-a819-4663-bcaf-0641cfcbbfbd")
+	)
+	(wire
+		(pts
+			(xy 196.85 68.58) (xy 193.04 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79db33d0-f235-4155-9bfd-924b4da72054")
+	)
+	(wire
+		(pts
+			(xy 181.61 58.42) (xy 181.61 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e6f0c88-875d-4db6-b93e-66c523044896")
+	)
+	(wire
+		(pts
+			(xy 127 55.88) (xy 127 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83d67be1-0a25-4721-bb9d-ae4a32e2d117")
+	)
+	(wire
+		(pts
+			(xy 116.84 110.49) (xy 121.92 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2909,17 +2924,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 59.69) (xy 167.64 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8846a19d-cd2f-48c3-9367-02f6f2aec38d")
-	)
-	(wire
-		(pts
-			(xy 167.64 116.84) (xy 167.64 118.11)
+			(xy 167.64 109.22) (xy 167.64 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2929,17 +2934,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 59.69) (xy 194.31 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89326f08-3aa7-4771-9139-e1b3c47fd38a")
-	)
-	(wire
-		(pts
-			(xy 153.67 123.19) (xy 154.94 123.19)
+			(xy 153.67 115.57) (xy 154.94 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2949,17 +2944,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 58.42) (xy 157.48 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ab474b7-17f7-4b90-bd69-6824092938b2")
-	)
-	(wire
-		(pts
-			(xy 91.44 63.5) (xy 99.06 63.5)
+			(xy 92.71 64.77) (xy 100.33 64.77)
 		)
 		(stroke
 			(width 0)
@@ -2969,27 +2954,17 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 63.5) (xy 115.57 64.77)
+			(xy 154.94 55.88) (xy 154.94 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8c42bb8f-2b96-4150-b5c6-6f834aa0e6fa")
+		(uuid "8bf0eff0-0d64-444b-a28f-6a60d56a49a7")
 	)
 	(wire
 		(pts
-			(xy 187.96 59.69) (xy 187.96 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8df1c485-d6a4-47bb-b448-ade9f081410c")
-	)
-	(wire
-		(pts
-			(xy 143.51 130.81) (xy 143.51 132.08)
+			(xy 143.51 123.19) (xy 143.51 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2999,17 +2974,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 57.15) (xy 130.81 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "914120a4-67ee-4bb4-b9da-6ad463b535b2")
-	)
-	(wire
-		(pts
-			(xy 116.84 128.27) (xy 121.92 128.27)
+			(xy 116.84 120.65) (xy 121.92 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3019,57 +2984,37 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 54.61) (xy 133.35 54.61)
+			(xy 175.26 58.42) (xy 181.61 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9cdb14a2-2241-41b8-8121-567840f3a0bd")
+		(uuid "93df0db8-7ebd-4e66-9a15-107cd0d6d0c6")
 	)
 	(wire
 		(pts
-			(xy 167.64 59.69) (xy 172.72 59.69)
+			(xy 175.26 68.58) (xy 175.26 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9f654f16-e8d0-4f8b-9438-065f71cd25a8")
+		(uuid "a1d336cd-0f94-4950-8fe9-9d6a9858a969")
 	)
 	(wire
 		(pts
-			(xy 153.67 59.69) (xy 157.48 59.69)
+			(xy 119.38 55.88) (xy 127 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a049726e-29f9-4475-8eb7-72c3281422d0")
+		(uuid "a259495b-793b-4c40-beb8-a595a10ed1ae")
 	)
 	(wire
 		(pts
-			(xy 157.48 49.53) (xy 157.48 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1c4b046-c994-40a9-86c2-3d57c3a86a63")
-	)
-	(wire
-		(pts
-			(xy 153.67 62.23) (xy 157.48 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a50b9ab0-62de-4dfa-8bad-3e685f50a695")
-	)
-	(wire
-		(pts
-			(xy 96.52 54.61) (xy 99.06 54.61)
+			(xy 97.79 55.88) (xy 100.33 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3079,7 +3024,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 125.73) (xy 121.92 125.73)
+			(xy 124.46 118.11) (xy 121.92 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3089,47 +3034,37 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 54.61) (xy 115.57 55.88)
+			(xy 189.23 68.58) (xy 181.61 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a775caed-c617-46cd-ba1c-d9d042c58c83")
+		(uuid "aad2b038-41e4-4549-9365-88fb2499d22a")
 	)
 	(wire
 		(pts
-			(xy 143.51 69.85) (xy 143.51 71.12)
+			(xy 193.04 68.58) (xy 193.04 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ab1df355-3f5d-46a9-85fa-89108d5787fc")
+		(uuid "ad6f27ec-df54-4ed3-83c3-d0f3d34ef093")
 	)
 	(wire
 		(pts
-			(xy 187.96 69.85) (xy 180.34 69.85)
+			(xy 204.47 67.31) (xy 204.47 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af16237e-cf99-4245-bb25-615cef479327")
+		(uuid "adb63f07-3000-41aa-abd8-2b76596c54fe")
 	)
 	(wire
 		(pts
-			(xy 153.67 54.61) (xy 153.67 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0412cbf-f833-4ee9-af9b-11f6544516ab")
-	)
-	(wire
-		(pts
-			(xy 116.84 119.38) (xy 116.84 118.11)
+			(xy 116.84 111.76) (xy 116.84 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3139,7 +3074,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 125.73) (xy 162.56 125.73)
+			(xy 153.67 118.11) (xy 162.56 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3149,7 +3084,27 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 62.23) (xy 91.44 63.5)
+			(xy 175.26 77.47) (xy 175.26 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b33883e7-b407-465a-9a15-229ef83ef5eb")
+	)
+	(wire
+		(pts
+			(xy 181.61 58.42) (xy 189.23 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5c39190-b9ce-4cb9-900d-24cb09a8fe6e")
+	)
+	(wire
+		(pts
+			(xy 92.71 63.5) (xy 92.71 64.77)
 		)
 		(stroke
 			(width 0)
@@ -3159,7 +3114,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 118.11) (xy 132.08 118.11)
+			(xy 133.35 110.49) (xy 132.08 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3169,17 +3124,27 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 62.23) (xy 157.48 69.85)
+			(xy 154.94 53.34) (xy 156.21 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bbcd5878-81f0-42ae-a51f-03f013e8cefc")
+		(uuid "babda43b-f691-4075-ae25-31352ea50e51")
 	)
 	(wire
 		(pts
-			(xy 116.84 128.27) (xy 116.84 127)
+			(xy 123.19 66.04) (xy 123.19 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bba2aa15-c485-423e-82f3-f8fa58ea6bdb")
+	)
+	(wire
+		(pts
+			(xy 116.84 120.65) (xy 116.84 119.38)
 		)
 		(stroke
 			(width 0)
@@ -3189,17 +3154,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 59.69) (xy 180.34 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd2c0308-9073-4ad9-95b7-0d5997fcc533")
-	)
-	(wire
-		(pts
-			(xy 132.08 123.19) (xy 133.35 123.19)
+			(xy 132.08 115.57) (xy 133.35 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3209,37 +3164,17 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 77.47) (xy 167.64 78.74)
+			(xy 127 55.88) (xy 132.08 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bf138af7-901b-4055-b524-3bec66fc109e")
+		(uuid "c5659cf0-817c-4bab-bdf6-2cbbd5be4b2b")
 	)
 	(wire
 		(pts
-			(xy 187.96 59.69) (xy 194.31 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfc37238-4a4a-436c-a79d-92558c9733fa")
-	)
-	(wire
-		(pts
-			(xy 180.34 59.69) (xy 187.96 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bffdb5be-731a-4831-9479-d3b5203f3ac1")
-	)
-	(wire
-		(pts
-			(xy 153.67 120.65) (xy 156.21 120.65)
+			(xy 153.67 113.03) (xy 156.21 113.03)
 		)
 		(stroke
 			(width 0)
@@ -3249,7 +3184,27 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 118.11) (xy 167.64 118.11)
+			(xy 119.38 64.77) (xy 119.38 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5f9afd3-474c-40c5-810d-1eb0b2d781ce")
+	)
+	(wire
+		(pts
+			(xy 132.08 60.96) (xy 132.08 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca69aa25-d268-4e3c-9f2e-1eb3823c864d")
+	)
+	(wire
+		(pts
+			(xy 156.21 110.49) (xy 167.64 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3259,7 +3214,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 123.19) (xy 121.92 123.19)
+			(xy 124.46 115.57) (xy 121.92 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3269,27 +3224,57 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 54.61) (xy 124.46 54.61)
+			(xy 154.94 60.96) (xy 154.94 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1f083f0-dce9-4614-ac43-8f90f7f46fb7")
+		(uuid "d0135362-96a1-4a69-89d7-70045668d766")
 	)
 	(wire
 		(pts
-			(xy 153.67 49.53) (xy 157.48 49.53)
+			(xy 196.85 58.42) (xy 196.85 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3a3169d-d68f-4fa1-adbf-0f27e2a17492")
+		(uuid "d0fe453a-f043-438c-a6a2-645c9233464f")
 	)
 	(wire
 		(pts
-			(xy 121.92 125.73) (xy 121.92 128.27)
+			(xy 175.26 68.58) (xy 175.26 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d210b588-fdc6-4af5-815c-92901e556b46")
+	)
+	(wire
+		(pts
+			(xy 143.51 66.04) (xy 143.51 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2bca224-4161-4a13-a69e-c407c8dd423d")
+	)
+	(wire
+		(pts
+			(xy 196.85 67.31) (xy 196.85 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d42ec160-81d7-42fc-8024-e5de5c7af9e4")
+	)
+	(wire
+		(pts
+			(xy 121.92 118.11) (xy 121.92 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3299,37 +3284,57 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 60.96) (xy 172.72 59.69)
+			(xy 165.1 58.42) (xy 165.1 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ddadb7b3-8871-4edb-8a5b-127063a79778")
+		(uuid "d92f3426-b04c-4ea4-91a8-792a1f2eeda6")
 	)
 	(wire
 		(pts
-			(xy 157.48 69.85) (xy 167.64 69.85)
+			(xy 133.35 60.96) (xy 132.08 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ed5e2c93-363e-4262-9b27-c78acface910")
+		(uuid "dae3e986-de02-49c5-9344-d2c713aad9bf")
 	)
 	(wire
 		(pts
-			(xy 133.35 62.23) (xy 130.81 62.23)
+			(xy 175.26 58.42) (xy 175.26 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f0c1c817-c176-4a27-b80d-a999fb9e29f0")
+		(uuid "e8186387-1dd0-4e91-9264-86893ceac324")
 	)
 	(wire
 		(pts
-			(xy 99.06 54.61) (xy 101.6 54.61)
+			(xy 189.23 58.42) (xy 189.23 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0a4a43b-d1a6-46f8-b08b-7ad8267dabcc")
+	)
+	(wire
+		(pts
+			(xy 189.23 67.31) (xy 189.23 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f15c3fbf-c820-4988-b8c8-4d2849e9e1b9")
+	)
+	(wire
+		(pts
+			(xy 100.33 55.88) (xy 102.87 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3339,27 +3344,37 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 54.61) (xy 124.46 55.88)
+			(xy 193.04 68.58) (xy 189.23 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f3cb141a-6c36-4c81-baf4-bdd38a9ab05f")
+		(uuid "f3d4fca2-0bbb-4dc9-8e24-e3296a7eb7be")
 	)
 	(wire
 		(pts
-			(xy 124.46 54.61) (xy 130.81 54.61)
+			(xy 153.67 55.88) (xy 154.94 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fed0229d-c35f-4e47-ad38-93e18c3c10e0")
+		(uuid "f418609c-1fe9-4a20-a050-879529a2836b")
+	)
+	(wire
+		(pts
+			(xy 153.67 60.96) (xy 154.94 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f895cbbe-c653-4ccf-8240-56b5eca3c870")
 	)
 	(text "5.5-24V \ninput"
 		(exclude_from_sim no)
-		(at 67.31 57.15 0)
+		(at 68.58 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3370,7 +3385,7 @@
 	)
 	(text "3.3V Switching Supply"
 		(exclude_from_sim no)
-		(at 133.35 109.22 0)
+		(at 133.35 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3379,20 +3394,9 @@
 		)
 		(uuid "276f8932-4277-4d07-9af2-9b1724284908")
 	)
-	(text "min COUT:\n20uF"
+	(text "5V, 3.5A Switching Supply"
 		(exclude_from_sim no)
-		(at 170.18 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2c634637-08d2-4ad6-a50a-5ede7ce62e8b")
-	)
-	(text "5V Switching Supply"
-		(exclude_from_sim no)
-		(at 133.35 44.45 0)
+		(at 134.62 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3403,7 +3407,7 @@
 	)
 	(text "Resettable Fuse:\n7A Holding\n14A Trip"
 		(exclude_from_sim no)
-		(at 101.6 44.45 0)
+		(at 102.87 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3412,20 +3416,9 @@
 		)
 		(uuid "c900b87c-ea3f-4c0b-94da-78c8bef1c6d1")
 	)
-	(text "min CIN:\n2.2uF"
-		(exclude_from_sim no)
-		(at 121.92 53.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f4549924-fc39-4d18-9698-90f40f26d868")
-	)
 	(symbol
 		(lib_id "Device:C")
-		(at 116.84 123.19 0)
+		(at 116.84 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3433,7 +3426,7 @@
 		(dnp no)
 		(uuid "05738533-a02d-4513-a7b2-927a32d601b4")
 		(property "Reference" "C27"
-			(at 117.475 120.65 0)
+			(at 117.475 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3442,7 +3435,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 116.84 125.73 0)
+			(at 116.84 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3451,7 +3444,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 117.8052 127 0)
+			(at 117.8052 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3460,7 +3453,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf"
-			(at 116.84 123.19 0)
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3469,7 +3462,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 123.19 0)
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3478,7 +3471,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BZ71E106KE15L/13904911"
-			(at 116.84 123.19 0)
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3487,7 +3480,7 @@
 			)
 		)
 		(property "Manufacturer Number" "GRM21BZ71E106KE15L"
-			(at 116.84 123.19 0)
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3496,7 +3489,7 @@
 			)
 		)
 		(property "Rated Voltage" "25V"
-			(at 116.84 123.19 0)
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3505,7 +3498,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 116.84 123.19 0)
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3514,7 +3507,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 116.84 123.19 0)
+			(at 116.84 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3539,7 +3532,7 @@
 	)
 	(symbol
 		(lib_id "power:VPP")
-		(at 110.49 50.8 0)
+		(at 111.76 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3547,7 +3540,7 @@
 		(dnp no)
 		(uuid "102ed560-f3d8-4c54-9414-76c82d3b5b4c")
 		(property "Reference" "#PWR061"
-			(at 110.49 54.61 0)
+			(at 111.76 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3556,7 +3549,7 @@
 			)
 		)
 		(property "Value" "VPP"
-			(at 110.49 46.99 0)
+			(at 111.76 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3564,7 +3557,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 50.8 0)
+			(at 111.76 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3573,7 +3566,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 50.8 0)
+			(at 111.76 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3582,7 +3575,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VPP\""
-			(at 110.49 50.8 0)
+			(at 111.76 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3603,34 +3596,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 187.96 64.77 0)
+		(lib_id "power:PWR_FLAG")
+		(at 204.47 58.42 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1964bdf7-eacb-4b45-8730-0870ed66f394")
-		(property "Reference" "C36"
-			(at 187.96 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 187.96 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 188.9252 68.58 0)
+		(uuid "174af93f-ed9a-4319-882e-ac50af953ee6")
+		(property "Reference" "#FLG04"
+			(at 206.375 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3638,8 +3613,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://calchip.com/wp-content/uploads/2023/09/GMC-Series-2.pdf"
-			(at 187.96 64.77 0)
+		(property "Value" "PWR_FLAG"
+			(at 212.09 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3648,34 +3640,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 187.96 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Number" "GMC21X7R106K25NT"
-			(at 187.96 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Cal-Chip Electronics, Inc."
-			(at 187.96 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC21X7R106K25NT/22639515"
-			(at 187.96 64.77 0)
+			(at 204.47 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3684,15 +3649,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "635a1e8f-35a2-4072-b13a-5dfe19b3f816")
-		)
-		(pin "2"
-			(uuid "ad1bfe11-dbf2-4a38-b7ec-6133577769a2")
+			(uuid "c8a79c62-0a15-41cb-858a-5b55222a135c")
 		)
 		(instances
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "C36")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -3700,7 +3662,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 128.27 125.73 270)
+		(at 128.27 118.11 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3708,7 +3670,7 @@
 		(dnp no)
 		(uuid "22272f46-ab3b-4a4a-aa76-e4ae6e01a5ed")
 		(property "Reference" "R16"
-			(at 126.365 128.27 90)
+			(at 126.365 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3717,7 +3679,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 125.73 125.73 90)
+			(at 125.73 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3726,7 +3688,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 128.27 123.952 90)
+			(at 128.27 116.332 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3735,7 +3697,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 128.27 125.73 0)
+			(at 128.27 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3744,7 +3706,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 125.73 0)
+			(at 128.27 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3753,7 +3715,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/726526"
-			(at 128.27 125.73 90)
+			(at 128.27 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3762,7 +3724,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 128.27 125.73 0)
+			(at 128.27 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3771,7 +3733,7 @@
 			)
 		)
 		(property "Manufacturer Number" "RC0402FR-07100KL"
-			(at 128.27 125.73 0)
+			(at 128.27 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3780,7 +3742,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 128.27 125.73 0)
+			(at 128.27 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3804,34 +3766,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 124.46 59.69 0)
+		(lib_id "power:GND")
+		(at 123.19 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "337f777c-36a9-4137-99f7-e1ed625c9afb")
-		(property "Reference" "C31"
-			(at 124.46 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 125.095 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 125.4252 63.5 0)
+		(uuid "2794d995-909c-428d-979e-0e039d8c7640")
+		(property "Reference" "#PWR0161"
+			(at 123.19 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3839,8 +3783,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://calchip.com/wp-content/uploads/2023/09/GMC-Series-2.pdf"
-			(at 124.46 59.69 0)
+		(property "Value" "GND"
+			(at 123.19 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3849,34 +3810,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Number" "GMC21X7R106K25NT"
-			(at 124.46 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Cal-Chip Electronics, Inc."
-			(at 124.46 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC21X7R106K25NT/22639515"
-			(at 124.46 59.69 0)
+			(at 123.19 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3885,15 +3819,108 @@
 			)
 		)
 		(pin "1"
-			(uuid "72ac188f-1574-42ad-b614-5940aace9708")
-		)
-		(pin "2"
-			(uuid "769a29d9-6306-49bd-9906-e11b93ce960f")
+			(uuid "91e0ddce-edc5-40d4-a564-c7c95c3bb2db")
 		)
 		(instances
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "C31")
+					(reference "#PWR0161")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 119.38 60.96 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37f7b788-4fd2-428c-8441-eab95d6a01d0")
+		(property "Reference" "C52"
+			(at 123.19 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 125.73 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 118.4148 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+			(at 119.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "CGA3E2X7R1H104K080AA"
+			(at 119.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK Corporation"
+			(at 119.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/CGA3E2X7R1H104K080AA/2443144"
+			(at 119.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08759690-5d6e-4a71-a4a1-182f1fa37e0e")
+		)
+		(pin "2"
+			(uuid "570fcab8-9b07-41c2-b63a-9f7cf8074b5c")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
+					(reference "C52")
 					(unit 1)
 				)
 			)
@@ -3901,7 +3928,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 158.75 123.19 90)
+		(at 158.75 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3909,7 +3936,7 @@
 		(dnp no)
 		(uuid "3d0b1cff-922d-47d2-91b6-c7457969c3f4")
 		(property "Reference" "L3"
-			(at 158.75 121.285 90)
+			(at 158.75 113.665 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3917,7 +3944,7 @@
 			)
 		)
 		(property "Value" "2.2uH"
-			(at 158.75 124.46 90)
+			(at 158.75 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3925,7 +3952,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 158.75 123.19 0)
+			(at 158.75 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3934,7 +3961,7 @@
 			)
 		)
 		(property "Datasheet" "https://abracon.com/Magnetics/inductors/AISC-0603F.pdf"
-			(at 158.75 123.19 0)
+			(at 158.75 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3943,7 +3970,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 158.75 123.19 0)
+			(at 158.75 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3952,7 +3979,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/abracon-llc/AISC-0603F-2R2J-T/4696666"
-			(at 158.75 123.19 90)
+			(at 158.75 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3961,7 +3988,7 @@
 			)
 		)
 		(property "Manufacturer Number" "AISC-0603F-2R2J-T"
-			(at 158.75 123.19 90)
+			(at 158.75 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3970,7 +3997,7 @@
 			)
 		)
 		(property "Manufacturer" "Abracon LLC"
-			(at 158.75 123.19 90)
+			(at 158.75 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3979,7 +4006,7 @@
 			)
 		)
 		(property "DC Resistance" "1.5Ohm"
-			(at 158.75 123.19 90)
+			(at 158.75 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4004,15 +4031,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 115.57 59.69 0)
+		(at 160.02 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4099d69c-dc7b-4244-8c4c-cad13b71a3aa")
-		(property "Reference" "C30"
-			(at 115.57 57.15 0)
+		(uuid "4c79fabd-4dbc-4973-bb2f-87ae40dbdde4")
+		(property "Reference" "C51"
+			(at 158.75 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4020,8 +4047,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.3uF"
-			(at 115.57 62.23 0)
+		(property "Value" "0.1uF"
+			(at 166.37 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4029,8 +4056,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 116.5352 63.5 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 163.83 52.3748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4039,7 +4066,7 @@
 			)
 		)
 		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
-			(at 115.57 59.69 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4048,7 +4075,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 59.69 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4056,8 +4083,8 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/CGA4J1X7R1E335K125AC/2672859"
-			(at 115.57 59.69 0)
+		(property "Manufacturer Number" "CGA3E2X7R1H104K080AA"
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4066,7 +4093,7 @@
 			)
 		)
 		(property "Manufacturer" "TDK Corporation"
-			(at 115.57 59.69 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4074,35 +4101,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "CGA4J1X7R1E335K125AC"
-			(at 115.57 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rated Voltage" "25V"
-			(at 115.57 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature Coefficient" "X7R"
-			(at 115.57 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "10%"
-			(at 115.57 59.69 0)
+		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/CGA3E2X7R1H104K080AA/2443144"
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4111,210 +4111,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "507f4e08-68f0-4119-bdb1-32b6f3077c55")
+			(uuid "fea6b057-0e9c-4810-820e-a10d978ec540")
 		)
 		(pin "2"
-			(uuid "c8a8f8a0-7fc5-4eb8-b7c6-e054dd0165cc")
+			(uuid "6c71b40d-8491-48af-bd1d-1c4de1af50bb")
 		)
 		(instances
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "C30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 180.34 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "43fb8c23-0c7c-4203-b64c-e3fa7bc62a88")
-		(property "Reference" "#PWR072"
-			(at 180.34 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 180.34 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e0090998-79b6-45ab-8923-15acdcb0a5a2")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "#PWR072")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 167.64 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4c5b87d7-5e5d-4572-b6aa-bf7c8914ac28")
-		(property "Reference" "#PWR071"
-			(at 167.64 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 167.64 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 167.64 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fc0b4ce7-eea9-4033-af9f-61e62612a7e4")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "#PWR071")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 124.46 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4e357f92-cd1f-4b87-bc9d-c37b474051b5")
-		(property "Reference" "#PWR068"
-			(at 124.46 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 124.46 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.46 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "346ded3f-8f33-4d20-90ec-be610f9ed91b")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "#PWR068")
+					(reference "C51")
 					(unit 1)
 				)
 			)
@@ -4322,7 +4127,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 167.64 123.19 180)
+		(at 167.64 115.57 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4330,7 +4135,7 @@
 		(dnp no)
 		(uuid "5291ca09-3e77-47a8-9fe1-48ebf0db85b3")
 		(property "Reference" "C28"
-			(at 171.45 121.285 0)
+			(at 171.45 113.665 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4339,7 +4144,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 172.72 125.73 0)
+			(at 172.72 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4348,7 +4153,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 166.6748 119.38 0)
+			(at 166.6748 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4357,7 +4162,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/43/CL21A226KPCLRNC_Spec.pdf"
-			(at 167.64 123.19 0)
+			(at 167.64 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4366,7 +4171,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 123.19 0)
+			(at 167.64 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4375,7 +4180,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A226KPCLRNC/5961270"
-			(at 167.64 123.19 0)
+			(at 167.64 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4384,7 +4189,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 167.64 123.19 0)
+			(at 167.64 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4393,7 +4198,7 @@
 			)
 		)
 		(property "Manufacturer Number" "CL21A226KPCLRNC"
-			(at 167.64 123.19 0)
+			(at 167.64 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4402,7 +4207,7 @@
 			)
 		)
 		(property "Rated Voltage" "10V"
-			(at 167.64 123.19 0)
+			(at 167.64 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4411,7 +4216,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X5R"
-			(at 167.64 123.19 0)
+			(at 167.64 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4436,7 +4241,7 @@
 	)
 	(symbol
 		(lib_id "Device:Polyfuse")
-		(at 105.41 54.61 90)
+		(at 106.68 55.88 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4444,7 +4249,7 @@
 		(dnp no)
 		(uuid "544cd52d-e5b3-41e2-a0d2-79893d48b028")
 		(property "Reference" "F1"
-			(at 105.41 52.07 90)
+			(at 106.68 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4452,7 +4257,7 @@
 			)
 		)
 		(property "Value" "Polyfuse"
-			(at 105.41 50.8 90)
+			(at 106.68 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4461,7 +4266,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_2920_7451Metric"
-			(at 110.49 53.34 0)
+			(at 111.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4471,7 +4276,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/assetdocs/low-rho-datasheet-update?assetguid=b786faf0-de16-4763-9d22-6b8080943caf"
-			(at 105.41 54.61 0)
+			(at 106.68 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4480,7 +4285,7 @@
 			)
 		)
 		(property "Description" "Resettable fuse, 24V max, 7A holding, 14A trip"
-			(at 105.41 54.61 0)
+			(at 106.68 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4489,7 +4294,7 @@
 			)
 		)
 		(property "Manufacturer Number" "2920L700/24SLER"
-			(at 105.41 54.61 90)
+			(at 106.68 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4498,7 +4303,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/littelfuse-inc/2920L700-24SLER/12807015"
-			(at 105.41 54.61 90)
+			(at 106.68 55.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4522,34 +4327,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 157.48 54.61 0)
+		(lib_id "power:GND")
+		(at 193.04 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "64bd0ab7-56b2-4078-b85c-84332cd653bf")
-		(property "Reference" "C33"
-			(at 157.48 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 157.48 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 158.4452 58.42 0)
+		(uuid "5eb88d02-5de7-4160-986e-3eb24adaf8a5")
+		(property "Reference" "#PWR0162"
+			(at 193.04 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4557,181 +4344,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
-			(at 157.48 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 157.48 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Number" "CGA3E2X7R1H104K080AA"
-			(at 157.48 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK Corporation"
-			(at 157.48 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/CGA3E2X7R1H104K080AA/2443144"
-			(at 157.48 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "42b219f6-2dbe-4c0a-8ab1-c7995c186b6f")
-		)
-		(pin "2"
-			(uuid "479b755d-5c72-4b13-a1d6-4ce07dd3ef33")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "C33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 162.56 59.69 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "659a933f-205a-4571-b956-5f5b97b11dfb")
-		(property "Reference" "L5"
-			(at 164.846 57.912 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "15uH"
-			(at 162.56 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "kicad_component_library:L_Wuerth_5.5x5.3mm"
-			(at 162.56 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/74408943150.pdf"
-			(at 162.56 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 162.56 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Number" "74408943150"
-			(at 162.56 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Würth Elektronik"
-			(at 162.56 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/74408943150/3083180"
-			(at 162.56 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ecc071e0-4c5e-47f5-b969-8cff4e4dba2b")
-		)
-		(pin "1"
-			(uuid "c581b9ff-48e2-4cca-a4b4-bb7e73240aec")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "L5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 167.64 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6b9b7199-8fed-4e9c-89ec-6e16817a1937")
-		(property "Reference" "#PWR048"
-			(at 167.64 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 167.64 111.76 0)
+		(property "Value" "GND"
+			(at 193.04 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4739,7 +4353,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 116.84 0)
+			(at 193.04 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4748,7 +4362,169 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 116.84 0)
+			(at 193.04 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7d784164-3e76-41da-8791-d38b8a8a99bc")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
+					(reference "#PWR0162")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 189.23 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "684c8cab-4de3-44eb-85b3-f4a1e9f95a94")
+		(property "Reference" "C47"
+			(at 189.23 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 189.23 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 190.1952 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2023/09/GMC-Series-2.pdf"
+			(at 189.23 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "GMC21X7R106K25NT"
+			(at 189.23 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 189.23 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC21X7R106K25NT/22639515"
+			(at 189.23 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3cbc4885-bd54-4f14-999d-c03bc77077d9")
+		)
+		(pin "2"
+			(uuid "56fec681-be3e-4b03-9486-06c6baae7ca7")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
+					(reference "C47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 167.64 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b9b7199-8fed-4e9c-89ec-6e16817a1937")
+		(property "Reference" "#PWR048"
+			(at 167.64 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 167.64 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4757,7 +4533,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 167.64 116.84 0)
+			(at 167.64 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4779,7 +4555,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 143.51 132.08 0)
+		(at 143.51 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4787,7 +4563,7 @@
 		(dnp no)
 		(uuid "6e7f9c31-72be-48f4-86cc-775924dded3e")
 		(property "Reference" "#PWR047"
-			(at 143.51 138.43 0)
+			(at 143.51 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4796,7 +4572,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 141.605 135.89 0)
+			(at 141.605 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4805,7 +4581,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 132.08 0)
+			(at 143.51 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4814,7 +4590,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 132.08 0)
+			(at 143.51 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4823,7 +4599,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 143.51 132.08 0)
+			(at 143.51 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4845,176 +4621,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 167.64 64.77 0)
+		(at 175.26 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7a93dd3b-7043-4cf4-b84f-7a310e1925ec")
-		(property "Reference" "R19"
-			(at 162.56 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "52K3"
-			(at 167.64 67.31 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 165.862 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
-			(at 167.64 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 167.64 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
-			(at 167.64 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Number" "RMCF0603FT52K3"
-			(at 167.64 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT52K3/1714113?s=N4IgTCBcDaIEoFkDCAxADANjQZhQFQFYwBpbEAXQF8g"
-			(at 167.64 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "60efd1e5-53e2-42fa-815d-0001c47108fb")
-		)
-		(pin "1"
-			(uuid "d1a7b0aa-390d-467d-be6e-109fe126979d")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 130.81 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7b91d2e2-8821-4144-bc62-b93bb86b8c1e")
-		(property "Reference" "#PWR067"
-			(at 130.81 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 130.81 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ff3ff452-0f36-4b7a-8e08-19c3731bcf2a")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 128.27 123.19 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "868353c8-312f-4c52-8242-c408966ee30d")
-		(property "Reference" "R15"
-			(at 126.365 121.285 90)
+		(uuid "72f164f5-8de8-4c63-844e-8b0c5da11649")
+		(property "Reference" "R50"
+			(at 173.355 65.405 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5023,7 +4638,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 125.73 123.19 90)
+			(at 175.26 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5032,7 +4647,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 128.27 121.412 90)
+			(at 173.482 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5041,7 +4656,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 128.27 123.19 0)
+			(at 175.26 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5050,7 +4665,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 123.19 0)
+			(at 175.26 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5059,7 +4674,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/726526"
-			(at 128.27 123.19 90)
+			(at 175.26 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5068,7 +4683,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 128.27 123.19 0)
+			(at 175.26 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5077,7 +4692,7 @@
 			)
 		)
 		(property "Manufacturer Number" "RC0402FR-07100KL"
-			(at 128.27 123.19 0)
+			(at 175.26 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5086,7 +4701,354 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 128.27 123.19 0)
+			(at 175.26 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71d1141c-0573-4944-be29-8a5046d1aaca")
+		)
+		(pin "2"
+			(uuid "342b3110-21bb-4c60-8ea1-997f5890ef4d")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Switching:LMR51430")
+		(at 143.51 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73adf375-cf1a-4b15-8bfe-352376b952c8")
+		(property "Reference" "U15"
+			(at 143.51 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMR51430"
+			(at 143.51 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 144.78 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr51430.pdf"
+			(at 144.78 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.5-V to 36-V, 3-A synchronous buck converter with 40-µA IQ, SOT-23-6"
+			(at 143.51 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "689c9378-574e-486d-b860-c897d23bb76f")
+		)
+		(pin "6"
+			(uuid "11ee3b8f-0aeb-4974-b0ee-8464b887a865")
+		)
+		(pin "1"
+			(uuid "6f072729-8e3c-4730-a00e-fe74ae0918f6")
+		)
+		(pin "3"
+			(uuid "5b2db260-3953-484f-b6d0-ac46649160cf")
+		)
+		(pin "5"
+			(uuid "777332b2-53ca-4787-8701-f578d7dbf70b")
+		)
+		(pin "4"
+			(uuid "55ce97b9-4a15-49d2-bf72-6f58480966f2")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
+					(reference "U15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 170.18 58.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "825026d6-b527-4eff-b9ad-df8bea0a1c2c")
+		(property "Reference" "L1"
+			(at 170.18 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "6.8uH"
+			(at 170.18 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Bourns_SRR1260"
+			(at 170.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://bourns.com/docs/Product-Datasheets/SRR1240.pdf"
+			(at 170.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 170.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "SRR1240-6R8M"
+			(at 170.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/bourns-inc/SRR1240-6R8M/1969939"
+			(at 170.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bourns Inc."
+			(at 170.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a2e8d5ac-d5b0-4905-98f2-a04ef4697ede")
+		)
+		(pin "1"
+			(uuid "80a935ab-6e59-4369-8d70-98814988ae9f")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85e8026b-a079-4648-9523-2560021ca256")
+		(property "Reference" "#PWR0160"
+			(at 143.51 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c92e7ca-7f83-4ffc-b026-a773f404da8e")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
+					(reference "#PWR0160")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 128.27 115.57 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "868353c8-312f-4c52-8242-c408966ee30d")
+		(property "Reference" "R15"
+			(at 126.365 113.665 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 125.73 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 128.27 113.792 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 128.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 128.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/726526"
+			(at 128.27 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 128.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "RC0402FR-07100KL"
+			(at 128.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 128.27 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5111,7 +5073,7 @@
 	)
 	(symbol
 		(lib_id "kicad_component_library:rt6150b-33gqw")
-		(at 143.51 120.65 0)
+		(at 143.51 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5120,7 +5082,7 @@
 		(fields_autoplaced yes)
 		(uuid "883afe27-1ddb-49b1-b74c-f6e394f6b412")
 		(property "Reference" "U7"
-			(at 143.51 111.76 0)
+			(at 143.51 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5128,7 +5090,7 @@
 			)
 		)
 		(property "Value" "rt6150b-33gqw"
-			(at 143.51 114.3 0)
+			(at 143.51 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5136,7 +5098,7 @@
 			)
 		)
 		(property "Footprint" "kicad_component_library:WDFN-10-1EP_2.5x2.5mm_P0.5_EP1.25x2.1mm"
-			(at 143.51 112.395 0)
+			(at 143.51 104.775 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5145,7 +5107,7 @@
 			)
 		)
 		(property "Datasheet" "file:///home/poofjunior/Downloads/DS6150AB-06.pdf"
-			(at 143.51 108.966 0)
+			(at 143.51 101.346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5154,7 +5116,7 @@
 			)
 		)
 		(property "Description" "Buck Boost Switching adjustable voltage regulator"
-			(at 144.272 109.982 0)
+			(at 144.272 102.362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5163,7 +5125,7 @@
 			)
 		)
 		(property "Manufacturer" "Richtek USA Inc."
-			(at 143.51 120.65 0)
+			(at 143.51 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5172,7 +5134,7 @@
 			)
 		)
 		(property "Manufacturer Number" "RT6150B-33GQW"
-			(at 143.51 120.65 0)
+			(at 143.51 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5181,7 +5143,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/richtek-usa-inc/RT6150B-33GQW/6676709"
-			(at 143.51 120.65 0)
+			(at 143.51 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5234,7 +5196,7 @@
 	(symbol
 		(lib_name "+5V_2")
 		(lib_id "power:+5V")
-		(at 116.84 116.84 0)
+		(at 116.84 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5242,7 +5204,7 @@
 		(dnp no)
 		(uuid "8a7ec4d7-b97c-4082-94fc-47c33f5d2ea6")
 		(property "Reference" "#PWR045"
-			(at 116.84 120.65 0)
+			(at 116.84 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5251,7 +5213,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 116.84 113.03 0)
+			(at 116.84 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5259,7 +5221,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 116.84 0)
+			(at 116.84 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5268,7 +5230,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 116.84 0)
+			(at 116.84 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5277,7 +5239,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 116.84 116.84 0)
+			(at 116.84 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5299,7 +5261,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:SUD45P03-09")
-		(at 91.44 57.15 90)
+		(at 92.71 58.42 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5308,7 +5270,7 @@
 		(fields_autoplaced yes)
 		(uuid "9806caf7-0fd0-49c4-8097-6bd3f94424d9")
 		(property "Reference" "Q2"
-			(at 91.44 48.26 90)
+			(at 92.71 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5316,7 +5278,7 @@
 			)
 		)
 		(property "Value" "GSFD4005"
-			(at 91.44 50.8 90)
+			(at 92.71 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5324,7 +5286,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-			(at 93.345 52.197 0)
+			(at 94.615 53.467 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5335,7 +5297,7 @@
 			)
 		)
 		(property "Datasheet" "https://goodarksemi.com/docs/datasheets/mosfets/GSFD4005.pdf"
-			(at 95.25 52.07 0)
+			(at 96.52 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5345,7 +5307,7 @@
 			)
 		)
 		(property "Description" "P-Channel Mosfet, -88A"
-			(at 91.44 57.15 0)
+			(at 92.71 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5354,7 +5316,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/good-ark-semiconductor/GSFD4005/22168140"
-			(at 91.44 57.15 90)
+			(at 92.71 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5363,7 +5325,7 @@
 			)
 		)
 		(property "Manufacturer Number" "GSFD4005"
-			(at 91.44 57.15 90)
+			(at 92.71 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5390,74 +5352,8 @@
 		)
 	)
 	(symbol
-		(lib_name "+5V_2")
-		(lib_id "power:+5V")
-		(at 194.31 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9a9ea89c-83bb-4831-bccd-7c9ce11bbd42")
-		(property "Reference" "#PWR08"
-			(at 194.31 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 194.31 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 194.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 194.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 194.31 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "37a26a5b-8024-4dcd-b064-d32848aac2e4")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
-		(at 91.44 67.31 0)
+		(at 92.71 68.58 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5466,7 +5362,7 @@
 		(dnp no)
 		(uuid "9e3b38f9-7bfd-4711-b4c1-23414e069a5b")
 		(property "Reference" "R23"
-			(at 94.234 66.548 0)
+			(at 95.504 67.818 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5474,7 +5370,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 94.742 68.326 0)
+			(at 96.012 69.596 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5482,7 +5378,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 91.44 67.31 0)
+			(at 92.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5491,7 +5387,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 67.31 0)
+			(at 92.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5500,7 +5396,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 91.44 67.31 0)
+			(at 92.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5509,7 +5405,7 @@
 			)
 		)
 		(property "LCSC" "C14675"
-			(at 91.44 67.31 90)
+			(at 92.71 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5518,7 +5414,7 @@
 			)
 		)
 		(property "MFG" "RC0603FR-07100KL"
-			(at 91.44 67.31 90)
+			(at 92.71 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5542,16 +5438,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 167.64 73.66 0)
+		(lib_id "Device:C")
+		(at 204.47 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a5f84151-7c23-4f86-b8a3-1729be420e70")
-		(property "Reference" "R20"
-			(at 161.925 73.66 0)
+		(uuid "a0492aea-e2d4-481f-ae6a-b0a176d95ddc")
+		(property "Reference" "C49"
+			(at 204.47 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5559,8 +5455,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
-			(at 167.64 75.565 90)
+		(property "Value" "10uF"
+			(at 204.47 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5568,8 +5464,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 165.862 73.66 90)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 205.4352 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5577,8 +5473,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 167.64 73.66 0)
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2023/09/GMC-Series-2.pdf"
+			(at 204.47 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5587,7 +5483,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 73.66 0)
+			(at 204.47 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5595,8 +5491,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 167.64 73.66 0)
+		(property "Manufacturer Number" "GMC21X7R106K25NT"
+			(at 204.47 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5604,8 +5500,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "RC0603FR-0710KL"
-			(at 167.64 73.66 0)
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 204.47 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5613,41 +5509,59 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 167.64 73.66 0)
+		(property "Link" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC21X7R106K25NT/22639515"
+			(at 204.47 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "a9fc6774-d6b6-4a7c-b9ca-cedf538edb5b")
 		)
 		(pin "2"
-			(uuid "d94939a7-ce5f-4c16-950a-8cf5e573e7f6")
-		)
-		(pin "1"
-			(uuid "20795c33-348c-413f-b338-b349768e573b")
+			(uuid "1a2e76a6-6dbc-4c06-80ac-cfccf4b45b15")
 		)
 		(instances
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "R20")
+					(reference "C49")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 143.51 71.12 0)
+		(lib_id "Device:C")
+		(at 181.61 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a9d3baeb-976d-442c-aaca-04baca4e1317")
-		(property "Reference" "#PWR069"
-			(at 143.51 77.47 0)
+		(uuid "bdad6d1d-2afe-4b7d-9699-33950d881d95")
+		(property "Reference" "C46"
+			(at 181.61 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 181.61 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 182.5752 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5655,25 +5569,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 143.51 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 143.51 71.12 0)
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2023/09/GMC-Series-2.pdf"
+			(at 181.61 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5682,7 +5579,34 @@
 			)
 		)
 		(property "Description" ""
-			(at 143.51 71.12 0)
+			(at 181.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "GMC21X7R106K25NT"
+			(at 181.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 181.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC21X7R106K25NT/22639515"
+			(at 181.61 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5691,12 +5615,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "1a018503-2016-4e1e-a9e1-14c158b4ad37")
+			(uuid "2ed5ba32-60bd-411c-a147-8d96c9dbe18b")
+		)
+		(pin "2"
+			(uuid "2eb7ecc9-bc68-4e48-9662-f1254410f086")
 		)
 		(instances
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "#PWR069")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -5704,72 +5631,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 115.57 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aaf4f0c6-eee4-499a-8da7-bb2f997fa291")
-		(property "Reference" "#PWR070"
-			(at 115.57 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 115.57 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.57 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 115.57 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 115.57 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fc946763-cfef-4df4-bc35-19949faedbf2")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "#PWR070")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 167.64 128.27 0)
+		(at 167.64 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5777,7 +5639,7 @@
 		(dnp no)
 		(uuid "c320ef19-c35a-4cee-9ce1-c7bd49c3f73c")
 		(property "Reference" "#PWR049"
-			(at 167.64 134.62 0)
+			(at 167.64 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5786,7 +5648,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.735 132.08 0)
+			(at 165.735 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5795,7 +5657,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 128.27 0)
+			(at 167.64 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5804,7 +5666,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 128.27 0)
+			(at 167.64 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5813,7 +5675,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 128.27 0)
+			(at 167.64 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5835,7 +5697,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 78.74 54.61 0)
+		(at 80.01 55.88 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5844,7 +5706,7 @@
 		(dnp no)
 		(uuid "c3e9c7b8-ea62-41ee-bac7-6a0006d25034")
 		(property "Reference" "J8"
-			(at 78.74 52.07 0)
+			(at 80.01 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5852,7 +5714,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 78.74 50.8 0)
+			(at 80.01 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5861,7 +5723,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal"
-			(at 78.74 54.61 0)
+			(at 80.01 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5870,7 +5732,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 54.61 0)
+			(at 80.01 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5879,7 +5741,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 78.74 54.61 0)
+			(at 80.01 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5903,25 +5765,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 121.92 129.54 0)
+		(lib_id "Device:R")
+		(at 175.26 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "cc37978c-f313-4c26-9515-7a533cd37538")
-		(property "Reference" "#PWR046"
-			(at 121.92 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 120.015 133.35 0)
+		(uuid "c7008ffe-a41c-4e2d-8713-482e403b103e")
+		(property "Reference" "R51"
+			(at 173.355 75.565 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5929,8 +5782,17 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 121.92 129.54 0)
+		(property "Value" "13K7"
+			(at 175.26 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 173.482 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5938,8 +5800,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 121.92 129.54 0)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 175.26 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5948,7 +5810,112 @@
 			)
 		)
 		(property "Description" ""
-			(at 121.92 129.54 0)
+			(at 175.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0713K7L/2827638"
+			(at 175.26 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 175.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "RC0402FR-0713K7L"
+			(at 175.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 175.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0df7bb48-14e7-41ee-9189-de45fc980e7d")
+		)
+		(pin "2"
+			(uuid "741c2dc3-0ac7-418f-a905-c8edfdd2d110")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc37978c-f313-4c26-9515-7a533cd37538")
+		(property "Reference" "#PWR046"
+			(at 121.92 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.015 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5970,7 +5937,7 @@
 	)
 	(symbol
 		(lib_id "Diode:BZV55B15")
-		(at 99.06 59.69 270)
+		(at 100.33 60.96 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5978,7 +5945,7 @@
 		(dnp no)
 		(uuid "cc7d7b68-ac0f-4a0a-8f26-fc3729d780af")
 		(property "Reference" "D9"
-			(at 101.6 59.69 90)
+			(at 102.87 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5987,7 +5954,7 @@
 			)
 		)
 		(property "Value" "BZV55B15"
-			(at 101.6 60.9599 90)
+			(at 102.87 62.2299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5997,7 +5964,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_MiniMELF"
-			(at 94.615 59.69 0)
+			(at 95.885 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6006,7 +5973,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
-			(at 99.06 59.69 0)
+			(at 100.33 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6015,7 +5982,7 @@
 			)
 		)
 		(property "Description" "15V, 500mW, 2%, Zener diode, MiniMELF"
-			(at 99.06 59.69 0)
+			(at 100.33 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6040,15 +6007,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 180.34 64.77 0)
+		(at 196.85 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d8ce52d6-7eaa-4e1d-a683-c0037195c3b1")
-		(property "Reference" "C35"
-			(at 180.34 62.865 0)
+		(uuid "cd7e4f97-8e55-43fd-a3e1-9b7b66f159c4")
+		(property "Reference" "C48"
+			(at 196.85 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6057,7 +6024,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 180.34 67.31 0)
+			(at 196.85 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6066,7 +6033,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 181.3052 68.58 0)
+			(at 197.8152 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6075,7 +6042,7 @@
 			)
 		)
 		(property "Datasheet" "https://calchip.com/wp-content/uploads/2023/09/GMC-Series-2.pdf"
-			(at 180.34 64.77 0)
+			(at 196.85 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6084,7 +6051,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 64.77 0)
+			(at 196.85 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6093,7 +6060,7 @@
 			)
 		)
 		(property "Manufacturer Number" "GMC21X7R106K25NT"
-			(at 180.34 64.77 0)
+			(at 196.85 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6102,7 +6069,7 @@
 			)
 		)
 		(property "Manufacturer" "Cal-Chip Electronics, Inc."
-			(at 180.34 64.77 0)
+			(at 196.85 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6111,7 +6078,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC21X7R106K25NT/22639515"
-			(at 180.34 64.77 0)
+			(at 196.85 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6120,15 +6087,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "98f98bd9-8d28-4638-9b98-79c8bbe72781")
+			(uuid "9a64a4d2-3082-40f9-96c3-cfaf9986e1a1")
 		)
 		(pin "2"
-			(uuid "f799ab61-7735-483d-9ff5-ec0a69572929")
+			(uuid "6562e07c-bf53-4774-9290-7eb706107462")
 		)
 		(instances
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "C35")
+					(reference "C48")
 					(unit 1)
 				)
 			)
@@ -6136,15 +6103,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 130.81 68.58 0)
+		(at 127 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e3aefc78-8c62-4c07-aaae-66afb7df9236")
-		(property "Reference" "C32"
-			(at 130.81 66.675 0)
+		(uuid "dd52cb4a-12ad-4174-a507-a6050c35fb51")
+		(property "Reference" "C50"
+			(at 127 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6152,8 +6119,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
-			(at 131.445 71.12 0)
+		(property "Value" "10uF"
+			(at 127.635 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6162,7 +6129,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 131.7752 72.39 0)
+			(at 127.9652 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6170,193 +6137,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf"
-			(at 130.81 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Number" "C2012X7R1H105K125AB"
-			(at 130.81 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TDK Corporation"
-			(at 130.81 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.digikey.com/en/products/detail/tdk-corporation/C2012X7R1H105K125AB/2732982"
-			(at 130.81 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3dc28bc3-7c14-4d17-933a-c00f9c75026f")
-		)
-		(pin "2"
-			(uuid "bb9f381f-41c2-43a1-97f9-e0f628404c86")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "C32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Switching:MCP16312x-xMNY")
-		(at 143.51 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e3bee9e7-4304-4e8b-ad2f-f45acf235cd3")
-		(property "Reference" "U9"
-			(at 143.51 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP16312x-xMNY"
-			(at 143.51 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm"
-			(at 144.78 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP16311-Family-Data-Sheet-DS20005255C.pdf"
-			(at 135.89 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Output Voltage, 30V Input, integrated switch step-down regulator, PWM modulation, DFN-8"
-			(at 143.51 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "d1999b28-f263-48db-8913-bf3bca51359f")
-		)
-		(pin "1"
-			(uuid "a82b7e51-e973-497b-a444-5d3d645f4965")
-		)
-		(pin "9"
-			(uuid "6b87962f-31a2-409d-bc3f-a2e43d535985")
-		)
-		(pin "2"
-			(uuid "e65948f2-f4b7-442f-9d14-23557231ee05")
-		)
-		(pin "3"
-			(uuid "c604e29d-2ba0-4734-a180-ee1eea3e4e5e")
-		)
-		(pin "7"
-			(uuid "6f9779b3-d0db-41d8-94dd-507efa2da703")
-		)
-		(pin "4"
-			(uuid "8f5d37ba-1f61-44a0-b762-a67c78809957")
-		)
-		(pin "5"
-			(uuid "2189c248-c011-4e9b-8e6e-ffa1de6ce2c6")
-		)
-		(pin "6"
-			(uuid "ea612253-3195-42c9-bb6e-52ff57f23aa1")
-		)
-		(instances
-			(project "valve-controller"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "U9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 194.31 59.69 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "eb85097a-aa6e-4b99-abff-ed1d13a2cb9f")
-		(property "Reference" "#FLG013"
-			(at 196.215 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 201.93 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 194.31 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 194.31 59.69 0)
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2023/09/GMC-Series-2.pdf"
+			(at 127 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6365,7 +6147,34 @@
 			)
 		)
 		(property "Description" ""
-			(at 194.31 59.69 0)
+			(at 127 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "GMC21X7R106K25NT"
+			(at 127 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 127 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC21X7R106K25NT/22639515"
+			(at 127 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6374,28 +6183,32 @@
 			)
 		)
 		(pin "1"
-			(uuid "37b59276-67fe-4306-ac2e-d32a99f01b9f")
+			(uuid "4fa353b0-eeb9-4109-ae9b-e32d594bd3f9")
+		)
+		(pin "2"
+			(uuid "de21701c-6c87-47b6-a1e2-b05baea26418")
 		)
 		(instances
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "#FLG013")
+					(reference "C50")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 91.44 73.66 0)
+		(lib_name "+5V_2")
+		(lib_id "power:+5V")
+		(at 204.47 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f6e2814b-69c1-4c01-9047-94d679fa84cf")
-		(property "Reference" "#PWR066"
-			(at 91.44 80.01 0)
+		(uuid "e1151b1c-45ee-4304-86ce-127722ff1129")
+		(property "Reference" "#PWR0164"
+			(at 204.47 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6403,8 +6216,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 91.44 77.47 0)
+		(property "Value" "+5V"
+			(at 204.47 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6412,7 +6225,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 73.66 0)
+			(at 204.47 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6421,7 +6234,72 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 73.66 0)
+			(at 204.47 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 204.47 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06672063-9637-4a06-b9f4-f1336b0936db")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
+					(reference "#PWR0164")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 92.71 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6e2814b-69c1-4c01-9047-94d679fa84cf")
+		(property "Reference" "#PWR066"
+			(at 92.71 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.71 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6430,7 +6308,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 91.44 73.66 0)
+			(at 92.71 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6451,34 +6329,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 172.72 64.77 0)
+		(lib_id "power:GND")
+		(at 175.26 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ff1ac899-3eb1-486c-b16c-86fd70cd7f43")
-		(property "Reference" "C34"
-			(at 172.72 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 172.72 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 173.6852 68.58 0)
+		(uuid "fe36cd43-d204-4ee9-a29b-860bd15f4994")
+		(property "Reference" "#PWR0163"
+			(at 175.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6486,8 +6346,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://calchip.com/wp-content/uploads/2023/09/GMC-Series-2.pdf"
-			(at 172.72 64.77 0)
+		(property "Value" "GND"
+			(at 175.26 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6496,34 +6373,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 172.72 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Number" "GMC21X7R106K25NT"
-			(at 172.72 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Cal-Chip Electronics, Inc."
-			(at 172.72 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC21X7R106K25NT/22639515"
-			(at 172.72 64.77 0)
+			(at 175.26 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6532,15 +6382,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4052be07-a5ec-499c-a192-6a731ac4f49b")
-		)
-		(pin "2"
-			(uuid "1f33f289-9329-40fc-a305-177a606723aa")
+			(uuid "76cf1e30-a022-4ed6-af9d-4df9a967bd0f")
 		)
 		(instances
 			(project "valve-controller"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b51b21ef-b374-4f9f-a058-7db9b64fdf4a"
-					(reference "C34")
+					(reference "#PWR0163")
 					(unit 1)
 				)
 			)

@@ -5,6 +5,7 @@ exports/ # or exporting Kicad files.
 # Kicad-generated
 *-backups/
 *.kicad_prl
+*.lck
 fp-info-cache
 
 
