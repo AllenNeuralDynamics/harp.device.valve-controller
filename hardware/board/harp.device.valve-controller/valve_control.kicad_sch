@@ -3377,6 +3377,17 @@
 		)
 		(uuid "ff48d484-0e37-4d81-9e48-af8995dc978c")
 	)
+	(text "Mates with\nPhoenix Contact\n1840366"
+		(exclude_from_sim no)
+		(at 123.19 24.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f0c65e06-451b-4614-866d-d557ad12d0b0")
+	)
 	(label "CTRL2"
 		(at 97.79 43.18 0)
 		(fields_autoplaced yes)
@@ -3708,7 +3719,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-header-mc-15-2-g-35-1844210?type=pdf"
 			(at 124.46 30.48 0)
 			(effects
 				(font
@@ -3718,6 +3729,33 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 124.46 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 124.46 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "1844210"
+			(at 124.46 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" "mates with Phoenix Contact 1840366"
 			(at 124.46 30.48 0)
 			(effects
 				(font
@@ -4808,7 +4846,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-header-mc-15-2-g-35-1844210?type=pdf"
 			(at 124.46 106.68 0)
 			(effects
 				(font
@@ -4818,6 +4856,33 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 124.46 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 124.46 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "1844210"
+			(at 124.46 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" "mates with Phoenix Contact 1840366"
 			(at 124.46 106.68 0)
 			(effects
 				(font
@@ -4944,7 +5009,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-header-mc-15-2-g-35-1844210?type=pdf"
 			(at 149.86 35.56 0)
 			(effects
 				(font
@@ -4954,6 +5019,33 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 149.86 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 149.86 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "1844210"
+			(at 149.86 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" "mates with Phoenix Contact 1840366"
 			(at 149.86 35.56 0)
 			(effects
 				(font
@@ -5123,7 +5215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-header-mc-15-2-g-35-1844210?type=pdf"
 			(at 124.46 144.78 0)
 			(effects
 				(font
@@ -5133,6 +5225,33 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 124.46 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 124.46 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "1844210"
+			(at 124.46 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" "mates with Phoenix Contact 1840366"
 			(at 124.46 144.78 0)
 			(effects
 				(font
@@ -6468,7 +6587,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-header-mc-15-2-g-35-1844210?type=pdf"
 			(at 149.86 73.66 0)
 			(effects
 				(font
@@ -6478,6 +6597,33 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 149.86 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 149.86 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "1844210"
+			(at 149.86 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" "mates with Phoenix Contact 1840366"
 			(at 149.86 73.66 0)
 			(effects
 				(font
@@ -7016,7 +7162,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-header-mc-15-2-g-35-1844210?type=pdf"
 			(at 124.46 68.58 0)
 			(effects
 				(font
@@ -7026,6 +7172,33 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 124.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 124.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "1844210"
+			(at 124.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" "mates with Phoenix Contact 1840366"
 			(at 124.46 68.58 0)
 			(effects
 				(font
@@ -9850,7 +10023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-header-mc-15-2-g-35-1844210?type=pdf"
 			(at 149.86 111.76 0)
 			(effects
 				(font
@@ -9860,6 +10033,33 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 149.86 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 149.86 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "1844210"
+			(at 149.86 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" "mates with Phoenix Contact 1840366"
 			(at 149.86 111.76 0)
 			(effects
 				(font
@@ -11510,7 +11710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.phoenixcontact.com/en-us/products/pcb-header-mc-15-2-g-35-1844210?type=pdf"
 			(at 149.86 149.86 0)
 			(effects
 				(font
@@ -11520,6 +11720,33 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 149.86 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Phoenix Contact"
+			(at 149.86 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "1844210"
+			(at 149.86 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" "mates with Phoenix Contact 1840366"
 			(at 149.86 149.86 0)
 			(effects
 				(font
