@@ -5,6 +5,8 @@ message(STATUS "Computed Git Hash: ${COMMIT_ID}")
 add_definitions(-DGIT_HASH="${COMMIT_ID}") # Usable in source code.
 
 #add_definitions(-DDEBUG) # Uncomment for debugging
+add_definitions(-DUSBD_MANUFACTURER="Allen Institute")
+add_definitions(-DUSBD_PRODUCT="valve-controller")
 
 # PICO_SDK_PATH must be defined.
 include(${PICO_SDK_PATH}/pico_sdk_init.cmake)
@@ -12,7 +14,7 @@ include(${PICO_SDK_PATH}/pico_sdk_init.cmake)
 # Use modern conventions like std::invoke
 set(CMAKE_CXX_STANDARD 17)
 
-project(harp_c_app_example-${COMMIT_ID})
+project(harp_c_app_example)
 
 pico_sdk_init()
 add_subdirectory(lib/harp.core.rp2040/firmware) # Path to harp.core.rp2040.
