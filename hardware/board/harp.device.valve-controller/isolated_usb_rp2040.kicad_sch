@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "harp.device.valve-controller")
-		(date "2023-09-01")
-		(rev "0.1")
+		(date "2025-02-09")
+		(rev "1.0.0")
 		(company "The Allen Institute")
 	)
 	(lib_symbols
@@ -5037,10 +5037,16 @@
 		(uuid "1986f4bd-9feb-41da-9143-c7c09606c998")
 	)
 	(junction
-		(at 107.95 189.865)
+		(at 107.95 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1f803777-aee9-44b6-8dc8-3396e3382394")
+	)
+	(junction
+		(at 256.54 22.225)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "212b44eb-8f0c-480e-ae30-93fda5fffd5d")
 	)
 	(junction
 		(at 270.51 81.28)
@@ -5049,7 +5055,7 @@
 		(uuid "21c365b3-13b7-4eac-bb3f-3f725347fafc")
 	)
 	(junction
-		(at 99.06 189.865)
+		(at 99.06 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "266ed746-451f-413d-9dff-9f844ad9ed72")
@@ -5073,13 +5079,13 @@
 		(uuid "3b020218-8308-4ace-a849-090cfdc68779")
 	)
 	(junction
-		(at 99.06 179.705)
+		(at 99.06 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "40ac632e-0a78-4bc4-959e-bdc5155eaaaf")
 	)
 	(junction
-		(at 134.62 189.865)
+		(at 134.62 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4d657822-2665-4a42-9a1e-298b86692bc7")
@@ -5091,31 +5097,25 @@
 		(uuid "5353c2ad-44ea-4cc4-aac7-03600605ef65")
 	)
 	(junction
-		(at 116.84 189.865)
+		(at 116.84 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "59c4c160-8d79-46ed-bcda-0298e3ee06b5")
 	)
 	(junction
-		(at 152.4 189.865)
+		(at 152.4 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5dfe8dcf-186d-496e-a6df-d0695f62b9a4")
 	)
 	(junction
-		(at 161.29 179.705)
+		(at 161.29 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63881f45-49fa-4207-b99a-91639a9bc9c2")
 	)
 	(junction
-		(at 243.84 33.655)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "65e99158-4b8b-4d8d-8f10-f112ae5c1403")
-	)
-	(junction
-		(at 134.62 179.705)
+		(at 134.62 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6630e035-c5b9-4977-b65b-07d1b2694827")
@@ -5133,7 +5133,7 @@
 		(uuid "6fa62914-7316-443c-a966-dfd530569e33")
 	)
 	(junction
-		(at 125.73 179.705)
+		(at 125.73 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76569815-30d5-4a8e-a3d3-6db760930332")
@@ -5145,13 +5145,13 @@
 		(uuid "7ff00952-78aa-4d2b-9dda-b21fd168da85")
 	)
 	(junction
-		(at 116.84 179.705)
+		(at 116.84 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9745de62-aa67-483d-b432-4674048adb05")
 	)
 	(junction
-		(at 152.4 179.705)
+		(at 152.4 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a06ffa47-235e-4433-b079-9c07faccb980")
@@ -5181,13 +5181,19 @@
 		(uuid "aa0e0c82-8475-432d-898f-236cb2cc1f55")
 	)
 	(junction
+		(at 242.57 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0178b4f-b4ac-460f-8913-223ed79d3129")
+	)
+	(junction
 		(at 48.26 154.305)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2b0e59f-e049-4066-a885-e7422b99eca4")
 	)
 	(junction
-		(at 143.51 179.705)
+		(at 143.51 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3480000-44b7-4e2d-86af-44e98738d2e5")
@@ -5205,7 +5211,7 @@
 		(uuid "b57949b0-82a1-40cc-885e-bb7efc9719a7")
 	)
 	(junction
-		(at 107.95 179.705)
+		(at 107.95 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7c951ab-fe31-4aee-b47b-5fdb5a7a5b75")
@@ -5229,7 +5235,7 @@
 		(uuid "df7947b7-136e-4559-8671-bee0991c8007")
 	)
 	(junction
-		(at 161.29 189.865)
+		(at 161.29 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2a13559-ebe2-4254-9c21-02ab58a91324")
@@ -5241,13 +5247,7 @@
 		(uuid "e4443d07-5967-456b-9311-50aaf1625df3")
 	)
 	(junction
-		(at 257.81 22.225)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e74bc9cd-8249-4623-a054-c4575b07420a")
-	)
-	(junction
-		(at 125.73 189.865)
+		(at 125.73 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9f5910b-697b-45e1-9ca5-08e783f906bd")
@@ -5271,7 +5271,7 @@
 		(uuid "ee2cc164-3ce7-461a-af35-11a29ae7378d")
 	)
 	(junction
-		(at 143.51 189.865)
+		(at 143.51 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa9f2ca6-222b-4427-acb8-ba00ff96008a")
@@ -5307,20 +5307,12 @@
 		(uuid "bdfcf20f-2f72-499f-b1cc-853628bf45ad")
 	)
 	(no_connect
-		(at 161.29 139.7)
-		(uuid "c9bfe4f1-a1d1-4c6f-bb6d-466a692bb77a")
-	)
-	(no_connect
-		(at 161.29 142.24)
-		(uuid "e0cde7f3-1215-402c-a605-68fefc11f386")
-	)
-	(no_connect
 		(at 139.7 110.49)
 		(uuid "fb4ff204-73a9-4e1f-bb44-9d672d59a5db")
 	)
 	(wire
 		(pts
-			(xy 243.84 22.225) (xy 257.81 22.225)
+			(xy 242.57 22.225) (xy 256.54 22.225)
 		)
 		(stroke
 			(width 0)
@@ -5370,16 +5362,6 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 31.115) (xy 271.78 31.115)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03a467c0-ee8a-4235-91d8-51c7adcee202")
-	)
-	(wire
-		(pts
 			(xy 106.68 27.94) (xy 106.68 31.75)
 		)
 		(stroke
@@ -5420,7 +5402,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 22.225) (xy 257.81 26.67)
+			(xy 256.54 22.225) (xy 256.54 26.67)
 		)
 		(stroke
 			(width 0)
@@ -5430,7 +5412,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 23.495) (xy 243.84 22.225)
+			(xy 242.57 22.86) (xy 242.57 22.225)
 		)
 		(stroke
 			(width 0)
@@ -5440,7 +5422,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 179.705) (xy 99.06 180.975)
+			(xy 99.06 180.34) (xy 99.06 181.61)
 		)
 		(stroke
 			(width 0)
@@ -5610,7 +5592,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 39.37) (xy 275.59 39.37)
+			(xy 269.24 39.37) (xy 273.05 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5640,7 +5622,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 188.595) (xy 107.95 189.865)
+			(xy 107.95 189.23) (xy 107.95 190.5)
 		)
 		(stroke
 			(width 0)
@@ -5660,16 +5642,6 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 31.115) (xy 243.84 33.655)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2075e029-a339-495c-b298-2b521979bd6a")
-	)
-	(wire
-		(pts
 			(xy 224.79 90.17) (xy 227.33 90.17)
 		)
 		(stroke
@@ -5680,7 +5652,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 179.705) (xy 143.51 180.975)
+			(xy 143.51 180.34) (xy 143.51 181.61)
 		)
 		(stroke
 			(width 0)
@@ -5700,7 +5672,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 179.705) (xy 143.51 179.705)
+			(xy 134.62 180.34) (xy 143.51 180.34)
 		)
 		(stroke
 			(width 0)
@@ -5720,7 +5692,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 180.975) (xy 125.73 179.705)
+			(xy 125.73 181.61) (xy 125.73 180.34)
 		)
 		(stroke
 			(width 0)
@@ -5730,7 +5702,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 188.595) (xy 170.18 189.865)
+			(xy 170.18 189.23) (xy 170.18 190.5)
 		)
 		(stroke
 			(width 0)
@@ -5770,13 +5742,23 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 189.865) (xy 125.73 189.865)
+			(xy 134.62 190.5) (xy 125.73 190.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2a5abf2a-138c-490c-be1c-babc6e05763b")
+	)
+	(wire
+		(pts
+			(xy 156.21 139.7) (xy 161.29 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2aa67cf9-36aa-4703-9251-a2746b2c9be1")
 	)
 	(wire
 		(pts
@@ -5800,7 +5782,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 179.705) (xy 116.84 180.975)
+			(xy 116.84 180.34) (xy 116.84 181.61)
 		)
 		(stroke
 			(width 0)
@@ -5810,23 +5792,13 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 188.595) (xy 143.51 189.865)
+			(xy 143.51 189.23) (xy 143.51 190.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "30151ce2-c6b7-4ea8-abba-6d4a4167c014")
-	)
-	(wire
-		(pts
-			(xy 275.59 39.37) (xy 275.59 38.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30242322-a06f-486e-9b04-ddebe5723e14")
 	)
 	(wire
 		(pts
@@ -5880,7 +5852,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 188.595) (xy 125.73 189.865)
+			(xy 125.73 189.23) (xy 125.73 190.5)
 		)
 		(stroke
 			(width 0)
@@ -5930,23 +5902,13 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 33.655) (xy 271.78 33.655)
+			(xy 241.3 34.29) (xy 242.57 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "38c6c5a7-4160-461f-aef4-8f2299d962d6")
-	)
-	(wire
-		(pts
-			(xy 242.57 33.655) (xy 243.84 33.655)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e4dc962-a53f-4c85-9555-e00809d8604c")
+		(uuid "3c090c30-93ca-4450-a822-78c417815197")
 	)
 	(wire
 		(pts
@@ -5970,16 +5932,6 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 38.735) (xy 271.78 38.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "412e6f07-218f-4046-a8aa-740059a78eda")
-	)
-	(wire
-		(pts
 			(xy 42.545 45.085) (xy 41.275 45.085)
 		)
 		(stroke
@@ -5990,7 +5942,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 189.865) (xy 116.84 189.865)
+			(xy 125.73 190.5) (xy 116.84 190.5)
 		)
 		(stroke
 			(width 0)
@@ -6047,6 +5999,16 @@
 			(type default)
 		)
 		(uuid "47092592-a654-4c21-acd7-cfd067bcbfd0")
+	)
+	(wire
+		(pts
+			(xy 242.57 30.48) (xy 242.57 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "479c0485-5e80-4621-adb2-7bcfca89d416")
 	)
 	(wire
 		(pts
@@ -6117,16 +6079,6 @@
 			(type default)
 		)
 		(uuid "4c348b71-ea49-465f-b60e-b286ddf98c8a")
-	)
-	(wire
-		(pts
-			(xy 243.84 34.29) (xy 245.11 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cadcd41-bcf5-4619-bea2-f6af6f0adc2b")
 	)
 	(wire
 		(pts
@@ -6230,16 +6182,6 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 41.275) (xy 271.78 41.275)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55061d30-0de2-449e-85e6-4f0392d0482b")
-	)
-	(wire
-		(pts
 			(xy 70.485 18.415) (xy 70.485 19.685)
 		)
 		(stroke
@@ -6257,16 +6199,6 @@
 			(type default)
 		)
 		(uuid "562bcb95-03d3-4dda-8f95-51df700463f6")
-	)
-	(wire
-		(pts
-			(xy 276.86 41.91) (xy 276.86 41.275)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5869853a-9929-47ad-a956-81be43bbe03c")
 	)
 	(wire
 		(pts
@@ -6300,7 +6232,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 188.595) (xy 152.4 189.865)
+			(xy 152.4 189.23) (xy 152.4 190.5)
 		)
 		(stroke
 			(width 0)
@@ -6340,6 +6272,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 46.99) (xy 256.54 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d60aa1b-7272-4aa3-a659-68f0830afea5")
+	)
+	(wire
+		(pts
 			(xy 224.79 82.55) (xy 251.46 82.55)
 		)
 		(stroke
@@ -6367,16 +6309,6 @@
 			(type default)
 		)
 		(uuid "5e65d98b-5605-47ab-bbb0-a642f67af904")
-	)
-	(wire
-		(pts
-			(xy 274.32 34.29) (xy 274.32 33.655)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "606515fd-222b-4cbc-8cc5-c310f8a7e53b")
 	)
 	(wire
 		(pts
@@ -6460,7 +6392,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 189.865) (xy 170.18 189.865)
+			(xy 161.29 190.5) (xy 170.18 190.5)
 		)
 		(stroke
 			(width 0)
@@ -6600,7 +6532,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 189.865) (xy 107.95 189.865)
+			(xy 116.84 190.5) (xy 107.95 190.5)
 		)
 		(stroke
 			(width 0)
@@ -6640,16 +6572,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 46.99) (xy 257.81 47.625)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a930966-9a44-414d-a751-86da908d1342")
-	)
-	(wire
-		(pts
 			(xy 191.77 55.88) (xy 191.77 57.15)
 		)
 		(stroke
@@ -6667,16 +6589,6 @@
 			(type default)
 		)
 		(uuid "7b933fc3-ade1-405a-a50e-791ce8c237e9")
-	)
-	(wire
-		(pts
-			(xy 273.05 31.75) (xy 273.05 31.115)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b9eb395-6641-4081-8baf-7a0025267ace")
 	)
 	(wire
 		(pts
@@ -6750,7 +6662,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 179.705) (xy 134.62 179.705)
+			(xy 125.73 180.34) (xy 134.62 180.34)
 		)
 		(stroke
 			(width 0)
@@ -6810,16 +6722,6 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 39.37) (xy 243.84 38.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89700fd0-bc3d-45f6-9ded-c4b571c693ef")
-	)
-	(wire
-		(pts
 			(xy 118.11 22.86) (xy 118.11 26.67)
 		)
 		(stroke
@@ -6830,7 +6732,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 188.595) (xy 99.06 189.865)
+			(xy 99.06 189.23) (xy 99.06 190.5)
 		)
 		(stroke
 			(width 0)
@@ -6850,7 +6752,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 180.975) (xy 152.4 179.705)
+			(xy 152.4 181.61) (xy 152.4 180.34)
 		)
 		(stroke
 			(width 0)
@@ -6860,7 +6762,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 179.705) (xy 107.95 179.705)
+			(xy 99.06 180.34) (xy 107.95 180.34)
 		)
 		(stroke
 			(width 0)
@@ -6920,7 +6822,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 189.865) (xy 161.29 189.865)
+			(xy 152.4 190.5) (xy 161.29 190.5)
 		)
 		(stroke
 			(width 0)
@@ -6960,7 +6862,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 179.705) (xy 152.4 179.705)
+			(xy 161.29 180.34) (xy 152.4 180.34)
 		)
 		(stroke
 			(width 0)
@@ -6970,7 +6872,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 189.865) (xy 134.62 189.865)
+			(xy 143.51 190.5) (xy 134.62 190.5)
 		)
 		(stroke
 			(width 0)
@@ -7010,7 +6912,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 38.735) (xy 242.57 38.735)
+			(xy 243.84 39.37) (xy 241.3 39.37)
 		)
 		(stroke
 			(width 0)
@@ -7060,7 +6962,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 180.975) (xy 161.29 179.705)
+			(xy 161.29 181.61) (xy 161.29 180.34)
 		)
 		(stroke
 			(width 0)
@@ -7087,6 +6989,16 @@
 			(type default)
 		)
 		(uuid "a5c4e0d4-cfd7-4f7a-a68d-20aa6e1ab452")
+	)
+	(wire
+		(pts
+			(xy 156.21 144.78) (xy 157.48 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a74a5139-a06b-4595-9685-38e5e64f0204")
 	)
 	(wire
 		(pts
@@ -7200,7 +7112,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 179.705) (xy 152.4 179.705)
+			(xy 143.51 180.34) (xy 152.4 180.34)
 		)
 		(stroke
 			(width 0)
@@ -7210,7 +7122,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 34.29) (xy 274.32 34.29)
+			(xy 269.24 34.29) (xy 273.05 34.29)
 		)
 		(stroke
 			(width 0)
@@ -7230,7 +7142,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 188.595) (xy 116.84 189.865)
+			(xy 116.84 189.23) (xy 116.84 190.5)
 		)
 		(stroke
 			(width 0)
@@ -7260,7 +7172,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 180.975) (xy 170.18 179.705)
+			(xy 170.18 181.61) (xy 170.18 180.34)
 		)
 		(stroke
 			(width 0)
@@ -7270,7 +7182,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 31.75) (xy 273.05 31.75)
+			(xy 269.24 31.75) (xy 273.05 31.75)
 		)
 		(stroke
 			(width 0)
@@ -7310,6 +7222,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 34.29) (xy 243.84 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbf9ff79-631d-4dd8-a4bf-cf14d431b453")
+	)
+	(wire
+		(pts
 			(xy 42.545 37.465) (xy 42.545 38.735)
 		)
 		(stroke
@@ -7320,7 +7242,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 189.865) (xy 107.95 189.865)
+			(xy 99.06 190.5) (xy 107.95 190.5)
 		)
 		(stroke
 			(width 0)
@@ -7347,16 +7269,6 @@
 			(type default)
 		)
 		(uuid "bccc24e1-61eb-40b0-aa73-e41bdb2ea893")
-	)
-	(wire
-		(pts
-			(xy 243.84 34.29) (xy 243.84 33.655)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdc8d5bc-1f7b-4a8b-97cc-a1ed9a8c5f45")
 	)
 	(wire
 		(pts
@@ -7390,7 +7302,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 189.865) (xy 161.29 188.595)
+			(xy 161.29 190.5) (xy 161.29 189.23)
 		)
 		(stroke
 			(width 0)
@@ -7420,7 +7332,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 189.865) (xy 143.51 189.865)
+			(xy 152.4 190.5) (xy 143.51 190.5)
 		)
 		(stroke
 			(width 0)
@@ -7440,7 +7352,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 179.705) (xy 107.95 180.975)
+			(xy 107.95 180.34) (xy 107.95 181.61)
 		)
 		(stroke
 			(width 0)
@@ -7470,7 +7382,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 179.705) (xy 134.62 180.975)
+			(xy 134.62 180.34) (xy 134.62 181.61)
 		)
 		(stroke
 			(width 0)
@@ -7550,23 +7462,13 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 189.865) (xy 99.06 191.135)
+			(xy 99.06 190.5) (xy 99.06 191.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d88f413f-bf01-48b7-b6d9-8c6820309152")
-	)
-	(wire
-		(pts
-			(xy 243.84 39.37) (xy 245.11 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8cbe17b-e0f6-4cff-94db-5ac0000c8384")
 	)
 	(wire
 		(pts
@@ -7650,6 +7552,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 144.78) (xy 157.48 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dee96819-bfca-41ba-999e-b14fdad296fc")
+	)
+	(wire
+		(pts
 			(xy 41.275 32.385) (xy 43.815 32.385)
 		)
 		(stroke
@@ -7660,7 +7572,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 188.595) (xy 134.62 189.865)
+			(xy 134.62 189.23) (xy 134.62 190.5)
 		)
 		(stroke
 			(width 0)
@@ -7690,7 +7602,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 179.705) (xy 125.73 179.705)
+			(xy 116.84 180.34) (xy 125.73 180.34)
 		)
 		(stroke
 			(width 0)
@@ -7710,7 +7622,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 20.955) (xy 257.81 22.225)
+			(xy 256.54 20.32) (xy 256.54 22.225)
 		)
 		(stroke
 			(width 0)
@@ -7800,7 +7712,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 179.705) (xy 161.29 179.705)
+			(xy 170.18 180.34) (xy 161.29 180.34)
 		)
 		(stroke
 			(width 0)
@@ -7820,7 +7732,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 41.91) (xy 276.86 41.91)
+			(xy 269.24 41.91) (xy 273.05 41.91)
 		)
 		(stroke
 			(width 0)
@@ -7830,13 +7742,23 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 179.705) (xy 107.95 179.705)
+			(xy 116.84 180.34) (xy 107.95 180.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f8992e48-b791-4c86-a271-c62f9ec07548")
+	)
+	(wire
+		(pts
+			(xy 156.21 142.24) (xy 161.29 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa087bcf-6ee0-4886-9311-7d98e8b834d0")
 	)
 	(wire
 		(pts
@@ -7860,7 +7782,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 178.435) (xy 99.06 179.705)
+			(xy 99.06 179.07) (xy 99.06 180.34)
 		)
 		(stroke
 			(width 0)
@@ -7888,6 +7810,17 @@
 			(justify left bottom)
 		)
 		(uuid "168e76e2-50c0-4c92-b786-d17122a819cd")
+	)
+	(text "SWD"
+		(exclude_from_sim no)
+		(at 151.13 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2053fabc-c62b-411e-a0cb-8fa97aa5fc3e")
 	)
 	(text "Close to\npackage."
 		(exclude_from_sim no)
@@ -8198,7 +8131,7 @@
 		(uuid "3901dcb3-8a8a-482b-8388-aec530c0d363")
 	)
 	(label "QSPI_D0"
-		(at 271.78 31.115 0)
+		(at 273.05 31.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8220,7 +8153,7 @@
 		(uuid "61b54325-2431-4421-a836-541bec3a7259")
 	)
 	(label "QSPI_D3"
-		(at 271.78 41.275 0)
+		(at 273.05 41.91 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8253,7 +8186,7 @@
 		(uuid "771bb1d5-8692-4f8f-b965-841f721b3062")
 	)
 	(label "QSPI_CS"
-		(at 242.57 33.655 180)
+		(at 241.3 34.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8286,7 +8219,7 @@
 		(uuid "7c025f0e-58c4-4f3a-ac86-29a832f67c0f")
 	)
 	(label "QSPI_CLK"
-		(at 242.57 38.735 180)
+		(at 241.3 39.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8330,7 +8263,7 @@
 		(uuid "99d6b230-4987-41e2-a169-ab5a7f5ccf54")
 	)
 	(label "QSPI_D2"
-		(at 271.78 38.735 0)
+		(at 273.05 39.37 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8385,7 +8318,7 @@
 		(uuid "cd9586de-23ff-44ab-915d-ee4b1ffa2bd5")
 	)
 	(label "QSPI_D1"
-		(at 271.78 33.655 0)
+		(at 273.05 34.29 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8889,6 +8822,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 47.625 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 47.625 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9411202b-431d-498b-b529-ce9d928b5366")
 		)
@@ -9052,6 +9003,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 269.24 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 269.24 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "usb_isolated"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
@@ -9121,111 +9090,6 @@
 			(project "usb_isolated"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
 					(reference "#PWR079")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 243.84 27.305 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "07e45d05-3278-40bb-9e79-d70543cdbda3")
-		(property "Reference" "R9"
-			(at 247.65 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
-			(at 243.84 26.035 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 245.618 27.305 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/SG73P.pdf"
-			(at 243.84 27.305 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 243.84 27.305 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/SG73P1EWTTP1002F/14316756"
-			(at 243.84 27.305 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "KOA Speer Electronics, Inc."
-			(at 243.84 27.305 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Number" "SG73P1EWTTP1002F"
-			(at 243.84 27.305 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Notes" ""
-			(at 243.84 27.305 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fb54f761-2244-4a3a-b4f3-c1decc198b62")
-		)
-		(pin "2"
-			(uuid "c8b1d46a-bf59-4100-a221-e41101e626f9")
-		)
-		(instances
-			(project "usb_isolated"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
-					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -9319,6 +9183,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 100.33 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 100.33 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "81a87f8a-cdf4-4b90-8107-0a755309d83a")
 		)
@@ -9336,7 +9218,7 @@
 	)
 	(symbol
 		(lib_id "Memory_Flash:W25Q128JVS")
-		(at 257.81 36.83 0)
+		(at 256.54 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9344,7 +9226,7 @@
 		(dnp no)
 		(uuid "09f67cc8-3b7e-4563-9496-b54defe2ca02")
 		(property "Reference" "U5"
-			(at 259.08 25.4 0)
+			(at 257.81 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9353,7 +9235,7 @@
 			)
 		)
 		(property "Value" "W25Q16JVUXIQ"
-			(at 259.08 27.94 0)
+			(at 257.81 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9362,7 +9244,7 @@
 			)
 		)
 		(property "Footprint" "kicad_component_library:Winbond-8USON-2x3mm"
-			(at 257.81 36.83 0)
+			(at 256.54 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9371,7 +9253,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.winbond.com/resource-files/w25q16jv%20spi%20revh%2004082019%20plus.pdf"
-			(at 257.81 36.83 0)
+			(at 256.54 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9380,7 +9262,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 257.81 36.83 0)
+			(at 256.54 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9389,7 +9271,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/winbond-electronics/W25Q16JVUXIQ-TR/15182017"
-			(at 257.81 36.83 0)
+			(at 256.54 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9398,7 +9280,7 @@
 			)
 		)
 		(property "Manufacturer" "Winbond Electronics"
-			(at 257.81 36.83 0)
+			(at 256.54 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9407,7 +9289,7 @@
 			)
 		)
 		(property "Manufacturer Number" "W25Q16JVUXIQ TR"
-			(at 257.81 36.83 0)
+			(at 256.54 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9416,7 +9298,25 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components"
-			(at 257.81 36.83 0)
+			(at 256.54 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 256.54 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 256.54 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9493,7 +9393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
 			(at 41.91 184.785 0)
 			(effects
 				(font
@@ -9511,7 +9411,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
 			(at 41.91 184.785 0)
 			(effects
 				(font
@@ -9520,7 +9420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
+		(property "Manufacturer" "Murata Electronics"
 			(at 41.91 184.785 0)
 			(effects
 				(font
@@ -9529,7 +9429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
 			(at 41.91 184.785 0)
 			(effects
 				(font
@@ -9538,7 +9438,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
+		(property "Rated Voltage" "50V"
 			(at 41.91 184.785 0)
 			(effects
 				(font
@@ -9566,6 +9466,24 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
+			(at 41.91 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 41.91 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 41.91 184.785 0)
 			(effects
 				(font
@@ -9663,6 +9581,24 @@
 			)
 		)
 		(property "Manufacturer Number" "n/a"
+			(at 274.955 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 274.955 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 274.955 163.195 0)
 			(effects
 				(font
@@ -9854,6 +9790,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 31.75 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 31.75 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d0c3b55f-df97-4aa2-bdf3-031ab0a3f224")
 		)
@@ -9994,6 +9948,120 @@
 			(project "usb_isolated"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
 					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 242.57 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d20557d-004a-4209-abc4-11f8e7935e17")
+		(property "Reference" "R9"
+			(at 243.84 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K"
+			(at 242.57 28.575 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 240.792 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rncf.pdf"
+			(at 242.57 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 242.57 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Stackpole Electronics Inc"
+			(at 242.57 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "RNCF0402BTE10K0"
+			(at 242.57 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCF0402BTE10K0/1710765"
+			(at 242.57 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 242.57 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 242.57 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "24776edb-90de-475e-8450-7fe7c6307f3c")
+		)
+		(pin "1"
+			(uuid "fd19992a-a8d5-47be-9600-f7d35ac67704")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -10166,7 +10234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
 			(at 48.26 149.225 0)
 			(effects
 				(font
@@ -10184,7 +10252,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
 			(at 48.26 149.225 0)
 			(effects
 				(font
@@ -10193,7 +10261,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
+		(property "Manufacturer" "Murata Electronics"
 			(at 48.26 149.225 0)
 			(effects
 				(font
@@ -10202,7 +10270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
 			(at 48.26 149.225 0)
 			(effects
 				(font
@@ -10211,7 +10279,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
+		(property "Rated Voltage" "50V"
 			(at 48.26 149.225 0)
 			(effects
 				(font
@@ -10239,6 +10307,24 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
+			(at 48.26 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 48.26 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 48.26 149.225 0)
 			(effects
 				(font
@@ -10330,7 +10416,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 134.62 184.785 180)
+		(at 134.62 185.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10338,7 +10424,7 @@
 		(dnp no)
 		(uuid "20da9dc8-381f-4e47-9f78-b7dff16ff478")
 		(property "Reference" "C15"
-			(at 138.43 182.245 0)
+			(at 138.43 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10347,7 +10433,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 140.97 187.325 0)
+			(at 140.97 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10356,7 +10442,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 133.6548 180.975 0)
+			(at 133.6548 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10364,8 +10450,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
-			(at 134.62 184.785 0)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
+			(at 134.62 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10374,7 +10460,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 134.62 184.785 0)
+			(at 134.62 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10382,8 +10468,8 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
-			(at 134.62 184.785 0)
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
+			(at 134.62 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10391,8 +10477,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
-			(at 134.62 184.785 0)
+		(property "Manufacturer" "Murata Electronics"
+			(at 134.62 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10400,8 +10486,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
-			(at 134.62 184.785 0)
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
+			(at 134.62 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10409,8 +10495,8 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
-			(at 134.62 184.785 0)
+		(property "Rated Voltage" "50V"
+			(at 134.62 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10419,7 +10505,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 134.62 184.785 0)
+			(at 134.62 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10428,7 +10514,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 134.62 184.785 0)
+			(at 134.62 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10437,7 +10523,25 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
-			(at 134.62 184.785 0)
+			(at 134.62 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 134.62 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 134.62 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10462,7 +10566,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 257.81 20.955 0)
+		(at 256.54 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10470,7 +10574,7 @@
 		(dnp no)
 		(uuid "28f605f3-1247-4001-8b6f-f707781aa212")
 		(property "Reference" "#PWR037"
-			(at 257.81 24.765 0)
+			(at 256.54 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10479,7 +10583,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 257.81 17.145 0)
+			(at 256.54 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10487,7 +10591,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 257.81 20.955 0)
+			(at 256.54 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10496,7 +10600,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 20.955 0)
+			(at 256.54 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10505,7 +10609,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 257.81 20.955 0)
+			(at 256.54 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10650,6 +10754,120 @@
 			(project "usb_isolated"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 99.06 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ac7db36-848b-4b30-876b-5ab497f02726")
+		(property "Reference" "C11"
+			(at 99.06 183.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 99.06 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 100.0252 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://calchip.com/wp-content/uploads/2023/09/GMC-Series-2.pdf"
+			(at 99.06 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "GMC21X7R106K25NT"
+			(at 99.06 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 99.06 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC21X7R106K25NT/22639515"
+			(at 99.06 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 99.06 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 99.06 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ef0a749-634c-483e-aa4c-4206a2f5c502")
+		)
+		(pin "2"
+			(uuid "7a006bd1-0e08-4093-91b1-374c0729042c")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -10875,6 +11093,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 265.43 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 265.43 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "142b10f5-2d7e-43d4-9b4f-5d79554ba529")
 		)
@@ -10951,6 +11187,140 @@
 			(project "usb_isolated"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Male")
+		(at 151.13 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e04c5ef-1a29-47cf-ba87-df8e09de9d27")
+		(property "Reference" "J21"
+			(at 148.59 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Male"
+			(at 151.765 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 151.13 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "n/a"
+			(at 151.13 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 151.13 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" "DNP"
+			(at 151.13 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Alternate" "n/a"
+			(at 151.13 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "n/a"
+			(at 151.13 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "n/a"
+			(at 151.13 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "n/a"
+			(at 151.13 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 151.13 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 151.13 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c4b34c0-c709-44fe-9b7b-4519e1fb5080")
+		)
+		(pin "2"
+			(uuid "414bb280-62a5-495e-a845-cbfd56abc4c0")
+		)
+		(pin "3"
+			(uuid "62b39fc7-78eb-4070-8762-5af3ef161466")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
+					(reference "J21")
 					(unit 1)
 				)
 			)
@@ -11118,6 +11488,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 229.87 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 229.87 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "16918094-7a0c-4efb-abc9-442cfba3de34")
 		)
@@ -11221,6 +11609,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 55.245 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 55.245 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "14e779e4-f779-4374-9fd5-0e2993b503b4")
 		)
@@ -11241,7 +11647,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 99.06 178.435 0)
+		(at 99.06 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11249,7 +11655,7 @@
 		(dnp no)
 		(uuid "49a776b0-59ce-4a58-9c23-961c38ab6b26")
 		(property "Reference" "#PWR023"
-			(at 99.06 182.245 0)
+			(at 99.06 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11258,7 +11664,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 99.06 174.625 0)
+			(at 99.06 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11266,7 +11672,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 178.435 0)
+			(at 99.06 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11275,7 +11681,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 178.435 0)
+			(at 99.06 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11284,7 +11690,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 99.06 178.435 0)
+			(at 99.06 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11299,6 +11705,72 @@
 			(project "usb_isolated"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 157.48 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4abcea38-5500-455d-9783-8b916389821f")
+		(property "Reference" "#PWR08"
+			(at 157.48 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2025a32-4d05-4819-870a-af7c7351082a")
+		)
+		(instances
+			(project "valve-controller"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -11372,7 +11844,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 116.84 184.785 180)
+		(at 116.84 185.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11380,7 +11852,7 @@
 		(dnp no)
 		(uuid "51cca8aa-377b-4caf-83c5-d8abb8a99a74")
 		(property "Reference" "C13"
-			(at 120.65 182.245 0)
+			(at 120.65 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11389,7 +11861,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 123.19 187.325 0)
+			(at 123.19 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11398,7 +11870,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 115.8748 180.975 0)
+			(at 115.8748 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11406,8 +11878,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
-			(at 116.84 184.785 0)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
+			(at 116.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11416,7 +11888,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 184.785 0)
+			(at 116.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11424,8 +11896,8 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
-			(at 116.84 184.785 0)
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
+			(at 116.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11433,8 +11905,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
-			(at 116.84 184.785 0)
+		(property "Manufacturer" "Murata Electronics"
+			(at 116.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11442,8 +11914,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
-			(at 116.84 184.785 0)
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
+			(at 116.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11451,8 +11923,8 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
-			(at 116.84 184.785 0)
+		(property "Rated Voltage" "50V"
+			(at 116.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11461,7 +11933,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 116.84 184.785 0)
+			(at 116.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11470,7 +11942,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 116.84 184.785 0)
+			(at 116.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11479,7 +11951,25 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
-			(at 116.84 184.785 0)
+			(at 116.84 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 116.84 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 116.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11729,6 +12219,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 47.625 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 47.625 29.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5144b4b5-e8f3-49d7-8303-cbdb023a92b6")
 		)
@@ -11906,6 +12414,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 229.87 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 229.87 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "02f52060-2e61-4788-8c0c-76605a134c50")
 		)
@@ -11923,7 +12449,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 99.06 191.135 0)
+		(at 99.06 191.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11931,7 +12457,7 @@
 		(dnp no)
 		(uuid "64b3cfc3-7404-4239-857a-75ebef713481")
 		(property "Reference" "#PWR024"
-			(at 99.06 197.485 0)
+			(at 99.06 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11940,7 +12466,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 97.155 194.945 0)
+			(at 97.155 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11949,7 +12475,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 191.135 0)
+			(at 99.06 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11958,7 +12484,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 191.135 0)
+			(at 99.06 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11967,7 +12493,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 99.06 191.135 0)
+			(at 99.06 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11989,7 +12515,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 143.51 184.785 180)
+		(at 143.51 185.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11997,7 +12523,7 @@
 		(dnp no)
 		(uuid "64c783e3-a48e-4e89-b449-a868016fe4fb")
 		(property "Reference" "C16"
-			(at 147.32 182.245 0)
+			(at 147.32 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12006,7 +12532,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 149.86 187.325 0)
+			(at 149.86 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12015,7 +12541,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 142.5448 180.975 0)
+			(at 142.5448 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12023,8 +12549,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
-			(at 143.51 184.785 0)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
+			(at 143.51 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12033,7 +12559,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 143.51 184.785 0)
+			(at 143.51 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12041,8 +12567,8 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
-			(at 143.51 184.785 0)
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
+			(at 143.51 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12050,8 +12576,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
-			(at 143.51 184.785 0)
+		(property "Manufacturer" "Murata Electronics"
+			(at 143.51 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12059,8 +12585,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
-			(at 143.51 184.785 0)
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
+			(at 143.51 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12068,8 +12594,8 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
-			(at 143.51 184.785 0)
+		(property "Rated Voltage" "50V"
+			(at 143.51 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12078,7 +12604,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 143.51 184.785 0)
+			(at 143.51 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12087,7 +12613,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 143.51 184.785 0)
+			(at 143.51 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12096,7 +12622,25 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
-			(at 143.51 184.785 0)
+			(at 143.51 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 143.51 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 143.51 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12217,6 +12761,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 19.05 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 19.05 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a981cbce-ed28-4f48-b98e-1c3923ecd523")
 		)
@@ -12317,6 +12879,24 @@
 			)
 		)
 		(property "Manufacturer" "Raspberry Pi"
+			(at 193.04 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 193.04 107.95 0)
 			(effects
 				(font
@@ -12793,6 +13373,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 26.035 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 26.035 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A1"
 			(uuid "68469917-61cc-456d-ac87-4ac9ce54c211")
 		)
@@ -12855,7 +13453,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 161.29 184.785 180)
+		(at 161.29 185.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12863,7 +13461,7 @@
 		(dnp no)
 		(uuid "70b8c9ff-2e07-4a7a-8415-47eba5a1a84a")
 		(property "Reference" "C18"
-			(at 165.1 182.245 0)
+			(at 165.1 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12872,7 +13470,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 167.64 187.325 0)
+			(at 167.64 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12881,7 +13479,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 160.3248 180.975 0)
+			(at 160.3248 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12889,8 +13487,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
-			(at 161.29 184.785 0)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
+			(at 161.29 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12899,7 +13497,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 161.29 184.785 0)
+			(at 161.29 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12907,8 +13505,8 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
-			(at 161.29 184.785 0)
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
+			(at 161.29 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12916,8 +13514,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
-			(at 161.29 184.785 0)
+		(property "Manufacturer" "Murata Electronics"
+			(at 161.29 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12925,8 +13523,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
-			(at 161.29 184.785 0)
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
+			(at 161.29 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12934,8 +13532,8 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
-			(at 161.29 184.785 0)
+		(property "Rated Voltage" "50V"
+			(at 161.29 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12944,7 +13542,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 161.29 184.785 0)
+			(at 161.29 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12953,7 +13551,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 161.29 184.785 0)
+			(at 161.29 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12962,7 +13560,25 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
-			(at 161.29 184.785 0)
+			(at 161.29 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 161.29 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 161.29 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13130,6 +13746,24 @@
 			)
 		)
 		(property "Tolerance" "1%"
+			(at 100.33 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 100.33 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 100.33 39.37 0)
 			(effects
 				(font
@@ -13385,7 +14019,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
 			(at 57.15 149.225 0)
 			(effects
 				(font
@@ -13403,7 +14037,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
 			(at 57.15 149.225 0)
 			(effects
 				(font
@@ -13412,7 +14046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
+		(property "Manufacturer" "Murata Electronics"
 			(at 57.15 149.225 0)
 			(effects
 				(font
@@ -13421,7 +14055,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
 			(at 57.15 149.225 0)
 			(effects
 				(font
@@ -13430,7 +14064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
+		(property "Rated Voltage" "50V"
 			(at 57.15 149.225 0)
 			(effects
 				(font
@@ -13458,6 +14092,24 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
+			(at 57.15 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 57.15 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 57.15 149.225 0)
 			(effects
 				(font
@@ -13598,6 +14250,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 59.69 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 59.69 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c78fc998-c159-4cc5-a4ba-e8b485fe47fd")
 		)
@@ -13730,6 +14400,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 74.295 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 74.295 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "89cd60a1-8e7f-4089-96fb-a75222a4ca46")
 		)
@@ -13848,7 +14536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/esd7571-d.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD5V0F1BLD.pdf"
 			(at 84.455 149.225 0)
 			(effects
 				(font
@@ -13866,7 +14554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/onsemi/ESD7571N2T5G/7220690"
+		(property "Link" "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PESD5V0F1BLD-315/3679473"
 			(at 84.455 149.225 0)
 			(effects
 				(font
@@ -13875,7 +14563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 84.455 149.225 0)
 			(effects
 				(font
@@ -13884,7 +14572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "ESD7571N2T5G"
+		(property "Manufacturer Number" "PESD5V0F1BLD,315"
 			(at 84.455 149.225 0)
 			(effects
 				(font
@@ -13895,6 +14583,24 @@
 		)
 		(property "Notes" "not polarized"
 			(at 84.455 149.225 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 84.455 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 84.455 149.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14070,6 +14776,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 256.54 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 256.54 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e4c97b5b-79d3-42da-a428-4d4f7108ba07")
 		)
@@ -14093,7 +14817,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 170.18 184.785 180)
+		(at 170.18 185.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14101,7 +14825,7 @@
 		(dnp no)
 		(uuid "95042bd8-ea12-4007-87d5-177869b81566")
 		(property "Reference" "C19"
-			(at 173.99 182.245 0)
+			(at 173.99 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14110,7 +14834,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 176.53 187.325 0)
+			(at 176.53 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14119,7 +14843,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 169.2148 180.975 0)
+			(at 169.2148 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14127,8 +14851,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
-			(at 170.18 184.785 0)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
+			(at 170.18 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14137,7 +14861,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 170.18 184.785 0)
+			(at 170.18 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14145,8 +14869,8 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
-			(at 170.18 184.785 0)
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
+			(at 170.18 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14154,8 +14878,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
-			(at 170.18 184.785 0)
+		(property "Manufacturer" "Murata Electronics"
+			(at 170.18 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14163,8 +14887,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
-			(at 170.18 184.785 0)
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
+			(at 170.18 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14172,8 +14896,8 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
-			(at 170.18 184.785 0)
+		(property "Rated Voltage" "50V"
+			(at 170.18 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14182,7 +14906,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 170.18 184.785 0)
+			(at 170.18 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14191,7 +14915,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 170.18 184.785 0)
+			(at 170.18 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14200,7 +14924,25 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
-			(at 170.18 184.785 0)
+			(at 170.18 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 170.18 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 170.18 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14225,7 +14967,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 125.73 184.785 180)
+		(at 125.73 185.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14233,7 +14975,7 @@
 		(dnp no)
 		(uuid "98835efa-039c-4c82-81af-0acd39e474f1")
 		(property "Reference" "C14"
-			(at 129.54 182.245 0)
+			(at 129.54 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14242,7 +14984,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 132.08 187.325 0)
+			(at 132.08 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14251,7 +14993,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 124.7648 180.975 0)
+			(at 124.7648 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14259,8 +15001,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
-			(at 125.73 184.785 0)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
+			(at 125.73 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14269,7 +15011,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 125.73 184.785 0)
+			(at 125.73 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14277,8 +15019,8 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
-			(at 125.73 184.785 0)
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
+			(at 125.73 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14286,8 +15028,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
-			(at 125.73 184.785 0)
+		(property "Manufacturer" "Murata Electronics"
+			(at 125.73 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14295,8 +15037,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
-			(at 125.73 184.785 0)
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
+			(at 125.73 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14304,8 +15046,8 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
-			(at 125.73 184.785 0)
+		(property "Rated Voltage" "50V"
+			(at 125.73 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14314,7 +15056,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 125.73 184.785 0)
+			(at 125.73 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14323,7 +15065,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 125.73 184.785 0)
+			(at 125.73 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14332,7 +15074,25 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
-			(at 125.73 184.785 0)
+			(at 125.73 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 125.73 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 125.73 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14435,6 +15195,24 @@
 			)
 		)
 		(property "Tolerance" "1%"
+			(at 256.54 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 256.54 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 256.54 84.455 0)
 			(effects
 				(font
@@ -14546,6 +15324,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 280.67 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 280.67 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "usb_isolated"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
@@ -14557,7 +15353,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 152.4 184.785 180)
+		(at 152.4 185.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14565,7 +15361,7 @@
 		(dnp no)
 		(uuid "9a56cd2e-41e0-4bde-9f05-853499dd9c32")
 		(property "Reference" "C17"
-			(at 156.21 182.245 0)
+			(at 156.21 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14574,7 +15370,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 158.75 187.325 0)
+			(at 158.75 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14583,7 +15379,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 151.4348 180.975 0)
+			(at 151.4348 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14591,8 +15387,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
-			(at 152.4 184.785 0)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
+			(at 152.4 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14601,7 +15397,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 184.785 0)
+			(at 152.4 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14609,8 +15405,8 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
-			(at 152.4 184.785 0)
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
+			(at 152.4 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14618,8 +15414,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
-			(at 152.4 184.785 0)
+		(property "Manufacturer" "Murata Electronics"
+			(at 152.4 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14627,8 +15423,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
-			(at 152.4 184.785 0)
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
+			(at 152.4 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14636,8 +15432,8 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
-			(at 152.4 184.785 0)
+		(property "Rated Voltage" "50V"
+			(at 152.4 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14646,7 +15442,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 152.4 184.785 0)
+			(at 152.4 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14655,7 +15451,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 152.4 184.785 0)
+			(at 152.4 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14664,7 +15460,25 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
-			(at 152.4 184.785 0)
+			(at 152.4 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 152.4 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 152.4 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14790,7 +15604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/esd7571-d.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD5V0F1BLD.pdf"
 			(at 70.485 23.495 0)
 			(effects
 				(font
@@ -14808,7 +15622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/onsemi/ESD7571N2T5G/7220690"
+		(property "Link" "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PESD5V0F1BLD-315/3679473"
 			(at 70.485 23.495 0)
 			(effects
 				(font
@@ -14817,7 +15631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "onsemi"
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 70.485 23.495 0)
 			(effects
 				(font
@@ -14826,7 +15640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "ESD7571N2T5G"
+		(property "Manufacturer Number" "PESD5V0F1BLD,315"
 			(at 70.485 23.495 0)
 			(effects
 				(font
@@ -14837,6 +15651,24 @@
 		)
 		(property "Notes" "not polarized"
 			(at 70.485 23.495 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 70.485 23.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 70.485 23.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14939,6 +15771,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 24.13 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 24.13 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "R"
 			(uuid "5d6ca3a6-5b45-4a47-b29e-efbbfc6aa03a")
 		)
@@ -14993,7 +15843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
 			(at 17.78 184.785 0)
 			(effects
 				(font
@@ -15011,7 +15861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
 			(at 17.78 184.785 0)
 			(effects
 				(font
@@ -15020,7 +15870,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
+		(property "Manufacturer" "Murata Electronics"
 			(at 17.78 184.785 0)
 			(effects
 				(font
@@ -15029,7 +15879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
 			(at 17.78 184.785 0)
 			(effects
 				(font
@@ -15038,7 +15888,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
+		(property "Rated Voltage" "50V"
 			(at 17.78 184.785 0)
 			(effects
 				(font
@@ -15066,6 +15916,24 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
+			(at 17.78 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 17.78 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 17.78 184.785 0)
 			(effects
 				(font
@@ -15222,7 +16090,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 107.95 184.785 180)
+		(at 107.95 185.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15230,7 +16098,7 @@
 		(dnp no)
 		(uuid "a919fafe-613d-4284-8fa9-e782faeda90e")
 		(property "Reference" "C12"
-			(at 111.76 182.245 0)
+			(at 111.76 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15239,7 +16107,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 114.3 187.325 0)
+			(at 114.3 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15248,7 +16116,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 106.9848 180.975 0)
+			(at 106.9848 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15256,8 +16124,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
-			(at 107.95 184.785 0)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
+			(at 107.95 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15266,7 +16134,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 107.95 184.785 0)
+			(at 107.95 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15274,8 +16142,8 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
-			(at 107.95 184.785 0)
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
+			(at 107.95 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15283,8 +16151,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
-			(at 107.95 184.785 0)
+		(property "Manufacturer" "Murata Electronics"
+			(at 107.95 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15292,8 +16160,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
-			(at 107.95 184.785 0)
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
+			(at 107.95 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15301,8 +16169,8 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
-			(at 107.95 184.785 0)
+		(property "Rated Voltage" "50V"
+			(at 107.95 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15311,7 +16179,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 107.95 184.785 0)
+			(at 107.95 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15320,7 +16188,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 107.95 184.785 0)
+			(at 107.95 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15329,7 +16197,25 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
-			(at 107.95 184.785 0)
+			(at 107.95 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 107.95 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 107.95 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15506,6 +16392,24 @@
 			)
 		)
 		(property "PCBWay Link" ""
+			(at 46.99 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 46.99 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 46.99 103.505 0)
 			(effects
 				(font
@@ -15888,6 +16792,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 25.4 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 25.4 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c864e65f-56da-4f3c-8357-be087bff90e8")
 		)
@@ -15948,7 +16870,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
 			(at 39.37 149.225 0)
 			(effects
 				(font
@@ -15966,7 +16888,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
 			(at 39.37 149.225 0)
 			(effects
 				(font
@@ -15975,7 +16897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
+		(property "Manufacturer" "Murata Electronics"
 			(at 39.37 149.225 0)
 			(effects
 				(font
@@ -15984,7 +16906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
 			(at 39.37 149.225 0)
 			(effects
 				(font
@@ -15993,7 +16915,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
+		(property "Rated Voltage" "50V"
 			(at 39.37 149.225 0)
 			(effects
 				(font
@@ -16021,6 +16943,24 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
+			(at 39.37 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 39.37 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 39.37 149.225 0)
 			(effects
 				(font
@@ -16134,6 +17074,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 120.65 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 120.65 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d77af84c-0e5f-4c52-9efe-d5683d42098a")
 		)
@@ -16227,7 +17185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
 			(at 50.8 184.785 0)
 			(effects
 				(font
@@ -16245,7 +17203,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
 			(at 50.8 184.785 0)
 			(effects
 				(font
@@ -16254,7 +17212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
+		(property "Manufacturer" "Murata Electronics"
 			(at 50.8 184.785 0)
 			(effects
 				(font
@@ -16263,7 +17221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
 			(at 50.8 184.785 0)
 			(effects
 				(font
@@ -16272,7 +17230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
+		(property "Rated Voltage" "50V"
 			(at 50.8 184.785 0)
 			(effects
 				(font
@@ -16300,6 +17258,24 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
+			(at 50.8 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 50.8 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 50.8 184.785 0)
 			(effects
 				(font
@@ -16479,6 +17455,24 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/XZCDGK53W1VF/501988/"
+			(at 265.43 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 265.43 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 265.43 78.105 0)
 			(effects
 				(font
@@ -16685,6 +17679,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 78.74 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 78.74 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9880f7fc-9c4d-4d9d-8293-f1fd26500921")
 		)
@@ -16736,7 +17748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/datasheet/WTC_MLCC_General_Purpose.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H104KE14-01.pdf"
 			(at 29.21 149.225 0)
 			(effects
 				(font
@@ -16754,7 +17766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/0402B104K160CT/6707534"
+		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM155R71H104KE14D/4906220"
 			(at 29.21 149.225 0)
 			(effects
 				(font
@@ -16763,7 +17775,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Walson Technology Corporation"
+		(property "Manufacturer" "Murata Electronics"
 			(at 29.21 149.225 0)
 			(effects
 				(font
@@ -16772,7 +17784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "0402B104K160CT"
+		(property "Manufacturer Number" "GRM155R71H104KE14D"
 			(at 29.21 149.225 0)
 			(effects
 				(font
@@ -16781,7 +17793,7 @@
 				(hide yes)
 			)
 		)
-		(property "Rated Voltage" "16V"
+		(property "Rated Voltage" "50V"
 			(at 29.21 149.225 0)
 			(effects
 				(font
@@ -16809,6 +17821,24 @@
 			)
 		)
 		(property "PCBWay Link" "https://www.pcbway.com/components/detail/0402B104K160CT/307171/"
+			(at 29.21 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 29.21 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 29.21 149.225 0)
 			(effects
 				(font
@@ -17004,6 +18034,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 149.86 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5d6b7dfa-1f26-4498-b47b-388f552f2841")
 		)
@@ -17027,7 +18075,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 257.81 47.625 0)
+		(at 256.54 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17036,7 +18084,7 @@
 		(fields_autoplaced yes)
 		(uuid "e127e43f-8a19-4a5f-add3-511877448e25")
 		(property "Reference" "#PWR038"
-			(at 257.81 53.975 0)
+			(at 256.54 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17045,7 +18093,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 260.35 48.8949 0)
+			(at 259.08 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17054,7 +18102,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 257.81 47.625 0)
+			(at 256.54 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17063,7 +18111,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 47.625 0)
+			(at 256.54 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17072,7 +18120,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 257.81 47.625 0)
+			(at 256.54 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17087,129 +18135,6 @@
 			(project "usb_isolated"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 99.06 184.785 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e4768087-3620-416d-a39f-007537edfbf3")
-		(property "Reference" "C11"
-			(at 100.33 182.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 100.33 187.325 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 100.0252 188.595 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf"
-			(at 99.06 184.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 99.06 184.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Link" "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BZ71E106KE15L/13904911"
-			(at 99.06 184.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Number" "GRM21BZ71E106KE15L"
-			(at 99.06 184.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Rated Voltage" "25V"
-			(at 99.06 184.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature Coefficient" "X7R"
-			(at 99.06 184.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Murata Electronics"
-			(at 99.06 184.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Alternate" "CL21B106KOQNNNE"
-			(at 99.06 184.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "327726d9-d9ed-46ee-abbe-5141f2a0d2b7")
-		)
-		(pin "2"
-			(uuid "7954592c-c9d4-420a-900c-0682cf106f4a")
-		)
-		(instances
-			(project "usb_isolated"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eb8325ca-9747-4676-8e08-1fb825a7219f"
-					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -17530,6 +18455,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 18.415 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 18.415 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b79de21f-a5d0-426a-848e-c52f08aca3e4")
 		)
@@ -17633,6 +18576,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 140.97 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
+			(at 140.97 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4363cb2d-fbc6-41d2-bc5c-9aed9bcca1c3")
 		)
@@ -17728,6 +18689,24 @@
 			)
 		)
 		(property "Tolerance" "1%"
+			(at 140.97 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 140.97 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 140.97 39.37 0)
 			(effects
 				(font

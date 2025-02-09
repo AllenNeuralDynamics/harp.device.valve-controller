@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "harp.device.valve-controller")
-		(date "2023-09-01")
-		(rev "0.1")
+		(date "2025-02-09")
+		(rev "1.0.0")
 		(company "The Allen Institute")
 	)
 	(lib_symbols
@@ -1785,6 +1785,24 @@
 			)
 		)
 		(property "Manufacturer Number" "0015910200"
+			(at 189.23 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 189.23 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" ""
 			(at 189.23 83.82 0)
 			(effects
 				(font
