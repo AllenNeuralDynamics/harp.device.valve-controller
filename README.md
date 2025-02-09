@@ -1,4 +1,4 @@
-A Harp-complian, 16-channel MOSFET Output board for valve control.
+A Harp-compliant, 16-channel MOSFET Output board for valve control.
 
 ![](./notes/images/valve-controller-render.png)
 
