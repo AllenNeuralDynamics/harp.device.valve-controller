@@ -1,5 +1,7 @@
 An RP2040-based Harp Hardware/Firmware project template.
 
+![](./notes/images/valve-controller-render.png)
+
 ## Features
 * Schematic template for an isolated full speed USB Harp Device with an audio jack
 * basic PCB Layout with size hints for various existing enclosures
