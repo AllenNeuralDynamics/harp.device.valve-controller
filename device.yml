@@ -1,0 +1,7 @@
+%YAML 1.1
+---
+# yaml-language-server: $schema=https://harp-tech.org/draft-02/schema/device.json
+device: ValveController
+whoAmI: 1406
+firmwareVersion: "0.0.0"
+hardwareTargets: "1.0.0"
