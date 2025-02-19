@@ -2,6 +2,26 @@
 
 app_regs_t app_regs;
 
+
+// Create Hit-and-Hold Valve Drivers.
+ValveDriver valve_drivers[NUM_VALVES]
+{{VALVE_PIN_BASE},
+ {VALVE_PIN_BASE + 1},
+ {VALVE_PIN_BASE + 2},
+ {VALVE_PIN_BASE + 3},
+ {VALVE_PIN_BASE + 4},
+ {VALVE_PIN_BASE + 5},
+ {VALVE_PIN_BASE + 6},
+ {VALVE_PIN_BASE + 7},
+ {VALVE_PIN_BASE + 8},
+ {VALVE_PIN_BASE + 9},
+ {VALVE_PIN_BASE + 10},
+ {VALVE_PIN_BASE + 11},
+ {VALVE_PIN_BASE + 12},
+ {VALVE_PIN_BASE + 13},
+ {VALVE_PIN_BASE + 14},
+ {VALVE_PIN_BASE + 15}};
+
 // Define "specs" per-register
 RegSpecs app_reg_specs[reg_count]
 {

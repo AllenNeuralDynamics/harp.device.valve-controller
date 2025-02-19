@@ -1,6 +1,7 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
+#define NUM_VALVES (16)
 
 #define UART_TX_PIN (0)
 #define HARP_SYNC_RX_PIN (5)
