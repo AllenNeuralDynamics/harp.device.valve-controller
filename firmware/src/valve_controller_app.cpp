@@ -172,7 +172,8 @@ void write_any_valve_config(msg_t& msg)
 
 void update_app_state()
 {
-
+    for (auto& valve_driver: valve_drivers)
+        valve_driver.update_fsm();
 }
 
 void reset_app()
