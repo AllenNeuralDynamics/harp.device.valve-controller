@@ -45,6 +45,10 @@ float ValveDriver::set_pwm_frequency_hz(float hz)
 void ValveDriver::reset_fsm()
 {
     hit_start_time_us_ = 0;
+    // Default to "hold" settings that are identical to "hit" settings.
+    hit_output_ = 1.0f;
+    hold_output_ = 1.0f;
+    hit_duration_us_ = 0;
     state_ = DEENERGIZED;
 }
 

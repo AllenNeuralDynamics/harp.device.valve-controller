@@ -54,6 +54,12 @@ public:
     void deenergize();
 
 /**
+ * \brief True if valve is currently turned enabled.
+ */
+    inline bool is_energized() const
+    {return (state_ != DEENERGIZED);}
+
+/**
  * \brief set the hit output power level.
  * \param output output power from 0.0 to 1.0. Note that while the input is a
  *  float, only 1 decimal place is used.
