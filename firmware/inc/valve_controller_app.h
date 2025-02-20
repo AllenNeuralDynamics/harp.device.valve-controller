@@ -13,11 +13,24 @@
 #endif
 
 // Setup for Harp App
-const size_t reg_count = 3;
+const size_t APP_REG_COUNT = 19;
+const size_t VALVE_START_APP_ADDRESS = APP_REG_START_ADDRESS + 3;
 
-extern RegSpecs app_reg_specs[reg_count];
-extern RegFnPair reg_handler_fns[reg_count];
+extern RegSpecs app_reg_specs[APP_REG_COUNT];
+extern RegFnPair reg_handler_fns[APP_REG_COUNT];
 extern HarpCApp& app;
+
+extern ValveDriver valve_drivers[NUM_VALVES];
+
+// Valve configuration struct for configuring the Hit-and-hold driver
+#pragma pack(push, 1)
+struct ValveConfig
+{
+    float hit_output;
+    float hold_output;
+    uint16_t hit_duration_us;
+};
+#pragma pack(pop)
 
 // Registers
 #pragma pack(push, 1)
@@ -33,6 +46,22 @@ struct app_regs_t
     uint16_t ValvesClear; // Deenergize the valve specified in the bitmask.
                           // Bitmask: one bit per valve. (1 = de-energize)
                           // Read values are the bitwise inverse of ValvesState
+    ValveConfig ValveConfig0;
+    ValveConfig ValveConfig1;
+    ValveConfig ValveConfig2;
+    ValveConfig ValveConfig3;
+    ValveConfig ValveConfig4;
+    ValveConfig ValveConfig5;
+    ValveConfig ValveConfig6;
+    ValveConfig ValveConfig7;
+    ValveConfig ValveConfig8;
+    ValveConfig ValveConfig9;
+    ValveConfig ValveConfig10;
+    ValveConfig ValveConfig11;
+    ValveConfig ValveConfig12;
+    ValveConfig ValveConfig13;
+    ValveConfig ValveConfig14;
+    ValveConfig ValveConfig15;
     // More app "registers" here.
 };
 #pragma pack(pop)
@@ -52,9 +81,11 @@ void reset_app();
 void read_valves_clear(uint8_t reg_address);
 void read_valves_set(uint8_t reg_address);
 void read_valves_state(uint8_t reg_address);
+void read_any_valve_config(uint8_t reg_address);
 
 void write_valves_clear(msg_t& msg);
 void write_valves_set(msg_t& msg);
 void write_valves_state(msg_t& msg);
+void write_any_valve_config(msg_t& msg);
 
 #endif // VALVE_CONTROLLER_APP_H

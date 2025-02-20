@@ -32,9 +32,14 @@ void ValveDriver::set_normalized_hold_output(float output)
         pwm_.set_duty_cycle(hold_output_);
 }
 
+void ValveDriver::set_hit_duration_us(uint32_t hit_duration_us)
+{
+    hit_duration_us_ = hit_duration_us_;
+}
+
 float ValveDriver::set_pwm_frequency_hz(float hz)
 {
-    pwm_.set_frequency(hz);
+    return pwm_.set_frequency(hz);
 }
 
 void ValveDriver::reset_fsm()

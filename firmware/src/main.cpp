@@ -20,7 +20,7 @@ HarpCApp& app = HarpCApp::init(HARP_DEVICE_ID,
                                "harp.device.valve-controller",
                                (uint8_t*)GIT_HASH,
                                &app_regs, app_reg_specs,
-                               reg_handler_fns, reg_count, update_app_state,
+                               reg_handler_fns, APP_REG_COUNT, update_app_state,
                                reset_app);
 
 // Core0 main.
