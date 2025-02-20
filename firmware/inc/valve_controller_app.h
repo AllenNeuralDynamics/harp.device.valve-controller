@@ -46,22 +46,12 @@ struct app_regs_t
     uint16_t ValvesClear; // Deenergize the valve specified in the bitmask.
                           // Bitmask: one bit per valve. (1 = de-energize)
                           // Read values are the bitwise inverse of ValvesState
-    ValveConfig ValveConfig0;
-    ValveConfig ValveConfig1;
-    ValveConfig ValveConfig2;
-    ValveConfig ValveConfig3;
-    ValveConfig ValveConfig4;
-    ValveConfig ValveConfig5;
-    ValveConfig ValveConfig6;
-    ValveConfig ValveConfig7;
-    ValveConfig ValveConfig8;
-    ValveConfig ValveConfig9;
-    ValveConfig ValveConfig10;
-    ValveConfig ValveConfig11;
-    ValveConfig ValveConfig12;
-    ValveConfig ValveConfig13;
-    ValveConfig ValveConfig14;
-    ValveConfig ValveConfig15;
+    /// @ref ValveConfigs are represented as 16 individual registers instead
+    /// of a register with an array of 16 ValveConfigs.
+    ValveConfig ValveConfigs[NUM_VALVES]; // Represents app regs: 35, 36, ... 50
+                                          // 16 Heterogeneous registers each
+                                          // representing a ValveConfig packed
+                                          // struct.
     // More app "registers" here.
 };
 #pragma pack(pop)

@@ -3,7 +3,11 @@
 app_regs_t app_regs;
 
 
-// Create Hit-and-Hold Valve Drivers.
+/// Create Hit-and-Hold Valve Drivers.
+/// The underlying PWM peripheral, aka: a PWM Slice, controls two adjacent PWM
+/// pins and must be configured with the same settings. This is OK since we are
+/// enforcing the same underlying peripheral settings (i.e: frequency) across
+/// all Slices.
 ValveDriver valve_drivers[NUM_VALVES]
 {{VALVE_PIN_BASE},
  {VALVE_PIN_BASE + 1},
@@ -28,22 +32,22 @@ RegSpecs app_reg_specs[APP_REG_COUNT]
     {(uint8_t*)&app_regs.ValvesState, sizeof(app_regs.ValvesState), U16},
     {(uint8_t*)&app_regs.ValvesSet, sizeof(app_regs.ValvesSet), U16},
     {(uint8_t*)&app_regs.ValvesClear, sizeof(app_regs.ValvesClear), U16},
-    {(uint8_t*)&app_regs.ValveConfig0, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig1, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig2, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig3, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig4, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig5, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig6, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig7, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig8, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig9, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig10, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig11, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig12, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig13, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig14, sizeof(ValveConfig), U8},
-    {(uint8_t*)&app_regs.ValveConfig15, sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[0], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[1], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[2], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[3], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[4], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[5], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[6], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[7], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[8], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[9], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[10], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[11], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[12], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[13], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[14], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.ValveConfigs[15], sizeof(ValveConfig), U8},
     // More specs here if we add additional registers.
 };
 
@@ -127,7 +131,13 @@ void write_valves_clear(msg_t& msg)
 
 void read_any_valve_config(uint8_t reg_address)
 {
-    // FIXME implement this.
+    uint8_t valve_index = reg_address - VALVE_START_APP_ADDRESS;
+    ValveConfig& valve_cfg = app_regs.ValveConfigs[valve_index];
+    const ValveDriver& valve_driver = valve_drivers[valve_index];
+    // Update Harp App registers with ValveDriver class contents.
+    valve_cfg.hit_output = valve_driver.get_hit_output();
+    valve_cfg.hold_output = valve_driver.get_hold_output();
+    valve_cfg.hit_duration_us = valve_driver.get_hit_duration_us();
     if (!HarpCore::is_muted())
         HarpCore::send_harp_reply(READ, reg_address);
 }
@@ -137,14 +147,12 @@ void write_any_valve_config(msg_t& msg)
 {
     HarpCore::copy_msg_payload_to_register(msg);
     uint8_t valve_index = msg.header.address - VALVE_START_APP_ADDRESS;
-    // Register struct is packed, so we can access the valve configuration
-    // w/ pointer arithmetic.
-    ValveConfig* valve_cfg_ptr = (&(app_regs.ValveConfig0))
-                                    + sizeof(ValveConfig) * valve_index;
+    const ValveConfig& valve_cfg = app_regs.ValveConfigs[valve_index];
+    ValveDriver& valve_driver = valve_drivers[valve_index];
     // Apply the configuration.
-    valve_drivers[valve_index].set_hit_duration_us(valve_cfg_ptr->hit_duration_us);
-    valve_drivers[valve_index].set_normalized_hit_output(valve_cfg_ptr->hit_output);
-    valve_drivers[valve_index].set_normalized_hold_output(valve_cfg_ptr->hit_output);
+    valve_driver.set_hit_duration_us(valve_cfg.hit_duration_us);
+    valve_driver.set_normalized_hit_output(valve_cfg.hit_output);
+    valve_driver.set_normalized_hold_output(valve_cfg.hold_output);
     if (!HarpCore::is_muted())
         HarpCore::send_harp_reply(WRITE, msg.header.address);
 }

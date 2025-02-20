@@ -67,6 +67,15 @@ public:
  */
     void set_normalized_hold_output(float output);
 
+    inline float get_hit_output() const
+    {return hit_output_;}
+
+    inline float get_hold_output() const
+    {return hold_output_;}
+
+    inline float get_hit_duration_us() const
+    {return hold_output_;}
+
 private:
 
     enum State
