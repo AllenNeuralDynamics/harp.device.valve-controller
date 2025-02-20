@@ -14,44 +14,57 @@
 class ValveDriver
 {
 public:
-    /**
-     * \brief constructor.
-     * \param pwm_pin the pwm output pin to the controller enable pin.
-     */
+/**
+ * \brief constructor.
+ * \param pwm_pin the pwm output pin to the controller enable pin.
+ */
     ValveDriver(uint8_t pwm_pin);
 
-    /**
-     * \brief destructor.
-     */
+/**
+ * \brief destructor.
+ */
     ~ValveDriver();
 
-    /**
-     * \brief set the pwm frequency in Hz.
-     * \returns the actual pwm frequency set on the device.
-     */
-    float set_pwm_frequency(float freq_hz);
+/**
+ * \brief set the pwm frequency in Hz.
+ * \returns the actual pwm frequency set on the device.
+ */
+    float set_pwm_frequency_hz(float freq_hz);
 
+/**
+ * \brief set the duration (in microseconds) that the valve operates at the
+ *  "hit" power level before transitioning to the "hold" power level.
+ */
     void set_hit_duration_us(uint32_t hit_duration_us);
 
-    void set_hold_duration_us(uint32_t hit_duration_us);
+/**
+ * \brief disable hit and hold feature such that the valve always operates
+ *  at the hit output power level.
+ */
+    void disable_hit_and_hold();
 
-    /**
-     * \brief enable the valve output
-     * \note inline
-     */
-    inline void energize()
-    }
+/**
+ * \brief enable the valve output.
+ */
+    void energize();
 
-    /**
-     * \brief disable the valve output by setting duty cycle to 0.
-     * \note inline.
-     */
-    inline void deenergize()
-    {
-    }
+/**
+ * \brief disable the valve output.
+ */
+    void deenergize();
 
-
+/**
+ * \brief set the hit output power level.
+ * \param output output power from 0.0 to 1.0. Note that while the input is a
+ *  float, only 1 decimal place is used.
+ */
     void set_normalized_hit_output(float output);
+
+/**
+ * \brief set the hold output power level.
+ * \param output output power from 0.0 to 1.0. Note that while the input is a
+ *  float, only 1 decimal place is used.
+ */
     void set_normalized_hold_output(float output);
 
 private:
@@ -67,6 +80,8 @@ private:
 
     void reset_fsm();
 
+    bool energize_queued_;
+    bool deenergize_queued_;
     void update_fsm();
 
     float hit_output_;

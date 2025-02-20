@@ -6,6 +6,7 @@
 #include <harp_message.h>
 #include <harp_core.h>
 #include <harp_c_app.h>
+#include <valve_driver.h>
 #ifdef DEBUG
     #include <stdio.h>
     #include <cstdio> // for printf

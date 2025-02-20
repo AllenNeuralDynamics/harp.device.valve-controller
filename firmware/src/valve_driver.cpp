@@ -2,7 +2,8 @@
 
 
 ValveDriver::ValveDriver(uint8_t pwm_pin)
-:pwm_{pwm_pin}, hit_output_{1.0}, hold_output_{1.0}, hit_duration_us_{0}
+:pwm_{pwm_pin}, hit_output_{1.0}, hold_output_{1.0}, hit_duration_us_{0},
+ energize_queued_{false}, deenergize_queued_{false}
 {
     pwm_.set_duty_cycle(0);
     pwm_.enable_output();
@@ -15,59 +16,86 @@ ValveDriver::~ValveDriver()
     pwm_.disable_output();
 }
 
-float ValveDriver::set_normalized_hit_output(float output)
-{
-
-}
-
-float ValveDriver::set_normalized_hold_output(float output)
+void ValveDriver::set_normalized_hit_output(float output)
 {
     hit_output_ = output;
-    // Apply the frequency change if we are in the right state.
+    // Reapply the frequency change if we are in the right state.
+    if (state_ == HIT)
+        pwm_.set_duty_cycle(hit_output_);
 }
 
+void ValveDriver::set_normalized_hold_output(float output)
+{
+    hold_output_ = output;
+    // Reapply the frequency change if we are in the right state.
+    if (state_ == HOLD)
+        pwm_.set_duty_cycle(hold_output_);
+}
 
 float ValveDriver::set_pwm_frequency_hz(float hz)
 {
     pwm_.set_frequency(hz);
 }
 
-
 void ValveDriver::reset_fsm()
 {
-    hold_start_time_us_ = 0;
     hit_start_time_us_ = 0;
-    state_ = OFF;
+    state_ = DEENERGIZED;
+}
+
+void ValveDriver::energize()
+{
+    energize_queued_ = true;
+    update_fsm();
+}
+
+void ValveDriver::deenergize()
+{
+    deenergize_queued_ = true;
+    update_fsm();
 }
 
 void ValveDriver::update_fsm()
 {
     uint32_t curr_time_us = time_us_32();
-    // Handle state transition logic.
+    // Handle next-state logic (based on inputs and current state).
     State next_state{state_};
-    switch (state_)
+    // Start with state transition logic that applies to all states.
+    if (energize_queued_)
+        next_state = HIT;
+    else if (deenergize_queued_)
+        next_state = DEENERGIZED;
+    else // Handle state-based state transition logic.
     {
-        case HIT:
-            if (curr_time_us - hit_start_time_us_) >= hit_duration_us_
-                next_state_ = HOLD;
-            break;
-        case HOLD:
-            break;
-        case DEENERGIZED:
-            break;
-        default:
-            break;
+        switch (state_)
+        {
+            case HIT:
+                if ((curr_time_us - hit_start_time_us_) >= hit_duration_us_)
+                    next_state = HOLD;
+                break;
+            case HOLD:
+                break;
+            case DEENERGIZED:
+                break;
+            default:
+                break;
+        }
     }
-    // Handle state-change or state-dependent output logic.
-    if (state_ != HIT) && (next_state == HIT)
+    // Handle output logic based on inputs current state, and next state.
+    if (energize_queued_ && (next_state == HIT))
     {
         hit_start_time_us_ = curr_time_us;
         pwm_.set_duty_cycle(hit_output_);
     }
-    else if (state == HIT) && (next_state == HOLD)
+    else if ((state_ != HOLD) && (next_state == HOLD))
         pwm_.set_duty_cycle(hold_output_);
     else if (next_state == DEENERGIZED)
         pwm_.set_duty_cycle(0);
+
+    // Clear flags
+    energize_queued_ = false;
+    deenergize_queued_ = false;
+
     // Apply state transition.
     state_ = next_state;
 }
