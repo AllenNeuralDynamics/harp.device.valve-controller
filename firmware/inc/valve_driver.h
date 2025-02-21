@@ -44,6 +44,20 @@ public:
     void disable_hit_and_hold();
 
 /**
+ * \brief reset to defaults and deenergize output.
+ * \details PWM duty cycle is set to zero (no valve output). PWM frequency is
+ *  reset to @ref DEFAULT_PWM_FREQUENCY_HZ. also calls @ref reset_fsm().
+ */
+    void reset();
+
+/**
+ * \brief Call periodically in a loop to update the internal finite state
+ *  machine that controls valve output behavior.
+ */
+    inline void update()
+    {update_fsm();}
+
+/**
  * \brief enable the valve output.
  */
     void energize();
@@ -82,6 +96,9 @@ public:
     inline float get_hit_duration_us() const
     {return hold_output_;}
 
+    // FIXME: make private
+    PWM pwm_;
+
 private:
 
     enum State
@@ -106,7 +123,6 @@ private:
 
     uint32_t hit_start_time_us_;
 
-    PWM pwm_;
 
     static const uint32_t DEFAULT_PWM_FREQUENCY_HZ = 25000;
 };

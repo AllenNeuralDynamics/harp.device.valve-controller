@@ -28,7 +28,7 @@ struct ValveConfig
 {
     float hit_output;
     float hold_output;
-    uint16_t hit_duration_us;
+    uint32_t hit_duration_us;
 };
 #pragma pack(pop)
 
@@ -68,14 +68,14 @@ void update_app_state();
  */
 void reset_app();
 
-void read_valves_clear(uint8_t reg_address);
-void read_valves_set(uint8_t reg_address);
 void read_valves_state(uint8_t reg_address);
+void read_valves_set(uint8_t reg_address);
+void read_valves_clear(uint8_t reg_address);
 void read_any_valve_config(uint8_t reg_address);
 
-void write_valves_clear(msg_t& msg);
-void write_valves_set(msg_t& msg);
 void write_valves_state(msg_t& msg);
+void write_valves_set(msg_t& msg);
+void write_valves_clear(msg_t& msg);
 void write_any_valve_config(msg_t& msg);
 
 #endif // VALVE_CONTROLLER_APP_H

@@ -173,17 +173,13 @@ void write_any_valve_config(msg_t& msg)
 void update_app_state()
 {
     for (auto& valve_driver: valve_drivers)
-        valve_driver.update_fsm();
+        valve_driver.update();
 }
 
 void reset_app()
 {
-    // init all GPIO pins we are using.
-    // FIXME: Valve drivers should handle underlying GPIO pins
-    gpio_init_mask((VALVES_MASK << VALVE_PIN_BASE) | (GPIOS_MASK << GPIO_PIN_BASE));
-    gpio_set_dir_masked(VALVES_MASK << VALVE_PIN_BASE, 0xFFFFFFFF);
-    gpio_put_masked(VALVES_MASK << VALVE_PIN_BASE, 0);
-    // Reset exposed GPIO pins to inputs.
+    // init the exposed auxiliary GPIO pins we are using.
+    gpio_init_mask(GPIOS_MASK << GPIO_PIN_BASE);
     gpio_set_dir_masked(GPIOS_MASK << GPIO_PIN_BASE, 0);
 
     // Reset Harp register struct elements.
@@ -192,6 +188,6 @@ void reset_app()
     app_regs.ValvesClear = 0;
     // Turn off all outputs.
     for (auto& valve_driver: valve_drivers)
-        valve_driver.deenergize();
+        valve_driver.reset();
 }
 
