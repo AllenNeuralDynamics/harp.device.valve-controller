@@ -24,8 +24,4 @@
 
 #define UNUSED_SERIAL_NUMBER (0)  // Deprecated in favor of R_UUID
 
-// Doesnt work yet:
-//#define USBD_MANUFACTURER "The Allen Institute for Neural Dynamics"
-//#define USBD_PRODUCT "Harp.Device.Lickety-Split"
-
 #endif // CONFIG_H

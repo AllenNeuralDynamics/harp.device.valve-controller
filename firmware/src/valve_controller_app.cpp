@@ -48,6 +48,10 @@ RegSpecs app_reg_specs[APP_REG_COUNT]
     {(uint8_t*)&app_regs.ValveConfigs[13], sizeof(ValveConfig), U8},
     {(uint8_t*)&app_regs.ValveConfigs[14], sizeof(ValveConfig), U8},
     {(uint8_t*)&app_regs.ValveConfigs[15], sizeof(ValveConfig), U8},
+    {(uint8_t*)&app_regs.AuxGPIODir, sizeof(app_regs.AuxGPIODir), U8},
+    {(uint8_t*)&app_regs.AuxGPIOState, sizeof(app_regs.AuxGPIOState), U8},
+    {(uint8_t*)&app_regs.AuxGPIOSet, sizeof(app_regs.AuxGPIOSet), U8},
+    {(uint8_t*)&app_regs.AuxGPIOClear, sizeof(app_regs.AuxGPIOClear), U8},
     // More specs here if we add additional registers.
 };
 
@@ -72,6 +76,10 @@ RegFnPair reg_handler_fns[APP_REG_COUNT]
     {read_any_valve_config, write_any_valve_config},
     {read_any_valve_config, write_any_valve_config},
     {read_any_valve_config, write_any_valve_config}, // valve 15
+    {read_aux_gpio_dir, write_aux_gpio_dir},
+    {read_aux_gpio_state, write_aux_gpio_state},
+    {read_aux_gpio_set, write_aux_gpio_set},
+    {read_aux_gpio_clear, write_aux_gpio_clear},
 };
 
 
@@ -170,6 +178,82 @@ void write_any_valve_config(msg_t& msg)
         HarpCore::send_harp_reply(WRITE, msg.header.address);
 }
 
+void read_aux_gpio_dir(uint8_t reg_address)
+{
+    // Nothing to do!
+    // This register will stay consistent with the underlying peripheral
+    //  register after we initialize it the first time.
+    if (!HarpCore::is_muted())
+        HarpCore::send_harp_reply(READ, reg_address);
+}
+
+void write_aux_gpio_dir(msg_t& msg)
+{
+    HarpCore::copy_msg_payload_to_register(msg);
+    // Apply register settings (set bits are outputs; cleared bits are inputs).
+    gpio_set_dir_masked(uint32_t(GPIOS_MASK) << GPIO_PIN_BASE,
+                        uint32_t(app_regs.AuxGPIODir) << GPIO_PIN_BASE);
+    if (!HarpCore::is_muted())
+        HarpCore::send_harp_reply(WRITE, msg.header.address);
+}
+
+void read_aux_gpio_state(uint8_t reg_address)
+{
+    // Update register contents.
+    app_regs.AuxGPIOState = uint8_t((gpio_get_all() >> GPIO_PIN_BASE)
+                                    & GPIOS_MASK);
+    if (!HarpCore::is_muted())
+        HarpCore::send_harp_reply(READ, reg_address);
+}
+
+void write_aux_gpio_state(msg_t& msg)
+{
+    HarpCore::copy_msg_payload_to_register(msg);
+    // Note: only write to outputs
+    gpio_put_masked(uint32_t(app_regs.AuxGPIODir) << GPIO_PIN_BASE,
+                    uint32_t(app_regs.AuxGPIOState) << GPIO_PIN_BASE);
+    if (!HarpCore::is_muted())
+        HarpCore::send_harp_reply(WRITE, msg.header.address);
+}
+
+void read_aux_gpio_set(uint8_t reg_address)
+{
+    // Nothing to do!
+    // This register's value will reflect the last value sent to this register.
+    if (!HarpCore::is_muted())
+        HarpCore::send_harp_reply(READ, reg_address);
+}
+
+void write_aux_gpio_set(msg_t& msg)
+{
+    HarpCore::copy_msg_payload_to_register(msg);
+    // Note: only write to outputs (ie: mask on Set bits).
+    gpio_put_masked(
+        uint32_t(app_regs.AuxGPIODir & app_regs.AuxGPIOSet) << GPIO_PIN_BASE,
+        uint32_t(app_regs.AuxGPIOSet) << GPIO_PIN_BASE);
+    if (!HarpCore::is_muted())
+        HarpCore::send_harp_reply(WRITE, msg.header.address);
+}
+
+void read_aux_gpio_clear(uint8_t reg_address)
+{
+    // Nothing to do!
+    // This register's value will reflect the last value sent to this register.
+    if (!HarpCore::is_muted())
+        HarpCore::send_harp_reply(READ, reg_address);
+}
+
+void write_aux_gpio_clear(msg_t& msg)
+{
+    HarpCore::copy_msg_payload_to_register(msg);
+    // Note: only write to outputs (ie: mask on Clear bits).
+    gpio_put_masked(
+        uint32_t(app_regs.AuxGPIODir & app_regs.AuxGPIOClear) << GPIO_PIN_BASE,
+        0);
+    if (!HarpCore::is_muted())
+        HarpCore::send_harp_reply(WRITE, msg.header.address);
+}
+
 void update_app_state()
 {
     for (auto& valve_driver: valve_drivers)
@@ -178,10 +262,6 @@ void update_app_state()
 
 void reset_app()
 {
-    // init the exposed auxiliary GPIO pins we are using.
-    gpio_init_mask(GPIOS_MASK << GPIO_PIN_BASE);
-    gpio_set_dir_masked(GPIOS_MASK << GPIO_PIN_BASE, 0);
-
     // Reset Harp register struct elements.
     app_regs.ValvesState = 0;
     app_regs.ValvesSet = 0;
@@ -189,5 +269,14 @@ void reset_app()
     // Turn off all outputs.
     for (auto& valve_driver: valve_drivers)
         valve_driver.reset();
+
+    // Init the exposed auxiliary GPIO pins we are using as all-inputs.
+    gpio_init_mask(GPIOS_MASK << GPIO_PIN_BASE);
+    gpio_set_dir_masked(GPIOS_MASK << GPIO_PIN_BASE, 0);
+
+    app_regs.AuxGPIODir = 0; // All inputs (consistent with what we just set).
+    app_regs.AuxGPIOState = (gpio_get_all() >> GPIO_PIN_BASE) & GPIOS_MASK;
+    app_regs.AuxGPIOSet = 0;
+    app_regs.AuxGPIOClear = 0;
 }
 

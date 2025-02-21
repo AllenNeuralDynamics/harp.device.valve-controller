@@ -13,7 +13,7 @@
 #endif
 
 // Setup for Harp App
-const size_t APP_REG_COUNT = 19;
+const size_t APP_REG_COUNT = 23;
 const size_t VALVE_START_APP_ADDRESS = APP_REG_START_ADDRESS + 3;
 
 extern RegSpecs app_reg_specs[APP_REG_COUNT];
@@ -52,6 +52,10 @@ struct app_regs_t
                                           // 16 Heterogeneous registers each
                                           // representing a ValveConfig packed
                                           // struct.
+    uint8_t AuxGPIODir;
+    uint8_t AuxGPIOState;
+    uint8_t AuxGPIOSet;
+    uint8_t AuxGPIOClear;
     // More app "registers" here.
 };
 #pragma pack(pop)
@@ -72,10 +76,18 @@ void read_valves_state(uint8_t reg_address);
 void read_valves_set(uint8_t reg_address);
 void read_valves_clear(uint8_t reg_address);
 void read_any_valve_config(uint8_t reg_address);
+void read_aux_gpio_dir(uint8_t reg_address);
+void read_aux_gpio_state(uint8_t reg_address);
+void read_aux_gpio_set(uint8_t reg_address);
+void read_aux_gpio_clear(uint8_t reg_address);
 
 void write_valves_state(msg_t& msg);
 void write_valves_set(msg_t& msg);
 void write_valves_clear(msg_t& msg);
 void write_any_valve_config(msg_t& msg);
+void write_aux_gpio_dir(msg_t& msg);
+void write_aux_gpio_state(msg_t& msg);
+void write_aux_gpio_set(msg_t& msg);
+void write_aux_gpio_clear(msg_t& msg);
 
 #endif // VALVE_CONTROLLER_APP_H
