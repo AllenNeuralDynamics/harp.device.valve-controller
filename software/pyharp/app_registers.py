@@ -23,3 +23,7 @@ class AppRegs(IntEnum):
     ValveConfigs13 = 48
     ValveConfigs14 = 49
     ValveConfigs15 = 50
+    AuxGPIODir = 51
+    AuxGPIOState = 52
+    AuxGPIOSet = 53
+    AuxGPIOClear = 54

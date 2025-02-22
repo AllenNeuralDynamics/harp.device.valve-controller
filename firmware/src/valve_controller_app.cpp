@@ -271,6 +271,7 @@ void reset_app()
         valve_driver.reset();
 
     // Init the exposed auxiliary GPIO pins we are using as all-inputs.
+    // This *must* be called once to setup the AUX GPIOs.
     gpio_init_mask(GPIOS_MASK << GPIO_PIN_BASE);
     gpio_set_dir_masked(GPIOS_MASK << GPIO_PIN_BASE, 0);
 

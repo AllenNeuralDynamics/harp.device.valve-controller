@@ -33,6 +33,7 @@ int main()
     stdio_uart_init_full(uart0, 921600, UART_TX_PIN, -1); // use uart1 tx only.
     printf("Hello, from an RP2040!\r\n");
 #endif
+    reset_app();
     while(true)
         app.run();
 }
