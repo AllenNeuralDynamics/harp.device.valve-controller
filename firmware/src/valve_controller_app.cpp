@@ -2,6 +2,19 @@
 
 app_regs_t app_regs;
 
+uint8_t old_aux_gpio_inputs;
+
+
+// Creat function aliases for readability.
+void (&read_aux_gpio_dir)(uint8_t reg_address) = HarpCore::read_reg_generic;
+void (&read_aux_gpio_set)(uint8_t reg_address) = HarpCore::read_reg_generic;
+void (&read_aux_gpio_clear)(uint8_t reg_address) = HarpCore::read_reg_generic;
+
+void (&read_aux_gpio_rise_event)(uint8_t reg_address) = HarpCore::read_reg_generic;
+void (&read_aux_gpio_fall_event)(uint8_t reg_address) = HarpCore::read_reg_generic;
+void (&write_aux_gpio_rise_event)(msg_t& msg) = HarpCore::write_reg_generic;
+void (&write_aux_gpio_fall_event)(msg_t& msg) = HarpCore::write_reg_generic;
+
 
 /// Create Hit-and-Hold Valve Drivers.
 /// The underlying PWM peripheral, aka: a PWM Slice, controls two adjacent PWM
@@ -32,6 +45,7 @@ RegSpecs app_reg_specs[APP_REG_COUNT]
     {(uint8_t*)&app_regs.ValvesState, sizeof(app_regs.ValvesState), U16},
     {(uint8_t*)&app_regs.ValvesSet, sizeof(app_regs.ValvesSet), U16},
     {(uint8_t*)&app_regs.ValvesClear, sizeof(app_regs.ValvesClear), U16},
+
     {(uint8_t*)&app_regs.ValveConfigs[0], sizeof(ValveConfig), U8},
     {(uint8_t*)&app_regs.ValveConfigs[1], sizeof(ValveConfig), U8},
     {(uint8_t*)&app_regs.ValveConfigs[2], sizeof(ValveConfig), U8},
@@ -48,10 +62,16 @@ RegSpecs app_reg_specs[APP_REG_COUNT]
     {(uint8_t*)&app_regs.ValveConfigs[13], sizeof(ValveConfig), U8},
     {(uint8_t*)&app_regs.ValveConfigs[14], sizeof(ValveConfig), U8},
     {(uint8_t*)&app_regs.ValveConfigs[15], sizeof(ValveConfig), U8},
+
     {(uint8_t*)&app_regs.AuxGPIODir, sizeof(app_regs.AuxGPIODir), U8},
     {(uint8_t*)&app_regs.AuxGPIOState, sizeof(app_regs.AuxGPIOState), U8},
     {(uint8_t*)&app_regs.AuxGPIOSet, sizeof(app_regs.AuxGPIOSet), U8},
     {(uint8_t*)&app_regs.AuxGPIOClear, sizeof(app_regs.AuxGPIOClear), U8},
+
+    {(uint8_t*)&app_regs.AuxGPIOInputRiseEvent, sizeof(app_regs.AuxGPIOInputRiseEvent), U8},
+    {(uint8_t*)&app_regs.AuxGPIOInputFallEvent, sizeof(app_regs.AuxGPIOInputFallEvent), U8},
+    {(uint8_t*)&app_regs.AuxGPIORisingInputs, sizeof(app_regs.AuxGPIORisingInputs), U8},
+    {(uint8_t*)&app_regs.AuxGPIOFallingInputs, sizeof(app_regs.AuxGPIOFallingInputs), U8},
     // More specs here if we add additional registers.
 };
 
@@ -60,6 +80,7 @@ RegFnPair reg_handler_fns[APP_REG_COUNT]
     {read_valves_state, write_valves_state},
     {read_valves_set, write_valves_set},
     {read_valves_clear, write_valves_clear},
+
     {read_any_valve_config, write_any_valve_config}, // valve 0
     {read_any_valve_config, write_any_valve_config}, // valve 1
     {read_any_valve_config, write_any_valve_config}, // ...
@@ -76,10 +97,14 @@ RegFnPair reg_handler_fns[APP_REG_COUNT]
     {read_any_valve_config, write_any_valve_config},
     {read_any_valve_config, write_any_valve_config},
     {read_any_valve_config, write_any_valve_config}, // valve 15
+
     {read_aux_gpio_dir, write_aux_gpio_dir},
     {read_aux_gpio_state, write_aux_gpio_state},
     {read_aux_gpio_set, write_aux_gpio_set},
     {read_aux_gpio_clear, write_aux_gpio_clear},
+
+    {read_aux_gpio_rise_event, write_aux_gpio_rise_event},
+    {read_aux_gpio_fall_event, write_aux_gpio_fall_event},
 };
 
 
@@ -178,14 +203,14 @@ void write_any_valve_config(msg_t& msg)
         HarpCore::send_harp_reply(WRITE, msg.header.address);
 }
 
-void read_aux_gpio_dir(uint8_t reg_address)
-{
-    // Nothing to do!
-    // This register will stay consistent with the underlying peripheral
-    //  register after we initialize it the first time.
-    if (!HarpCore::is_muted())
-        HarpCore::send_harp_reply(READ, reg_address);
-}
+//void read_aux_gpio_dir(uint8_t reg_address)
+//{
+//    // Nothing to do!
+//    // This register will stay consistent with the underlying peripheral
+//    //  register after we initialize it the first time.
+//    if (!HarpCore::is_muted())
+//        HarpCore::send_harp_reply(READ, reg_address);
+//}
 
 void write_aux_gpio_dir(msg_t& msg)
 {
@@ -200,8 +225,7 @@ void write_aux_gpio_dir(msg_t& msg)
 void read_aux_gpio_state(uint8_t reg_address)
 {
     // Update register contents.
-    app_regs.AuxGPIOState = uint8_t((gpio_get_all() >> GPIO_PIN_BASE)
-                                    & GPIOS_MASK);
+    app_regs.AuxGPIOState = read_aux_gpios();
     if (!HarpCore::is_muted())
         HarpCore::send_harp_reply(READ, reg_address);
 }
@@ -216,14 +240,6 @@ void write_aux_gpio_state(msg_t& msg)
         HarpCore::send_harp_reply(WRITE, msg.header.address);
 }
 
-void read_aux_gpio_set(uint8_t reg_address)
-{
-    // Nothing to do!
-    // This register's value will reflect the last value sent to this register.
-    if (!HarpCore::is_muted())
-        HarpCore::send_harp_reply(READ, reg_address);
-}
-
 void write_aux_gpio_set(msg_t& msg)
 {
     HarpCore::copy_msg_payload_to_register(msg);
@@ -233,14 +249,6 @@ void write_aux_gpio_set(msg_t& msg)
         uint32_t(app_regs.AuxGPIOSet) << GPIO_PIN_BASE);
     if (!HarpCore::is_muted())
         HarpCore::send_harp_reply(WRITE, msg.header.address);
-}
-
-void read_aux_gpio_clear(uint8_t reg_address)
-{
-    // Nothing to do!
-    // This register's value will reflect the last value sent to this register.
-    if (!HarpCore::is_muted())
-        HarpCore::send_harp_reply(READ, reg_address);
 }
 
 void write_aux_gpio_clear(msg_t& msg)
@@ -256,8 +264,24 @@ void write_aux_gpio_clear(msg_t& msg)
 
 void update_app_state()
 {
+    // Update valve controller state machines.
     for (auto& valve_driver: valve_drivers)
         valve_driver.update();
+    // Process AuxGPIO input changes.
+    // FIXME: do we need to update old_aux_gpio_inputs if we change (write-to)
+    //  app_regs.AuxGPIODir ?
+    uint8_t aux_gpio_inputs = read_aux_gpios() & ~app_regs.AuxGPIODir;
+    uint8_t changed_inputs = (old_aux_gpio_inputs ^ aux_gpio_inputs);
+    app_regs.AuxGPIORisingInputs = app_regs.AuxGPIOInputRiseEvent & aux_gpio_inputs & changed_inputs;
+    app_regs.AuxGPIOFallingInputs = app_regs.AuxGPIOInputFallEvent & ~aux_gpio_inputs & changed_inputs;
+    old_aux_gpio_inputs = aux_gpio_inputs;
+    // Emit EVENT messages for rising/falling edges on configured pins.
+    if (HarpCore::is_muted())
+        return;
+    if (app_regs.AuxGPIOInputRiseEvent & app_regs.AuxGPIORisingInputs)
+        HarpCore::send_harp_reply(EVENT, AUX_GPIO_RISING_INPUTS_ADDRESS);
+    if (app_regs.AuxGPIOInputFallEvent & app_regs.AuxGPIOFallingInputs)
+        HarpCore::send_harp_reply(EVENT, AUX_GPIO_FALLING_INPUTS_ADDRESS);
 }
 
 void reset_app()
@@ -279,5 +303,11 @@ void reset_app()
     app_regs.AuxGPIOState = (gpio_get_all() >> GPIO_PIN_BASE) & GPIOS_MASK;
     app_regs.AuxGPIOSet = 0;
     app_regs.AuxGPIOClear = 0;
+
+    // Clear aux input EVENT message configuration.
+    app_regs.AuxGPIORisingInputs = 0;
+    app_regs.AuxGPIOFallingInputs = 0;
+
+    old_aux_gpio_inputs = read_aux_gpios() & ~app_regs.AuxGPIODir;
 }
 

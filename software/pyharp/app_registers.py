@@ -27,3 +27,8 @@ class AppRegs(IntEnum):
     AuxGPIOState = 52
     AuxGPIOSet = 53
     AuxGPIOClear = 54
+
+    AuxGPIOInputRiseEvent = 55
+    AuxGPIOInputFallEvent = 56
+    AuxGPIOInputRisingInputs = 57
+    AuxGPIOFallingInputs = 58

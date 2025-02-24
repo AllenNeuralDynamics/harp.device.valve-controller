@@ -13,14 +13,21 @@
 #endif
 
 // Setup for Harp App
-const size_t APP_REG_COUNT = 23;
-const size_t VALVE_START_APP_ADDRESS = APP_REG_START_ADDRESS + 3;
+inline constexpr size_t APP_REG_COUNT = 27;
+// Numeric addresses for Harp Registers (clunky).
+inline constexpr size_t VALVE_START_APP_ADDRESS = APP_REG_START_ADDRESS + 3;
+inline constexpr size_t LAST_VALVE_APP_ADDRESS = VALVE_START_APP_ADDRESS + NUM_VALVES - 1;
+inline constexpr size_t AUX_GPIO_INPUT_RISE_EVENT_ADDRESS = LAST_VALVE_APP_ADDRESS + 5;
+inline constexpr size_t AUX_GPIO_RISING_INPUTS_ADDRESS = AUX_GPIO_INPUT_RISE_EVENT_ADDRESS + 2;
+inline constexpr size_t AUX_GPIO_FALLING_INPUTS_ADDRESS = AUX_GPIO_INPUT_RISE_EVENT_ADDRESS + 3;
 
 extern RegSpecs app_reg_specs[APP_REG_COUNT];
 extern RegFnPair reg_handler_fns[APP_REG_COUNT];
 extern HarpCApp& app;
 
 extern ValveDriver valve_drivers[NUM_VALVES];
+
+extern uint8_t old_aux_gpio_inputs;
 
 // Valve configuration struct for configuring the Hit-and-hold driver
 #pragma pack(push, 1)
@@ -56,6 +63,11 @@ struct app_regs_t
     uint8_t AuxGPIOState;
     uint8_t AuxGPIOSet;
     uint8_t AuxGPIOClear;
+
+    uint8_t AuxGPIOInputRiseEvent;
+    uint8_t AuxGPIOInputFallEvent;
+    uint8_t AuxGPIORisingInputs; // Raw state of which inputs rose (could be multiple)
+    uint8_t AuxGPIOFallingInputs; // Raw state of which inputs fell (could be multiple)
     // More app "registers" here.
 };
 #pragma pack(pop)
@@ -72,14 +84,14 @@ void update_app_state();
  */
 void reset_app();
 
+inline uint8_t read_aux_gpios()
+{return uint8_t((gpio_get_all() >> GPIO_PIN_BASE) & GPIOS_MASK);}
+
 void read_valves_state(uint8_t reg_address);
 void read_valves_set(uint8_t reg_address);
 void read_valves_clear(uint8_t reg_address);
 void read_any_valve_config(uint8_t reg_address);
-void read_aux_gpio_dir(uint8_t reg_address);
 void read_aux_gpio_state(uint8_t reg_address);
-void read_aux_gpio_set(uint8_t reg_address);
-void read_aux_gpio_clear(uint8_t reg_address);
 
 void write_valves_state(msg_t& msg);
 void write_valves_set(msg_t& msg);
