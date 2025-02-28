@@ -592,7 +592,7 @@
       "plot": "exports/gerbers/",
       "pos_files": "exports/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "valve-controller.step",
       "svg": "",
       "vrml": ""
     },
