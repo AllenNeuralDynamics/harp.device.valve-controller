@@ -48,11 +48,30 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.25
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        "duplicate_footprints|123000000|103000000|8c0253c6-54a9-4d66-b147-cf3149a7117b|3fac61cf-8faa-42b4-afe1-70ede69eeb73",
+        "duplicate_footprints|123000000|107000000|f218fbdf-31d4-49f4-8c3d-a9124219cb88|1419b79b-406d-44d6-b1b5-0256f4e68903",
+        "duplicate_footprints|123000000|38000000|3a9c7107-f15d-4363-b892-03faa75aff27|1419b79b-406d-44d6-b1b5-0256f4e68903",
+        "duplicate_footprints|157000000|38000000|3cff74ac-fea9-4978-9542-e60f4af9efaf|1419b79b-406d-44d6-b1b5-0256f4e68903",
+        "duplicate_footprints|157000000|42000000|cee030e6-7c7e-49fa-bc20-aeb4ff4846b6|3fac61cf-8faa-42b4-afe1-70ede69eeb73",
+        "extra_footprint|123000000|103000000|8c0253c6-54a9-4d66-b147-cf3149a7117b|00000000-0000-0000-0000-000000000000",
+        "extra_footprint|123000000|107000000|f218fbdf-31d4-49f4-8c3d-a9124219cb88|00000000-0000-0000-0000-000000000000",
+        "extra_footprint|123000000|38000000|3a9c7107-f15d-4363-b892-03faa75aff27|00000000-0000-0000-0000-000000000000",
+        "extra_footprint|153000000|107000000|3fac61cf-8faa-42b4-afe1-70ede69eeb73|00000000-0000-0000-0000-000000000000",
+        "extra_footprint|157000000|107000000|1419b79b-406d-44d6-b1b5-0256f4e68903|00000000-0000-0000-0000-000000000000",
+        "extra_footprint|157000000|38000000|3cff74ac-fea9-4978-9542-e60f4af9efaf|00000000-0000-0000-0000-000000000000",
+        "extra_footprint|157000000|42000000|cee030e6-7c7e-49fa-bc20-aeb4ff4846b6|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -110,21 +129,21 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.127,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.2,
-        "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_copper_edge_clearance": 0.381,
+        "min_hole_clearance": 0.127,
+        "min_hole_to_hole": 0.127,
+        "min_microvia_diameter": 0.4572,
+        "min_microvia_drill": 0.254,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
+        "min_text_height": 0.7,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_through_hole_diameter": 0.254,
+        "min_track_width": 0.127,
+        "min_via_annular_width": 0.1016,
+        "min_via_diameter": 0.4572,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -171,7 +190,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -198,7 +219,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -438,19 +464,36 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.1524,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
+        "microvia_diameter": 0.4572,
+        "microvia_drill": 0.254,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.1524,
+        "via_diameter": 0.4572,
+        "via_drill": 0.254,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.1524,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.4572,
+        "microvia_drill": 0.254,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4,
+        "via_diameter": 0.4572,
+        "via_drill": 0.254,
         "wire_width": 6
       }
     ],
@@ -459,7 +502,24 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "+12V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GND2"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "IN1"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -469,7 +529,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../../../../Downloads/harp.breakout.mini-clamp.step",
       "svg": "",
       "vrml": ""
     },
@@ -550,6 +610,54 @@
           "group_by": false,
           "label": "Manufacturer",
           "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFG",
+          "name": "MFG",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Link",
+          "name": "Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Notes",
+          "name": "Notes",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PCBWay Link",
+          "name": "PCBWay Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Rated Voltage",
+          "name": "Rated Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Temperature Coefficient",
+          "name": "Temperature Coefficient",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Tolerance",
+          "name": "Tolerance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
           "show": false
         }
       ],
