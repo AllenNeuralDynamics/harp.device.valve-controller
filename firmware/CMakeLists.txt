@@ -11,7 +11,7 @@ add_definitions(-DUSBD_PRODUCT="valve-controller")
 if (DEFINED PICO_SDK_PATH)
     message("Using explicitly defined PICO_SDK_PATH.")
 elseif (DEFINED ENV{PICO_SDK_PATH} AND NOT DEFINED PICO_SDK_PATH)
-    add_definitions(-DPICO_SDK_PATH="$ENV{PICO_SDK_PATH}")
+    set(PICO_SDK_PATH $ENV{PICO_SDK_PATH})
     message("Using environment variable PICO_SDK_PATH.")
 else()
     message(SEND_ERROR "PICO_SDK_PATH is not defined either as an environment "
