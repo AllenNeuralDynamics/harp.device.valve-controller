@@ -4122,7 +4122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://multimedia.3m.com/mws/media/277250O/3m-shrunk-delta-ribbon-sdr-cable-assembly-ts2120.pdf"
 			(at 231.14 67.31 0)
 			(effects
 				(font
@@ -4132,6 +4132,33 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x12, script generated"
+			(at 231.14 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/3m/37212-62M3-003PL/1632992"
+			(at 231.14 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "3M"
+			(at 231.14 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "37212-62M3-003PL"
 			(at 231.14 67.31 0)
 			(effects
 				(font
@@ -4794,7 +4821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://multimedia.3m.com/mws/media/277250O/3m-shrunk-delta-ribbon-sdr-cable-assembly-ts2120.pdf"
 			(at 231.14 104.14 0)
 			(effects
 				(font
@@ -4804,6 +4831,33 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x12, script generated"
+			(at 231.14 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/3m/37212-62M3-003PL/1632992"
+			(at 231.14 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "3M"
+			(at 231.14 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Number" "37212-62M3-003PL"
 			(at 231.14 104.14 0)
 			(effects
 				(font
@@ -6171,7 +6225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/937/Female_Headers.100_DS.pdf"
 			(at 71.12 90.17 0)
 			(effects
 				(font
