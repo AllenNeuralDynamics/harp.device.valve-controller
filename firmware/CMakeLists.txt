@@ -18,6 +18,7 @@ project(valve-controller)
 
 pico_sdk_init()
 add_subdirectory(lib/harp.core.rp2040/firmware) # Path to harp.core.rp2040.
+add_subdirectory(lib/rp2040.pwm)
 
 
 add_executable(${PROJECT_NAME}
@@ -25,10 +26,15 @@ add_executable(${PROJECT_NAME}
     src/valve_controller_app.cpp
 )
 
+add_library(valve_driver
+    src/valve_driver.cpp
+)
+
 include_directories(inc)
 
-target_link_libraries(${PROJECT_NAME} harp_core harp_c_app
-                      harp_sync pico_stdlib)
+target_link_libraries(valve_driver rp2040_pwm pico_stdlib)
+target_link_libraries(${PROJECT_NAME} harp_core harp_c_app rp2040_pwm
+                      valve_driver harp_sync pico_stdlib)
 
 pico_add_extra_outputs(${PROJECT_NAME})
 
