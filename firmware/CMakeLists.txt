@@ -27,7 +27,7 @@ add_executable(${PROJECT_NAME}
 
 include_directories(inc)
 
-target_link_libraries(${PROJECT_NAME} harp_core harp_c_app
+target_link_libraries(${PROJECT_NAME} harp_core harp_c_app hardware_pwm
                       harp_sync pico_stdlib)
 
 pico_add_extra_outputs(${PROJECT_NAME})

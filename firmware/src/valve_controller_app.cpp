@@ -270,7 +270,36 @@ void update_app_state()
     // Process AuxGPIO input changes.
     // FIXME: do we need to update old_aux_gpio_inputs if we change (write-to)
     //  app_regs.AuxGPIODir ?
-    uint8_t aux_gpio_inputs = read_aux_gpios() & ~app_regs.AuxGPIODir;
+
+    // FIXME: reset starting values.
+    // Debounce logic.
+    uint32_t curr_time_us = time_us_32();
+    if (curr_time_us - prev_update_time_us < DEBOUNCE_INTERVAL_US)
+        return;
+    prev_update_time_us = curr_time_us;
+    uint8_t aux_gpio_inputs = read_aux_gpios();
+    uint8_t filtered_gpios = 0;
+    // update cumulative sums and assign filtered gpio bits.
+    for (uint8_t i = 0; i < 8; ++i)
+    {
+        // Skip pin if it's not specified as an input.
+        if !(((~app_regs.AuxGPIODir) >> i) & 0x01)
+            continue;
+        uint8_t gpio_is_set = ((aux_gpio_inputs >> i) & 0x01);
+        // update cumulative sum.
+        score[i] += gpio_is_set? ((score < MAX_DEBOUNCE_SCORE)? 1:
+                                               0):
+                              ((score > MIN_DEBOUNCE_SCORE)? -1:
+                                               0);
+        // Apply hysteresis.
+        if (score[i] >= DEBOUNCE_ON_THRESHOLD):
+            filtered_gpios |= (0x01 << i);
+        else if (score[i] <= DEBOUNCE_OFF_THRESHOLD)
+            filtered_gpios &= ~(0x01 << i);
+    }
+
+    //uint8_t aux_gpio_inputs = read_aux_gpios() & ~app_regs.AuxGPIODir;
+    uint8_t aux_gpio_inputs = filtered_gpios & ~app_regs.AuxGPIODir;
     uint8_t changed_inputs = (old_aux_gpio_inputs ^ aux_gpio_inputs);
     app_regs.AuxGPIORisingInputs = app_regs.AuxGPIOInputRiseEvent & aux_gpio_inputs & changed_inputs;
     app_regs.AuxGPIOFallingInputs = app_regs.AuxGPIOInputFallEvent & ~aux_gpio_inputs & changed_inputs;

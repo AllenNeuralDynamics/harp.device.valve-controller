@@ -21,6 +21,14 @@ inline constexpr size_t AUX_GPIO_INPUT_RISE_EVENT_ADDRESS = LAST_VALVE_APP_ADDRE
 inline constexpr size_t AUX_GPIO_RISING_INPUTS_ADDRESS = AUX_GPIO_INPUT_RISE_EVENT_ADDRESS + 2;
 inline constexpr size_t AUX_GPIO_FALLING_INPUTS_ADDRESS = AUX_GPIO_INPUT_RISE_EVENT_ADDRESS + 3;
 
+
+// Debounce parameters for Aux GPIOS specified as inputs
+inline constexpr uint32_t DEBOUNCE_INTERVAL_US = 1000;
+inline constexpr uint32_t MIN_DEBOUNCE_SCORE = 0;
+inline constexpr uint32_t MAX_DEBOUNCE_SCORE = 10;
+inline constexpr uint32_t DEBOUNCE_ON_THRESHOLD = 2 * MAX_DEBOUNCE_SCORE / 3;
+inline constexpr uint32_t DEBOUNCE_OFF_THRESHOLD = MAX_DEBOUNCE_SCORE / 3;
+
 extern RegSpecs app_reg_specs[APP_REG_COUNT];
 extern RegFnPair reg_handler_fns[APP_REG_COUNT];
 extern HarpCApp& app;
