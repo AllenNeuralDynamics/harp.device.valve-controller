@@ -5841,7 +5841,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Number" "MAX5902ACEUT"
+		(property "Manufacturer Number" "MAX5902ACEUT+T"
 			(at 92.71 71.12 0)
 			(effects
 				(font
@@ -5850,7 +5850,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/rochester-electronics-llc/MAX5902ACEUT/12115092"
+		(property "Link" "https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX5902ACEUT-T/1781252"
 			(at 92.71 71.12 0)
 			(effects
 				(font
